@@ -359,21 +359,19 @@
 % use a multiple column layout for up to three different
 % affiliations
 \author{\IEEEauthorblockN{Melvin Johnson Premkumar}
-\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
-Georgia Institute of Technology\\
-Atlanta, Georgia 30332--0250\\
-Email: http://www.michaelshell.org/contact.html}
+\IEEEauthorblockA{Dept. of Computer Science\\
+Stanford University\\
+Email: melvinj@stanford.edu}
 \and
 \IEEEauthorblockN{Isaac Caswell}
-\IEEEauthorblockA{Twentieth Century Fox\\
-Springfield, USA\\
-Email: homer@thesimpsons.com}
+\IEEEauthorblockA{Dept. of Computer Science\\
+Stanford University\\
+Email: icaswell@stanford.edu}
 \and
 \IEEEauthorblockN{Zane Silver}
-\IEEEauthorblockA{Starfleet Academy\\
-San Francisco, California 96678-2391\\
-Telephone: (800) 555--1212\\
-Fax: (888) 555--1212}}
+\IEEEauthorblockA{Dept. of Computer Science\\
+Stanford University\\
+Email: ang@stanford.edu}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -414,7 +412,7 @@ Fax: (888) 555--1212}}
 %\boldmath
 
 
-We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
+In which we discuss various things
 
 
 \end{abstract}
@@ -426,8 +424,6 @@ We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
 % math in the abstract anyway.
 
 % no keywords
-
-In which we discuss various things
 
 
 % For peer review papers, you can put extra information on the cover
@@ -445,15 +441,46 @@ In which we discuss various things
 \section{Introduction}
 % no \IEEEPARstart
 Our project is to detect paraphrases in Twitter, as part of the SemEval challenge for 2015.   Given two sentences (Tweets), we determine whether they express the same or very similar meaning and optionally a degree score between 0 and 1.  The training dataset is provided by semEval and contains about 17,790 annotated sentence pairs, and comes with tokenization, part-of-speech and named entity tags.  The testing dataset consists of a further 1k examples from a different time period, annotated by an expert.  SemEval also provides several baselines against which to compare our algorithm's performance.  In this progress report we report the result from using Google Wordvec and Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection for this task; and discuss how to improve upon them.
+
+
+We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
+
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
-\subsection{Initial Steps: Wordvec}
-Subsection text here.
+\section{Related Work}
+Detail the baseline paper (Isaac)
 
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+\section{Initial Steps: Wordvec}
+\begin{itemize}
+
+\item brief discussion of what this is
+\item how did it work? (1-2 pg)
+\item not so great - get numbers TODO
+\item discussion of why
+
+\end{itemize}
+
+
+
+\section{Current Thread of Work:  Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}
+
+\begin{itemize}
+\item  What is the algorithm?
+\item similar to wordvec, but extends in in these ways….
+\item Why is it well suited to our problem specifically?
+\item how did it work? (TODO: run this)
+
+\end{itemize}
+
+\section{Next Steps}
+There are several things we can do to improve the accuracy of our current model.  Following is a list of the next things we will work on.
+\subsection{better normalization of the data}
+Twitter datasets tend to attract slang and misspellings, arbitrary capitalization and the like.  An easy way to improve our model would be therefore be to normalize the data better first.  We have found an external library (twitter lexicon normalization) which implements X, Y, by means of Z; we will apply this to our dataset and see what the effect on our performance is.  This tool can be used with a Twitter specifc entity detector, availiable online at https://github.com/sem-io/python-twitter-spell-checking. Furthermore one could experiment with basic word stemming.  
+\subsection{Expand on Xiao's comment: “Open problems: better ways to identify these phrases in the sentences from parse trees? how to learn the representation of these compositional phrases without retraining all the other word vectors?”}
+
+
 
 
 % An example of a floating figure using the graphicx package.
