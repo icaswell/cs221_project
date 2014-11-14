@@ -352,7 +352,7 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{CS221 Prroject Report}
+\title{CS221 Project Report}
 
 
 % author names and affiliations
@@ -371,7 +371,7 @@ Email: icaswell@stanford.edu}
 \IEEEauthorblockN{Zane Silver}
 \IEEEauthorblockA{Dept. of Computer Science\\
 Stanford University\\
-Email: ang@stanford.edu}}
+Email: zsilver@stanford.edu}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -472,14 +472,15 @@ The next step now is to properly determine when two words are an anchor. This as
 
  ==== describe model here ===
  
-\section{Initial Steps: Wordvec and Dense Vector Representation of Words}
-Our first attempt to approach this problem was to use Wordvec, the Stanford (TODO?) implementation of the Skip-gram algorithm developed by Mikilov et al in Google (TODO CITE). This model uses a representation of words as dense vectors with features related to co-occurrence in the corpus.
+\section{Method 1: Wordvec and Dense Vector Representation of Words}
+Our first attempt to approach this problem was to use Wordvec, tGoogle's implementation of the Skip-gram algorithm developed by Mikilov et al in Google (TODO CITE Mikilov). This model uses a representation of words as dense vectors with features related to co-occurrence in the corpus.
 
 \subsection{The model behind Wordvec and Dense Vector Representation of Words}
-In standard applications of machine learning techniques to NLP, words have been represented by "one-hot" vectors, which are vectors whose entries are al zero except for a single 1 entry. These have been moderately successful, but pose some serious problems. For instance, the similarity between any two words, with such a model, is zero. This problem is addressed by representing each word as a dense vector $w$, where each entry $w_k$ corresponds to some 'topic' or property of that word. (One may think $w$ as a probability distribution over different attributes of the word.) In practice, some form of statistical clustering is performed first, usually based off of which words tend to co-occur. Each 'topic' is determined by the percent membership to different clusters, based off of the global word co-occurrence matrix $X$ [CITE tutorial]
-\\
+In standard applications of machine learning techniques to NLP, words have been represented by "one-hot" vectors, which are vectors whose entries are al zero except for a single 1 entry. These have been moderately successful, but pose some serious problems. For instance, the similarity between any two words, with such a model, is zero. This problem is addressed by representing each word as a dense vector $w$, where each entry $w_k$ corresponds to some 'topic' or property of that word. (One may think $w$ as a probability distribution over different attributes of the word.) In practice, some form of statistical clustering is performed first, usually based off of which words tend to co-occur. Each 'topic' is determined by the percent membership to different clusters, based off of the global word co-occurrence matrix $X$ [TODO CITE Wordvec Tutorial]\\
 
-By using a vector represenatation for the distance between words, instead of a scalar distance as traditionally used, one respects a finer-grained relationship between words. For example, a vector distance metric makes intuitive sense in analogy detection: the analogy “king is to queen as man is to woman” should be encoded in the vector space by the vector equation $vec("king") − vec("queen") = vec("man") − vec("woman")$. Indeed, Milikov et al's model demonstrates that the vector obtained by the equation $vec("Madrid") - vec("Spain") + vec("France")$ is closer to $vec("Paris")$ than to any other word vector, and furthermore that even simple vector addition can produce meaningful results: for example, $vec("Russia") + vec("river")$ is close to $vec("Volga River")$, and $vec("Germany") + vec("capital")$ is close to $vec("Berlin")$. That the semantics of these phrases can be brought out by such simple compositionality has exciting implications for the ability to understand language using basic mathematical operations on the word-vector feature space.
+
+
+By using a vector represenatation for the distance between words, instead of a scalar distance as traditionally used, one respects a finer-grained relationship between words. For example, a vector distance metric makes intuitive sense in analogy detection: the analogy “king is to queen as man is to woman” should be encoded in the vector space by the vector equation vec("king") − vec("queen") = vec("man") − vec("woman"). Indeed, Milikov et al's model demonstrates that the vector obtained by the equation vec("Madrid") - vec("Spain") + vec("France") is closer to vec("Paris") than to any other word vector, and furthermore that even simple vector addition can produce meaningful results: for example, vec("Russia") + vec("river") is close to vec("Volga River"), and vec("Germany") + vec("capital") is close to vec("Berlin"). That the semantics of these phrases can be brought out by such simple compositionality has exciting implications for the ability to understand language using basic mathematical operations on the word-vector feature space.
 
 \subsection{The Algorithm}
 Given a sequence of training words $w_1, W_2, w_3 .... w_T$, the objective of the Skip-Gram model is to minimize the average log probability:
@@ -490,33 +491,22 @@ where $c$ is the training context, which gives the size of the neighborhod of of
 
 $$p(w_O|w_I) = \frac{exp(v_{wo}'^Tv_{wI})}{\sum_{w=1}^W exp(v_w^Tv_{wI})}$$
 
-Where $v_w$ and $v_w'$ are "input" and "output" representations of $w$m and $W$ is the number of words int he
+Where $v_w$ and $v_w'$ are "input" and "output" representations of $w$m and $W$ is the number of words in the vocabulary.  This expression, however, is in general computationally infeasible; as an alternative, in practice, Mikilov et al use Hierarchical softmax as an approximation of the softmax function.
 
-This expression, however, is in general computationally intensive; as an alternative, in practice, Mikilov et al use Hierarchical softmax as an approximation of the softmax function.
+With this framework in place, any standard optimization technique can be used. I this case we look into stochastic gradient descent.\\
 
-With this framework in place, any standard optimization technique can be used. I this case we look into stochastic gradient descent.
+Using this model on words alone, we get the undesireably low accuracy of 64\%, which does not compare well to the baseline of 72\%.  We therefore extend this model by learning vectors for bigrams and trigrams as well, and including phrase vector averaging.  What this means is that we represent each sentence (tweet) not only as a vector over word vectors, but also over word vector objects that correspond to the bi- and trigrams in the sentence.  In this case, for comparing tweets for paraphrase, the final features are cosine and Euclidean distance between the two sentences as the similarity.
+
 
 \subsection{Example}
-Consider the input $D$, where $D_T$ is a corpus containing $T$ words, $w_1, W_2, w_3 .... w_T$. For concreteness we can say that D is a corpus of $N$ submissions (papers) from the ACL conference in 2013. We begin with a random initialization over the vector representations for each word, the dimensionality of which we determine based off of empirical results. Then, until we have reached convergence, we compute the gradient of the log likelihood (defined above), parametrized by Hierarchical softmax, and update our word vectors. When convergence comes, we have a word vector representation for each word.
-\\ By observing which words have high values for different dimension in the vector, we can determine the semantic meaning of each dimension in the vector. For instance, one might find that all papers $w_k$ dealing with n-gram models have a high value for $w_{k5}$, whereas all papers analyzing Twitter data have a high $w_{k8}$. This would indicate that the fifth dimension of the word-vector space corresponded to n-gram models, and the 8th to papers analyzing Twitter datasets. Note, too, that these are not mutually exclusive.
-\\using these dense vector representations, we can now compare papers. Each paper can be assigned a vector representation itself, by aggregating its word vectors in a hierarchical way. One might then take the cosine difference between vector $w_0$ and all other papers in the dataset, to determine which papers are the most similar. Alternately one might use this data to look for similarities or analogies in the space of the words themselves.
+Consider the input $D$, where $D_T$ is a corpus containing $T$ words, $w_1, W_2, w_3 .... w_T$. For concreteness we can say that D is a corpus of $N$ tweets sampled from Twitter in May 2013.  We now break each tweet into a vector of its words and its bigrams and trigrams (which we term 'phrases'), each of which will be assigned a numerical vector representation, which we will now calculate.  We begin with a random initialization over the vector for each word/phrase, the dimensionality of which we determine based off of empirical results. Then, until we have reached convergence, we compute the gradient of the log likelihood (defined above), parametrized by Hierarchical softmax, and update our word vectors. When convergence comes, we have a word vector representation for each word and each phrase.  
+Using these dense vector representations, we can now compare tweets.  We iterate over all pairs of phrases between the two tweets, and take the cosine difference between those phrases.  The similarity score of the two tweets is now the average of these distances of pairs.  If the similarity score is high, we say that they are paraphrases; if it is low we say that they are not.\\
 
-this phrase is split into these phrases... avg similarity if computed (Xiao's email)
-
-Result: line from email.
-
-\subsection{Results with Wordvec}
-With an out of the box use fo Wordvec on our data, we achieve an accuracy of 64\%. This does not reach the baseline of 72\%, demonstrating that we must extend the algorithm. An extension is mentioned soon, using phrases, and training on the right data TODO\\
+Each tweet can furthermore be assigned a vector representation itself, by aggregating its word vectors in a hierarchical way.  There is an intuitive interpretation that we can now glean from these aggregate vectors.  By observing which words have high values for different elements in the vector, we can determine the semantic meaning of each dimension in the vector. For instance, one might find that all tweets $w_k$ dealing with sports have a high value for $w_{k5}$, whereas tweets about social rights have a high $w_{k18}$. This would indicate that the fifth dimension of the word-vector space corresponded to the general semantic topic of sports, and the 18th to issues of social justice.\\
 
 
-A recent exciting development in the class of algorithms using dense word vector representations is GloVe, developed st Stanford by Pennington, Socher and Manning. It addresses the problem that standard co-occurrence models are succeptable to noise: The vast majority of co-occurrences in the matrix $X$ will tend to be ones that happen very rarely, and without much particular semantic significance. Even just the 0 entries of $X$ will tend to account for 75-95\% of data. Furthermore, some words that co-occur extremely commonly have little semantic relevance, such as "the" along with any noun. To compensate for this, Pennington et al introduce a weighting function into the least-squares error which lowers the impact of common co-occurrences as well as the least common ones. Furthermore, by ensuring that the function approaches 0 as co-occurrence approaches 0, one naturally excludes all pairs which do not co-occur in the corpus from the calculations, which seems intuitively to make sense, and has the benefit of speeding up calculation significantly. Pennington et al demonstrate that, as a result of using only nonzero co-occurrence values, these methods run in approximately $O(|C|^{0.8})$ , where $|C|$ is the size of the corpus. The objective they propose furthermore claims to address several problems with loss functions of other unsupervised methods based on co-occurrence, such as skip-gram and ivLBL.
 
-
-phrase vectors is one way, deep NNs is the other way.
-phrases is the same s wordvec
-
-
-\section{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}
+\section{Method 2: Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}
 In this section, we describe a state-of-the-art work \cite{richard} on using dynamic pooling and unfolding recursive autoencoders (RAE) for paraphrase detection.\\
 \subsection{Model}
 The model used here are Neural networks. Neural networks are especially useful in automatically learning features from data. This is much more powerful than manually specifying features to the classifier. A very powerful idea called neural language models was first introduced by Bengio et al. \cite{bengio}. The idea is to jointly learn an embedding of words into an $n$-dimensional vector space and these vectors can be used to predict how likely a word is given its context. A word embedding matrix $L \in \mathbf{R}^{n \times |V|}$, where $|V|$ is the size of the vocabulary is obtained by running gradient descent on the network. Once this training is done we can obtain a word's vector as just a column in $L$.\\
@@ -545,35 +535,24 @@ Finally, a classifier is trained on this matrix which takes as input a matrix an
 Given two sentences and their parse trees $T_1$ and $T_2$, the unfolding recursive neural network will first compute features for these two sentences using the algorithm described above. We then compute the euclidean distance between all word and phrase vectors of the two sentences. This will form the $S$ matrix. We then compute the $S_{pooled}$ matrix as stated above. When this is given to the classifier, it will make a decision of whether the sentences are paraphrases or not.\\
 
 \section{Results}
-baseline -  F1:        0.501316944688
-    ACCURACY:  0.725537569461\\
-phrase vector F1 0.547  acc: 0.751\\
-RAE F1: 0.326 acc: 0.74
+\begin{enumerate}
+\item{baseline} F1 -  0.501; Acc - 0.726
+\item{Method 1 (phrase vectors)} F1 0.547;  Acc: 0.751
+\item{Method 2 (RAE)} F1: 0.326; Acc: 0.74
+\end{enumerate}
+
 \section{Next Steps}
-There are several things we can do to improve the accuracy of our current model.  Following is a list of the next things we will work on.
+There are several things we can do to improve the accuracy of our current model.  Following is a list of the next things we will work on
+
+
+
+\subsection{More Semantically Coherent Phrases}We saw a 10% inrease in model accuracy when we extended the wordVec algorithm over phrases as well.  However, in our implementation, these phrases are only ngrams, which do nt in general correspond very well to semantic units.  Therefore, we could probably get a significant improvement by parsing each tweet into a parse tree first with a standard semantic parser, and learning vector representations for the phrases output by that.
+
+
 \subsection{Better normalization of the data}
 Twitter datasets tend to attract slang and misspellings, arbitrary capitalization and the like.  An easy way to improve our model would be therefore be to normalize the data better first.  We have found an external library (twitter lexicon normalization) which implements X, Y, by means of Z; we will apply this to our dataset and see what the effect on our performance is.  This tool can be used with a Twitter specifc entity detector, availiable online at https://github.com/sem-io/python-twitter-spell-checking. Furthermore one could experiment with basic word stemming.  
-\subsection{Expand on Xiao's comment: “Open problems: better ways to identify these phrases in the sentences from parse trees? how to learn the representation of these compositional phrases without retraining all the other word vectors?”}
 
-
-
-
-
-\section{Conclusion}
-The conclusion goes here.
-
-
-
-
-% conference papers do not normally have an appendix
-
-
-% use section* for acknowledgement
-\section*{Acknowledgment}
-
-
-The authors would like to thank...
-
+\subsection{GloVe}  A recent exciting development in the class of algorithms using dense word vector representations is GloVe, developed st Stanford by Pennington, Socher and Manning. It addresses the problem that standard co-occurrence models are succeptable to noise: The vast majority of co-occurrences in the matrix $X$ will tend to be ones that happen very rarely, and without much particular semantic significance. Even just the 0 entries of $X$ will tend to account for 75-95\% of data. Furthermore, some words that co-occur extremely commonly have little semantic relevance, such as "the" along with any noun. To compensate for this, Pennington et al introduce a weighting function into the least-squares error which lowers the impact of common co-occurrences as well as the least common ones. Furthermore, by ensuring that the function approaches 0 as co-occurrence approaches 0, one naturally excludes all pairs which do not co-occur in the corpus from the calculations, which seems intuitively to make sense, and has the benefit of speeding up calculation significantly. Pennington et al demonstrate that, as a result of using only nonzero co-occurrence values, these methods run in approximately $O(|C|^{0.8})$ , where $|C|$ is the size of the corpus. The objective they propose furthermore claims to address several problems with loss functions of other unsupervised methods based on co-occurrence, such as skip-gram and ivLBL.  We hope to implement GloVe and see how it fares on our data.  (TODO CITE: GloVe)
 
 
 
@@ -608,6 +587,23 @@ Wei Xu, Extracting, Conf 2012.
 Richard Socher, Eric H. Huang, Jeffrey Pennington
 , Andrew Y. Ng, Christopher D. Manning, Dynamic Pooling and Unfolding Recursive
 Autoencoders for Paraphrase Detection, NIPS 2011.
+
+\bibitem{Mikolov}
+Tomas Mikolov, Ilya Sutskever, Kai Chen,
+Greg Corrado, Jeffry Dean
+Distributed Representations of Words and Phrases
+and their Compositionality, 2013
+
+\bibitem{GloVe}
+Jeffrey Pennington, Richard Socher, Christopher D. Manning
+GloVe: Global Vectors for Word Representation
+TODO: I couldn't find a date or conference on this one.  probs OK tho
+
+\bibitem{Wordvec Tutorial}
+Richard Socher and Christopher Manning
+Deep	 Learning for NLP
+NAACL 2013, Atlanta
+
 
 \end{thebibliography}
 
