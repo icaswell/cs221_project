@@ -1,4 +1,4 @@
-
+	
 %% bare_conf.tex
 %% V1.3
 %% 2007/01/11
@@ -170,7 +170,7 @@
 
 % *** MATH PACKAGES ***
 %
-%\usepackage[cmex10]{amsmath}
+\usepackage[cmex10]{amsmath}
 % A popular package from the American Mathematical Society that provides
 % many useful and powerful commands for dealing with mathematics. If using
 % it, be sure to load this package with the cmex10 option to ensure that
@@ -407,15 +407,6 @@ Email: ang@stanford.edu}}
 % make the title area
 \maketitle
 
-
-\begin{abstract}
-%\boldmath
-
-
-In which we discuss various things
-
-
-\end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
 % if the conference you are submitting to favors bold math in the abstract,
@@ -448,24 +439,106 @@ We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
-\section{Related Work}
-Detail the baseline paper (Isaac)
+\section{Task Review}
+Restate the task (Zane)
 
+\section{Baseline Description}
+We are using the MULTIP (Multi-Instance Learning Paraphrase) model for the Twitter phrase classier. This model was proposed by Xu et. al \cite{zane}. We will be implementing this model and extending its functionality (time permitting). The model description below is a summary of the paper that presents the MULTIP model. \medskip
 
-\section{Initial Steps: Wordvec}
+The advantage of using the MULTIP model is that it relies on sentence level relations using a feature-based classifier. Extensive research has been undertaken to improve upon the MULTIP model to that it can correctly identify two related twitter texts. This has proven to be especially difficult because of the amount of variability in the type of tweets and the prevelence of generalized naming for entities. Specifically, the paper presenting MULTIP uses the example sentences:\medskip
+
 \begin{itemize}
-
-\item brief discussion of what this is
-\item how did it work? (1-2 pg)
-\item not so great - get numbers TODO
-\item discussion of why
-
+\item That boy Brook Lopez with a deep 3
+\item brook Lopez hit a 3 and i missed it
 \end{itemize}
 
+\medskip The above example is just to illustrate difficulty that arises when the named entities are generalized into different words. \medskip
+
+Firstly, the MULTIP model relies on the at-least-one-anchor assumption. The at-least-one-anchor assumption is derived from the idea that twitter messages posted around the same time and the same topic share lexical paraphrases. This intuition allows us to extend the idea further: that most related twitter, not just those posted around the same time or location, messages will share a lexical paraphrase. The lexical paraphrases may be the same words, or different words, that are contained in two different tweets that identity the tweets are being related. In other words, it is assumed that related tweets contain an anchor, a lexical paraphrase.\medskip
+
+The MULTIP model setups a learner that observes the labels on groups of sentence-level paraphrases. This due to the at-least-one-anchor assumption described early. This method contrasts with a learner that observes word pairs. There are now two layers in the model since the sentence-level analysis inherently relies on the word-level analysis. This two-level hierarchy is described in explicit detail in the "Extracting Lexically Divergent..." paper. In the context of this class, the two-level model is simply a factor graph with paraphrases/sentences as the upper nodes and the word-pairs as the lower, or leaf, nodes.\medskip
+
+For each pair of sentences there is a binary variable ('y') that represents whether the two sentences are related. This is determined to be true (y=1) if there is at least one anchor found in the two sentences. We determine if at least one anchor exists in the set of word-pairs between the two sentences. The set of word-pairs is the set of unique word-pairs that can be formed from one word in each sentence. For each word-pair there is another binary variable ('z') which determines if those words are an anchor or not. Therefore, for y=1 there must be at least one z=1 in the set of word-pairs for the two sentences.  \medskip
+
+ ZANE EDITING
+%%\includegraphics[scale=.25]{test}
+
+For two sentences $s_{1}$ and $s_{2}$, y($s_{2}$,$s_{1}$) = 1 
+if $z_{j}$ = 1 for at least one j. $z_{j}$ = 1 only if $w_{j}$ = ($w_{j1}$, $w_{j2}$) is an anchor, where $w_{ji}$ corresponds to a word in sentence $s_{i}$. For every sentence pair ($s_{i}$, $s_{k}$), there will be $|s_{i}|$ * $|s_{k}|$ word-pairs, where $|s_{i}|$ is the number of words in sentence $s_{i}$. \medskip
+
+The next step now is to properly determine when two words are an anchor. This aspect will be incorporated into our different learning algorithms. WordVec has proven to be the most promising method to properly determine whether or not two words, and by extension two phrases, are lexically related. 
 
 
-\section{Current Thread of Work:  Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}
 
+ ==== describe model here ===
+ 
+\section{Initial Steps: Wordvec and Dense Vector Representation of Words}
+Our first attempt to approach this problem was to use Wordvec, the Stanford (TODO?) implementation of the Skip-gram algorithm developed by Mikilov et al in Google (TODO CITE). This model uses a representation of words as dense vectors with features related to co-occurrence in the corpus.
+
+\subsection{The model behind Wordvec and Dense Vector Representation of Words}
+In standard applications of machine learning techniques to NLP, words have been represented by "one-hot" vectors, which are vectors whose entries are al zero except for a single 1 entry. These have been moderately successful, but pose some serious problems. For instance, the similarity between any two words, with such a model, is zero. This problem is addressed by representing each word as a dense vector $w$, where each entry $w_k$ corresponds to some 'topic' or property of that word. (One may think $w$ as a probability distribution over different attributes of the word.) In practice, some form of statistical clustering is performed first, usually based off of which words tend to co-occur. Each 'topic' is determined by the percent membership to different clusters, based off of the global word co-occurrence matrix $X$ [CITE tutorial]
+\\
+
+By using a vector represenatation for the distance between words, instead of a scalar distance as traditionally used, one respects a finer-grained relationship between words. For example, a vector distance metric makes intuitive sense in analogy detection: the analogy “king is to queen as man is to woman” should be encoded in the vector space by the vector equation $vec("king") − vec("queen") = vec("man") − vec("woman")$. Indeed, Milikov et al's model demonstrates that the vector obtained by the equation $vec("Madrid") - vec("Spain") + vec("France")$ is closer to $vec("Paris")$ than to any other word vector, and furthermore that even simple vector addition can produce meaningful results: for example, $vec("Russia") + vec("river")$ is close to $vec("Volga River")$, and $vec("Germany") + vec("capital")$ is close to $vec("Berlin")$. That the semantics of these phrases can be brought out by such simple compositionality has exciting implications for the ability to understand language using basic mathematical operations on the word-vector feature space.
+
+\subsection{The Algorithm}
+Given a sequence of training words $w_1, W_2, w_3 .... w_T$, the objective of the Skip-Gram model is to minimize the average log probability:
+
+$$\frac{1}{T} \sum_{t=1}^T \sum_{-c \leq j \leq c, j \neq 0} logp(w_{t+j}|w_t)$$
+
+where $c$ is the training context, which gives the size of the neighborhod of of $w_t$ to look at, and which may depend on $w_t$. The size of $c$ can be tuned to trade off accuracy (a higher $c$ value) with efficiency (lower $c$). Specifically, Skip Gram defines $p(w_{t+j}|w_t)$ using the softmax function:
+
+$$p(w_O|w_I) = \frac{exp(v_{wo}'^Tv_{wI})}{\sum_{w=1}^W exp(v_w^Tv_{wI})}$$
+
+Where $v_w$ and $v_w'$ are "input" and "output" representations of $w$m and $W$ is the number of words int he
+
+This expression, however, is in general computationally intensive; as an alternative, in practice, Mikilov et al use Hierarchical softmax as an approximation of the softmax function.
+
+With this framework in place, any standard optimization technique can be used. I this case we look into stochastic gradient descent.
+
+\subsection{Example}
+Consider the input $D$, where $D_T$ is a corpus containing $T$ words, $w_1, W_2, w_3 .... w_T$. For concreteness we can say that D is a corpus of $N$ submissions (papers) from the ACL conference in 2013. We begin with a random initialization over the vector representations for each word, the dimensionality of which we determine based off of empirical results. Then, until we have reached convergence, we compute the gradient of the log likelihood (defined above), parametrized by Hierarchical softmax, and update our word vectors. When convergence comes, we have a word vector representation for each word.
+\\ By observing which words have high values for different dimension in the vector, we can determine the semantic meaning of each dimension in the vector. For instance, one might find that all papers $w_k$ dealing with n-gram models have a high value for $w_{k5}$, whereas all papers analyzing Twitter data have a high $w_{k8}$. This would indicate that the fifth dimension of the word-vector space corresponded to n-gram models, and the 8th to papers analyzing Twitter datasets. Note, too, that these are not mutually exclusive.
+\\using these dense vector representations, we can now compare papers. Each paper can be assigned a vector representation itself, by aggregating its word vectors in a hierarchical way. One might then take the cosine difference between vector $w_0$ and all other papers in the dataset, to determine which papers are the most similar. Alternately one might use this data to look for similarities or analogies in the space of the words themselves.
+
+this phrase is split into these phrases... avg similarity if computed (Xiao's email)
+
+Result: line from email.
+
+\subsection{Results with Wordvec}
+With an out of the box use fo Wordvec on our data, we achieve an accuracy of 64\%. This does not reach the baseline of 72\%, demonstrating that we must extend the algorithm. An extension is mentioned soon, using phrases, and training on the right data TODO\\
+
+
+A recent exciting development in the class of algorithms using dense word vector representations is GloVe, developed st Stanford by Pennington, Socher and Manning. It addresses the problem that standard co-occurrence models are succeptable to noise: The vast majority of co-occurrences in the matrix $X$ will tend to be ones that happen very rarely, and without much particular semantic significance. Even just the 0 entries of $X$ will tend to account for 75-95\% of data. Furthermore, some words that co-occur extremely commonly have little semantic relevance, such as "the" along with any noun. To compensate for this, Pennington et al introduce a weighting function into the least-squares error which lowers the impact of common co-occurrences as well as the least common ones. Furthermore, by ensuring that the function approaches 0 as co-occurrence approaches 0, one naturally excludes all pairs which do not co-occur in the corpus from the calculations, which seems intuitively to make sense, and has the benefit of speeding up calculation significantly. Pennington et al demonstrate that, as a result of using only nonzero co-occurrence values, these methods run in approximately $O(|C|^{0.8})$ , where $|C|$ is the size of the corpus. The objective they propose furthermore claims to address several problems with loss functions of other unsupervised methods based on co-occurrence, such as skip-gram and ivLBL.
+
+
+phrase vectors is one way, deep NNs is the other way.
+phrases is the same s wordvec
+
+
+\section{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}
+In this section, we describe a state-of-the-art work \cite{richard} on using dynamic pooling and unfolding recursive autoencoders (RAE) for paraphrase detection.\\
+\subsection{Model}
+The model used here are Neural networks. Neural networks are especially useful in automatically learning features from data. This is much more powerful than manually specifying features to the classifier. A very powerful idea called neural language models was first introduced by Bengio et al. \cite{bengio}. The idea is to jointly learn an embedding of words into an $n$-dimensional vector space and these vectors can be used to predict how likely a word is given its context. A word embedding matrix $L \in \mathbf{R}^{n \times |V|}$, where $|V|$ is the size of the vocabulary is obtained by running gradient descent on the network. Once this training is done we can obtain a word's vector as just a column in $L$.\\
+The goal of autoencoders is to learn a representation of their inputs. In this experiment we used recursive autoencoders to learn representations for sentences. The autoencoder uses a neural network layer to compute the parent representation. We then decode the vectors of the children in a reconstruction layer and compute the Euclidean distance between the two as the reconstruction error. For each of the children, we recursively compute the reconstruction loss for their children as well. The goal of the training is to minimize the reconstruction error across all inputs pairs. 
+\subsection{Algorithm}
+For a given sentence, a parse tree is obtained initially. A binary parse tree for a sentence is of the form of triplets of the parents with children: $(p \rightarrow c_1c_2)$. Each child can either be an input word vector $x_i$ or a nonterminal node in the tree. We now can compute parent representations using its two children $(c_1, c_2)$ using a neural network layer:\\
+\begin{equation}
+p = f(W_e[c_1;c_2] + b)
+\end{equation}
+where $[c1;c2]$ is the concatenation of the two children, $f$ is an tanh activation function and $W_e \in \mathbf{R}^{n \times 2n}$ the encoding matrix that we want to learn.\\
+To assess these $n$-dimensional representation of a parent $p$ we decode the vectors of its direct children into a reconstruction layer and compute the Euclidean distance between the original input and its reconstruction:\\
+\begin{equation}
+[c^\prime_1;c^\prime_2] = f(W_dp + b_d)
+\end{equation}
+\begin{equation}
+E_{rec}(p) = ||[c_1;c_2] - [c^\prime_1;c^\prime_2]||^2
+\end{equation}
+The training objective is the minimization of all reconstruction error of the input pairs at nonterminal nodes $p$ in a given parse tree T:\\
+\begin{equation}
+E_{rec}(T) = \sum_{p \in T} E_{rec}(p)
+\end{equation}\\
+The unfolding recursive autoencoder is the same as the standard RAE with the only difference being that a reconstruction is created for the entire spanned subtree under each node. The reconstruction error is now computed as 
 \begin{itemize}
 \item  What is the algorithm?
 \item similar to wordvec, but extends in in these ways….
@@ -481,89 +554,6 @@ Twitter datasets tend to attract slang and misspellings, arbitrary capitalizatio
 \subsection{Expand on Xiao's comment: “Open problems: better ways to identify these phrases in the sentences from parse trees? how to learn the representation of these compositional phrases without retraining all the other word vectors?”}
 
 
-
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation Results}
-%\label{fig_sim}
-%\end{figure}
-
-% Note that IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command, the
-% \label for the overall figure must come after \caption.
-% \hfil must be used as a separator to get equal spacing.
-% The subfigure.sty package works much the same way, except \subfigure is
-% used instead of \subfloat.
-%
-%\begin{figure*}[!t]
-%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
-%\label{fig_second_case}}}
-%\caption{Simulation results}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-
-
-% An example of a floating table. Note that, for IEEE style tables, the 
-% \caption command should come BEFORE the table. Table text will default to
-% \footnotesize as IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that IEEE does not put floats in the very first column - or typically
-% anywhere on the first page for that matter. Also, in-text middle ("here")
-% positioning is not used. Most IEEE journals/conferences use top floats
-% exclusively. Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the \fnbelowfloat
-% command of the stfloats package.
 
 
 
@@ -610,9 +600,12 @@ The authors would like to thank...
 % (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\bibitem{zane}
+Wei Xu, Extracting, Conf 2012.
+\bibitem{richard}
+Richard Socher, Eric H. Huang, Jeffrey Pennington
+, Andrew Y. Ng, Christopher D. Manning, Dynamic Pooling and Unfolding Recursive
+Autoencoders for Paraphrase Detection, NIPS 2011.
 
 \end{thebibliography}
 
