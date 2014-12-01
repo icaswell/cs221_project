@@ -77,6 +77,7 @@ def sF(w, i):
 
 def sdF(w, i):
     x, y = trainX[i], trainY[i]
+    #TODO: note that y is not yet used.  This needs to be changed to the deriv. of the objective!
     return x.dot(Vnot.T)
 
 #gradientDescent(F, dF, d)
