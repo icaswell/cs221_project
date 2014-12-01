@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 NOV 2014 21:50
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 NOV 2014 11:46
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -165,15 +169,39 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 351.
 LaTeX Font Info:    ... okay on input line 351.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 351.
 LaTeX Font Info:    ... okay on input line 351.
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
+
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 451.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 451.
- [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
+[1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 479--480
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
@@ -190,61 +218,108 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no ˆ in font ptmr7t!
 Missing character: There is no ’ in font ptmr7t!
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 496--497
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 490--491
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 502--504
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 496--498
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 4608) in paragraph at lines 505--506
+=======
+Underfull \hbox (badness 4608) in paragraph at lines 499--500
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 []\OT1/ptm/m/n/10 Each tweet can fur-ther-more be as-signed a vec-tor
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 505--506
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 510--511
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
 [2]
 
+<<<<<<< HEAD
 LaTeX Warning: Citation `bengio' on page 3 undefined on input line 512.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 515--516
+=======
+LaTeX Warning: Citation `bengio' on page 3 undefined on input line 506.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 518--521
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 512--515
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 526--528
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 520--522
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 4120) in paragraph at lines 530--534
+=======
+Underfull \hbox (badness 4120) in paragraph at lines 524--528
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 \OT1/ptm/m/n/10 stan-dard RAE with the only dif-fer-ence be-ing that a
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 530--534
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 524--528
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 535--536
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 
  []
 
@@ -269,12 +344,21 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  1516 strings out of 493315
+<<<<<<< HEAD
  22637 string characters out of 6137904
  87174 words of memory out of 5000000
  5020 multiletter control sequences out of 15000+600000
  32838 words of font info for 64 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  27i,6n,20p,1555b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
+=======
+ 22628 string characters out of 6137904
+ 89174 words of memory out of 5000000
+ 5020 multiletter control sequences out of 15000+600000
+ 32838 words of font info for 64 fonts, out of 8000000 for 9000
+ 960 hyphenation exceptions out of 8191
+ 27i,6n,20p,1548b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
@@ -287,7 +371,11 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
+<<<<<<< HEAD
 Output written on milestone.pdf (4 pages, 132176 bytes).
+=======
+Output written on milestone.pdf (4 pages, 132852 bytes).
+>>>>>>> 9af7030411b1b56248fa5e09a4a908406a13b6a9
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream

@@ -369,7 +369,7 @@ Stanford University\\
 Email: icaswell@stanford.edu}
 \and
 \IEEEauthorblockN{Zane Silver}
-\IEEEauthorblockA{Dept. of Computer Science\\
+\IEEEauthorblockA{Dept. of Electrical Engineering\\
 Stanford University\\
 Email: zsilver@stanford.edu}}
 
@@ -440,43 +440,37 @@ We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
 % (should never be an issue)
 
 \section{Task Review}
-Restate the task (Zane)
+Given two sentences, we have to determine whether they express the same or very similar meaning and optionally a degree score between 0 and 1. The input to the system are two sentences from Tweets in Twitter. The system has to predict whether they express the same meaning and also produce a similarity number between 0 and 1.\\
 
 \section{Baseline Description}
-We are using the MULTIP (Multi-Instance Learning Paraphrase) model for the Twitter phrase classier. This model was proposed by Xu et. al \cite{zane}. We will be implementing this model and extending its functionality (time permitting). The model description below is a summary of the paper that presents the MULTIP model. \medskip
+As a baseline model we found the MULTIP (Multi-Instance Learning Paraphrase) model for the Twitter phrase classifier. This model was proposed by Xu et. al \cite{zane}. Their model serves as a good starting point and is the reference baseline model for our twitter classifier project. The model description below is a summary of the proposal for the MULTIP model. \\
 
-The advantage of using the MULTIP model is that it relies on sentence level relations using a feature-based classifier. Extensive research has been undertaken to improve upon the MULTIP model to that it can correctly identify two related twitter texts. This has proven to be especially difficult because of the amount of variability in the type of tweets and the prevelence of generalized naming for entities. Specifically, the paper presenting MULTIP uses the example sentences:\medskip
+The advantage of using the MULTIP model is that it relies on sentence level relations using a feature-based classifier. Extensive research has been undertaken to improve upon the MULTIP model to that it can correctly identify two related twitter texts. This has proven to be especially difficult because of the amount of variability in the type of tweets and the prevelence of generalized naming for entities. Specifically, the paper presenting MULTIP uses the example sentences:
 
 \begin{itemize}
 \item That boy Brook Lopez with a deep 3
-\item brook Lopez hit a 3 and i missed it
+\item brook Lopez hit a 3 and I missed it
 \end{itemize}
 
-\medskip The above example is just to illustrate difficulty that arises when the named entities are generalized into different words. \medskip
+The above example is just to illustrate difficulty that arises when the named entities are generalized into different words. \\
 
-Firstly, the MULTIP model relies on the at-least-one-anchor assumption. The at-least-one-anchor assumption is derived from the idea that twitter messages posted around the same time and the same topic share lexical paraphrases. This intuition allows us to extend the idea further: that most related twitter, not just those posted around the same time or location, messages will share a lexical paraphrase. The lexical paraphrases may be the same words, or different words, that are contained in two different tweets that identity the tweets are being related. In other words, it is assumed that related tweets contain an anchor, a lexical paraphrase.\medskip
+Firstly, the MULTIP model relies on the at-least-one-anchor assumption. The at-least-one-anchor assumption is derived from the idea that twitter messages posted around the same time and the same topic share lexical paraphrases. This intuition allows us to extend the idea further: that most related twitter, not just those posted around the same time or location, messages will share a lexical paraphrase. The lexical paraphrases may be the same words, or different words, that are contained in two different tweets that identity the tweets are being related. In other words, it is assumed that related tweets contain an anchor, a lexical paraphrase. In the context of CS 221, an anchor is simply a factor. \\
 
-The MULTIP model setups a learner that observes the labels on groups of sentence-level paraphrases. This due to the at-least-one-anchor assumption described early. This method contrasts with a learner that observes word pairs. There are now two layers in the model since the sentence-level analysis inherently relies on the word-level analysis. This two-level hierarchy is described in explicit detail in the "Extracting Lexically Divergent..." paper. In the context of this class, the two-level model is simply a factor graph with paraphrases/sentences as the upper nodes and the word-pairs as the lower, or leaf, nodes.\medskip
+The MULTIP model setups a learner that observes the labels on groups of sentence-level paraphrases. This due to the at-least-one-anchor assumption described early. This method contrasts with a learner that observes word pairs. There are now two layers in the model since the sentence-level analysis inherently relies on the word-level analysis. This two-level hierarchy is described in explicit detail in the proposal by Xu et. al \cite{zane}. In the context of this class, the two-level model is simply a factor graph with paraphrases/sentences as the upper nodes and the word-pairs as the lower, or leaf, nodes.\medskip
 
 For each pair of sentences there is a binary variable ('y') that represents whether the two sentences are related. This is determined to be true (y=1) if there is at least one anchor found in the two sentences. We determine if at least one anchor exists in the set of word-pairs between the two sentences. The set of word-pairs is the set of unique word-pairs that can be formed from one word in each sentence. For each word-pair there is another binary variable ('z') which determines if those words are an anchor or not. Therefore, for y=1 there must be at least one z=1 in the set of word-pairs for the two sentences.  \medskip
 
- ZANE EDITING
-%%\includegraphics[scale=.25]{test}
 
 For two sentences $s_{1}$ and $s_{2}$, y($s_{2}$,$s_{1}$) = 1 
 if $z_{j}$ = 1 for at least one j. $z_{j}$ = 1 only if $w_{j}$ = ($w_{j1}$, $w_{j2}$) is an anchor, where $w_{ji}$ corresponds to a word in sentence $s_{i}$. For every sentence pair ($s_{i}$, $s_{k}$), there will be $|s_{i}|$ * $|s_{k}|$ word-pairs, where $|s_{i}|$ is the number of words in sentence $s_{i}$. \medskip
 
-The next step now is to properly determine when two words are an anchor. This aspect will be incorporated into our different learning algorithms. WordVec has proven to be the most promising method to properly determine whether or not two words, and by extension two phrases, are lexically related. 
-
-
-
- ==== describe model here ===
+This model suffices as a basic outline on how to solve the twitter classifier. However, this is only our baseline as the actual model and algorithm we implement is described below.
  
 \section{Method 1: Wordvec and Dense Vector Representation of Words}
-Our first attempt to approach this problem was to use Wordvec, tGoogle's implementation of the Skip-gram algorithm developed by Mikilov et al in Google (TODO CITE Mikilov). This model uses a representation of words as dense vectors with features related to co-occurrence in the corpus.
+Our first attempt to approach this problem was to use Wordvec, tGoogle's implementation of the Skip-gram algorithm developed by Mikilov et al in Google \cite{Mikolov}. This model uses a representation of words as dense vectors with features related to co-occurrence in the corpus.
 
 \subsection{The model behind Wordvec and Dense Vector Representation of Words}
-In standard applications of machine learning techniques to NLP, words have been represented by "one-hot" vectors, which are vectors whose entries are al zero except for a single 1 entry. These have been moderately successful, but pose some serious problems. For instance, the similarity between any two words, with such a model, is zero. This problem is addressed by representing each word as a dense vector $w$, where each entry $w_k$ corresponds to some 'topic' or property of that word. (One may think $w$ as a probability distribution over different attributes of the word.) In practice, some form of statistical clustering is performed first, usually based off of which words tend to co-occur. Each 'topic' is determined by the percent membership to different clusters, based off of the global word co-occurrence matrix $X$ [TODO CITE Wordvec Tutorial]\\
+In standard applications of machine learning techniques to NLP, words have been represented by "one-hot" vectors, which are vectors whose entries are al zero except for a single 1 entry. These have been moderately successful, but pose some serious problems. For instance, the similarity between any two words, with such a model, is zero. This problem is addressed by representing each word as a dense vector $w$, where each entry $w_k$ corresponds to some 'topic' or property of that word. (One may think $w$ as a probability distribution over different attributes of the word.) In practice, some form of statistical clustering is performed first, usually based off of which words tend to co-occur. Each 'topic' is determined by the percent membership to different clusters, based off of the global word co-occurrence matrix $X$ \cite{Wordvec}\\
 
 
 
@@ -535,24 +529,29 @@ Finally, a classifier is trained on this matrix which takes as input a matrix an
 Given two sentences and their parse trees $T_1$ and $T_2$, the unfolding recursive neural network will first compute features for these two sentences using the algorithm described above. We then compute the euclidean distance between all word and phrase vectors of the two sentences. This will form the $S$ matrix. We then compute the $S_{pooled}$ matrix as stated above. When this is given to the classifier, it will make a decision of whether the sentences are paraphrases or not.\\
 
 \section{Results}
-\begin{enumerate}
-\item{baseline} F1 -  0.501; Acc - 0.726
-\item{Method 1 (phrase vectors)} F1 0.547;  Acc: 0.751
-\item{Method 2 (RAE)} F1: 0.326; Acc: 0.74
-\end{enumerate}
+\begin{center}
+\begin{tabular}{|l | c | c | c|}
+\hline
+ & Baseline & Method 1 & Method 2 (RAE) \\ \hline
+ F1 & 0.501 & 0.547 & 0.326 \\ \hline
+ Acc & 0.726 & 0.751 & 0.74 \\ 
+ \hline
+\end{tabular}
+\end{center}
+
 
 \section{Next Steps}
 There are several things we can do to improve the accuracy of our current model.  Following is a list of the next things we will work on
 
 
 
-\subsection{More Semantically Coherent Phrases}We saw a 10% inrease in model accuracy when we extended the wordVec algorithm over phrases as well.  However, in our implementation, these phrases are only ngrams, which do nt in general correspond very well to semantic units.  Therefore, we could probably get a significant improvement by parsing each tweet into a parse tree first with a standard semantic parser, and learning vector representations for the phrases output by that.
+\subsection{More Semantically Coherent Phrases}We saw a 10\% inrease in model accuracy when we extended the wordVec algorithm over phrases as well.  However, in our implementation, these phrases are only ngrams, which do nt in general correspond very well to semantic units.  Therefore, we could probably get a significant improvement by parsing each tweet into a parse tree first with a standard semantic parser, and learning vector representations for the phrases output by that.
 
 
 \subsection{Better normalization of the data}
 Twitter datasets tend to attract slang and misspellings, arbitrary capitalization and the like.  An easy way to improve our model would be therefore be to normalize the data better first.  We have found an external library (twitter lexicon normalization) which implements X, Y, by means of Z; we will apply this to our dataset and see what the effect on our performance is.  This tool can be used with a Twitter specifc entity detector, availiable online at https://github.com/sem-io/python-twitter-spell-checking. Furthermore one could experiment with basic word stemming.  
 
-\subsection{GloVe}  A recent exciting development in the class of algorithms using dense word vector representations is GloVe, developed st Stanford by Pennington, Socher and Manning. It addresses the problem that standard co-occurrence models are succeptable to noise: The vast majority of co-occurrences in the matrix $X$ will tend to be ones that happen very rarely, and without much particular semantic significance. Even just the 0 entries of $X$ will tend to account for 75-95\% of data. Furthermore, some words that co-occur extremely commonly have little semantic relevance, such as "the" along with any noun. To compensate for this, Pennington et al introduce a weighting function into the least-squares error which lowers the impact of common co-occurrences as well as the least common ones. Furthermore, by ensuring that the function approaches 0 as co-occurrence approaches 0, one naturally excludes all pairs which do not co-occur in the corpus from the calculations, which seems intuitively to make sense, and has the benefit of speeding up calculation significantly. Pennington et al demonstrate that, as a result of using only nonzero co-occurrence values, these methods run in approximately $O(|C|^{0.8})$ , where $|C|$ is the size of the corpus. The objective they propose furthermore claims to address several problems with loss functions of other unsupervised methods based on co-occurrence, such as skip-gram and ivLBL.  We hope to implement GloVe and see how it fares on our data.  (TODO CITE: GloVe)
+\subsection{GloVe}  A recent exciting development in the class of algorithms using dense word vector representations is GloVe, developed st Stanford by Pennington, Socher and Manning. It addresses the problem that standard co-occurrence models are succeptable to noise: The vast majority of co-occurrences in the matrix $X$ will tend to be ones that happen very rarely, and without much particular semantic significance. Even just the 0 entries of $X$ will tend to account for 75-95\% of data. Furthermore, some words that co-occur extremely commonly have little semantic relevance, such as "the" along with any noun. To compensate for this, Pennington et al introduce a weighting function into the least-squares error which lowers the impact of common co-occurrences as well as the least common ones. Furthermore, by ensuring that the function approaches 0 as co-occurrence approaches 0, one naturally excludes all pairs which do not co-occur in the corpus from the calculations, which seems intuitively to make sense, and has the benefit of speeding up calculation significantly. Pennington et al demonstrate that, as a result of using only nonzero co-occurrence values, these methods run in approximately $O(|C|^{0.8})$ , where $|C|$ is the size of the corpus. The objective they propose furthermore claims to address several problems with loss functions of other unsupervised methods based on co-occurrence, such as skip-gram and ivLBL.  We hope to implement GloVe and see how it fares on our data. \cite{GloVe}
 
 
 
@@ -582,7 +581,10 @@ Twitter datasets tend to attract slang and misspellings, arbitrary capitalizatio
 \begin{thebibliography}{1}
 
 \bibitem{zane}
-Wei Xu, Extracting, Conf 2012.
+Wei Xu, Alan Ritter, Chris Callison-Burch, William B. Dolan, Yangfeng Ji, 
+Extracting Lexically Divergent Paraphrase from Twitter. 
+2014 Association for Computational Linguistics.
+
 \bibitem{richard}
 Richard Socher, Eric H. Huang, Jeffrey Pennington
 , Andrew Y. Ng, Christopher D. Manning, Dynamic Pooling and Unfolding Recursive
@@ -597,9 +599,8 @@ and their Compositionality, 2013
 \bibitem{GloVe}
 Jeffrey Pennington, Richard Socher, Christopher D. Manning
 GloVe: Global Vectors for Word Representation
-TODO: I couldn't find a date or conference on this one.  probs OK tho
 
-\bibitem{Wordvec Tutorial}
+\bibitem{Wordvec}
 Richard Socher and Christopher Manning
 Deep	 Learning for NLP
 NAACL 2013, Atlanta
