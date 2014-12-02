@@ -1,17 +1,8 @@
 from numpy import *
 from numpy.random import *
+from numpy.linalg import norm
 
-def gradientDescent(F, dF, d):
-    w = zeros((d, 1))
-    numIters = 1000
-    eta = 0.01  # step size
-    for t in range(numIters):
-        value = F(w)
-        gradient = dF(w)
-        print "t = %s, w = %s" % (t, w)
-        w = w - eta * gradient
-    return w
-
+############################################################
 def stochasticGradientDescent(sF, sdF, d, n):
     w = zeros((d, 1))
     numIters = 1000
@@ -19,67 +10,80 @@ def stochasticGradientDescent(sF, sdF, d, n):
     for t in range(numIters):
         print "t = %s, w = %s" % (t, w)
         for i in range(n):
-            value = sF(w, i)
-            gradient = sdF(w, i)
+            x, y = trainX[i], trainY[i]
+            value = sF(w, x, y)
+            gradient = sdF(w, x, y)
             w = w - eta * gradient
     return w
 
 ############################################################
-
-# Generate artificial data
-# true_w = array([1, 2, 3, 4, 5])
-# d = len(true_w)
-# numExamples = 10000
-# def generateExample():
-#     x = randn(d)
-#     y = true_w.dot(x) + randn()
-#     return (x, y)
-# points = [generateExample() for _ in range(numExamples)]
-
 ## create map from word to count
 counts = {}
-# with open('vocab.txt', 'r') as countF:
-#     for line in countF:
-#         line = line.split()
-#         counts[line[0]] = int(line[1])
-#print counts
+with open('vocab.txt', 'r') as countF:
+    for line in countF:
+        line = line.split()
+        counts[line[0]] = int(line[1])
 
+V_not = array([float(x) for i, x in enumerate(open('not.txt', 'r').readline().split()) if i])
+d = V_not.shape[0]
+V_not = V_not.reshape((d, 1))
 
-#trainX = [[float(x) if i else x for i, x in enumerate(line.split())] for line in open('originalVectorsTrain.txt', 'r')]
-#trainY = [[float(x) if i else x for i, x in enumerate(line.split())] for line in open('negationVectorsTrain.txt', 'r')]
-#testX = [[float(x) if i else x for i, x in enumerate(line.split())] for line in open('originalVectorsTest.txt', 'r')]
-#testY = [[float(x) if i else x for i, x in enumerate(line.split())] for line in open('negationVectorsTest.txt', 'r')]
+def read_vocab_file(fname, d):
+    return [(
+        line.split()[0],
+        array([float(x) for  x in line.split()[1:]]).reshape((d, 1))
+    ) for line in open(fname, 'r')]
 
-Vnot = array([float(x) for i, x in enumerate(open('not.txt', 'r').readline().split()) if i])
-d = Vnot.shape[0]
-Vnot = Vnot.reshape((d, 1))
-
-trainX = [array([float(x) for  x in line.split()[1:]]).reshape((d, 1)) for line in open('originalVectorsTrain.txt', 'r')]
-trainY = [array([float(x) for  x in line.split()[1:]]).reshape((d, 1)) for line in open('negationVectorsTrain.txt', 'r')]
-testX = [array([float(x) for  x in line.split()[1:]]).reshape((d, 1)) for line in open('originalVectorsTest.txt', 'r')]
-testY = [array([float(x) for  x in line.split()[1:]]).reshape((d, 1)) for line in open('negationVectorsTest.txt', 'r')]
-
-# # gradient descent
-# def F(w):
-#     return sum((x.dot(w) - y)**2 for x, y in points) / numExamples
-# def dF(w):
-#     return sum(2 * (x.dot(w) - y) * x for x, y in points) / numExamples
-
+trainX = read_vocab_file('originalVectorsTrain.txt', d)
+trainY = read_vocab_file('negationVectorsTrain.txt', d)
+testX = read_vocab_file('originalVectorsTest.txt', d)
+testY = read_vocab_file('negationVectorsTest.txt', d)
 
 # stochastic gradient descent
-def sF(w, i):
-    x, y = trainX[i], trainY[i]
-    #word = x[0]
-    #x = array(x[1:])
-    #wordNot = y[0]
-    #y = array(y[1:])
-    return (x.dot(Vnot.T)).dot(w)
+# def sf(w, i):
+#     x, y = trainX[i], trainY[i]
+#     word, Vword = x
+#     word_not, Vword_not = y
+#     return (word_vec.dot(V_not.T)).dot(w) * counts[word_not]
 
-def sdF(w, i):
-    x, y = trainX[i], trainY[i]
-    #TODO: note that y is not yet used.  This needs to be changed to the deriv. of the objective!
-    return x.dot(Vnot.T)
+# def sdf(w, i):
+#     x, y = trainX[i], trainY[i]
+#     word, Vword = x
+#     word_not, Vword_not = y    
+#     return Vword.dot(V_not.T)*counts[word_not]
 
-#gradientDescent(F, dF, d)
+def sF(w, x, y):
+    word, Vword = x
+    word_not, Vword_not = y
+    f_word = (Vword.dot(V_not.T)).dot(w) #lol
+    return -(1/counts[word_not]) * f_word.T.dot(Vword_not)/(norm(f_word) * norm(Vword_not))
+
+def sdF(w, x, y):
+    word, Vword = x
+    word_not, Vword_not = y
+    f_word = (Vword.dot(V_not.T)).dot(w)
+    num_1 = norm(f_word)*norm(Vword_not) * Vword.T.dot(V_not).dot(Vword.T)
+    num_2 = (norm(Vword_not)/norm(f_word)) * f_word.T.dot(Vword) * f_word
+    denom = -counts[word_not] * (norm(f_word)*norm(Vword_not))**2
+    return (num_1 - num_2)/denom
+                                                        
+    
+#===============================================================================
+# test this!
 numExamples = len(trainX)
-stochasticGradientDescent(sF, sdF, d, numExamples)
+w_trained = stochasticGradientDescent(sF, sdF, d, numExamples)
+
+w_rand = np.rand(w.shape)
+w_uniform = np.ones(w.shape)
+w_trained_inv = -w
+
+w_candidates = [w, w_rand, w_uniform, w_trained_inv]
+objective_scores = np.zeros((len(w_candidates), 1))
+
+for i in range(len(testX)):
+    _, x = testX[i]
+    _, y = testY[i]
+    objective_scores += array([sF(w, x, y) for w in w_candidates])
+
+print objective_scores
+    
