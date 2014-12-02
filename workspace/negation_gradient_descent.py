@@ -71,7 +71,7 @@ def sF(w, x, y):
     word, Vword = x
     word_not, Vword_not = y
     f_word = Vword.dot(Vnot.T).dot(w) # lol
-    return -(1/counts[word_not]) * f_word.T.dot(Vword_not)/(norm(f_word) * norm(Vword_not))
+    return (1/counts[word_not]) * f_word.T.dot(Vword_not)/(norm(f_word) * norm(Vword_not))
 
 def sdF(w, x, y):
     word, Vword = x
@@ -79,26 +79,25 @@ def sdF(w, x, y):
     f_word = (Vword.dot(Vnot.T)).dot(w) # dx1
     num_1 = norm(f_word)*norm(Vword_not) * Vword.dot(Vnot.T).dot(Vword) # dx1
     num_2 = (norm(Vword_not)/norm(f_word)) * f_word.T.dot(Vword) * f_word # dx1
-    denom = -counts[word_not] * (norm(f_word)*norm(Vword_not))**2
+    denom = counts[word_not] * (norm(f_word)*norm(Vword_not))**2
     return (num_1 - num_2)/denom
 ############################################################
 ## Test it versus random w!
 
 numExamples = len(trainX)
-w_trained = stochasticGradientDescent(sF, sdF, d, numExamples, 1)
+w_trained = stochasticGradientDescent(sF, sdF, d, numExamples, 500)
 
 w_rand = random(w_trained.shape)
 w_uniform = ones(w_trained.shape)
 w_trained_inv = -w_trained
 
 w_candidates = [w_trained, w_rand, w_uniform, w_trained_inv]
-print [i.shape for i in w_candidates]
 objective_scores = zeros((len(w_candidates), 1))
 
 for i in range(len(testX)):
     x = testX[i]
     y = testY[i]
-    objective_scores += array([sF(w, x, y) for w in w_candidates])
+    objective_scores += array([sF(w, x, y)[0,0] for w in w_candidates]).reshape(objective_scores.shape)
 
 print objective_scores
     
