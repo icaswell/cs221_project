@@ -429,9 +429,11 @@ Email: zsilver@stanford.edu}}
 
 
 
-\section{Introduction}
+\section{Abstract}
 % no \IEEEPARstart
-Our project is to detect paraphrases in Twitter, as part of the SemEval challenge for 2015.   Given two sentences (Tweets), we determine whether they express the same or very similar meaning and optionally a degree score between 0 and 1.  The training dataset is provided by semEval and contains about 17,790 annotated sentence pairs, and comes with tokenization, part-of-speech and named entity tags.  The testing dataset consists of a further 1k examples from a different time period, annotated by an expert.  SemEval also provides several baselines against which to compare our algorithm's performance.  In this progress report we report the result from using Google Wordvec and Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection for this task; and discuss how to improve upon them.
+Our project is to detect paraphrases in Twitter, as part of the SemEval challenge for 2015.   Given two sentences (Tweets), we determine whether they express the same or very similar meaning and optionally a degree score between 0 and 1.  The training dataset is provided by semEval and contains about 17,790 annotated sentence pairs, and comes with tokenization, part-of-speech and named entity tags.  The testing dataset consists of a further 1k examples from a different time period, annotated by an expert.  SemEval also provides several baselines against which to compare our algorithm's performance. \\ 
+
+TODO: Report the result from using Google Wordvec and Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection for this task; and discuss how to improve upon them.\\
 
 
 We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
@@ -441,6 +443,9 @@ We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
 
 \section{Task Review}
 Given two sentences, we have to determine whether they express the same or very similar meaning and optionally a degree score between 0 and 1. The input to the system are two sentences from Tweets in Twitter. The system has to predict whether they express the same meaning and also produce a similarity number between 0 and 1.\\
+
+\section{Oracle}
+The oracle for our twitter phase classifier are human identifiers. This relies on humans reading two different twitter phrases and determining whether or not they refer to the same context. The added constraint is the phrase identification must be performed in a timely manner (under a minute per phrase pair) and without outside help (i.e. searching on the internet the meaning of a word, phrase, etc.). With the members of our group as the oracle, we found that we have a 99.98\% accuracy rate. The oracle fails to accurately identify all phrases, or misidentifies some phrases as being related, due to human error. \\
 
 \section{Baseline Description}
 As a baseline model we found the MULTIP (Multi-Instance Learning Paraphrase) model for the Twitter phrase classifier. This model was proposed by Xu et. al \cite{zane}. Their model serves as a good starting point and is the reference baseline model for our twitter classifier project. The model description below is a summary of the proposal for the MULTIP model. \\
@@ -474,7 +479,7 @@ In standard applications of machine learning techniques to NLP, words have been 
 
 
 
-By using a vector represenatation for the distance between words, instead of a scalar distance as traditionally used, one respects a finer-grained relationship between words. For example, a vector distance metric makes intuitive sense in analogy detection: the analogy “king is to queen as man is to woman” should be encoded in the vector space by the vector equation vec("king") − vec("queen") = vec("man") − vec("woman"). Indeed, Milikov et al's model demonstrates that the vector obtained by the equation vec("Madrid") - vec("Spain") + vec("France") is closer to vec("Paris") than to any other word vector, and furthermore that even simple vector addition can produce meaningful results: for example, vec("Russia") + vec("river") is close to vec("Volga River"), and vec("Germany") + vec("capital") is close to vec("Berlin"). That the semantics of these phrases can be brought out by such simple compositionality has exciting implications for the ability to understand language using basic mathematical operations on the word-vector feature space.
+By using a vector representation for the distance between words, instead of a scalar distance as traditionally used, one respects a finer-grained relationship between words. For example, a vector distance metric makes intuitive sense in analogy detection: the analogy “king is to queen as man is to woman” should be encoded in the vector space by the vector equation vec("king") − vec("queen") = vec("man") − vec("woman"). Indeed, Milikov et al's model demonstrates that the vector obtained by the equation vec("Madrid") - vec("Spain") + vec("France") is closer to vec("Paris") than to any other word vector, and furthermore that even simple vector addition can produce meaningful results: for example, vec("Russia") + vec("river") is close to vec("Volga River"), and vec("Germany") + vec("capital") is close to vec("Berlin"). That the semantics of these phrases can be brought out by such simple compositionality has exciting implications for the ability to understand language using basic mathematical operations on the word-vector feature space.
 
 \subsection{The Algorithm}
 Given a sequence of training words $w_1, W_2, w_3 .... w_T$, the objective of the Skip-Gram model is to minimize the average log probability:
