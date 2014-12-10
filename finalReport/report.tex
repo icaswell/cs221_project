@@ -352,7 +352,7 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{CS221 Project Report}
+\title{CS221 Project Report\\Classifying Paraphrases in Twitter}
 
 
 % author names and affiliations
@@ -431,10 +431,19 @@ Email: zsilver@stanford.edu}}
 
 \section{Abstract}
 % no \IEEEPARstart
-Our project is to detect paraphrases in Twitter, as part of the SemEval challenge for 2015.   Given two sentences (Tweets), we determine whether they express the same or very similar meaning and optionally a degree score between 0 and 1.  The training dataset is provided by semEval and contains about 17,790 annotated sentence pairs, and comes with tokenization, part-of-speech and named entity tags.  The testing dataset consists of a further 1k examples from a different time period, annotated by an expert.  SemEval also provides several baselines against which to compare our algorithm's performance. \\ 
+Our project is detecting and identifying related paraphrases in Twitter, as part of the SemEval challenge for 2015.   Given two sentences (Tweets), we determine whether they express the same, or very similar, meaning. Then we assign the two phrases a degree score between 0 and 1 that indicates our level of confidence their relatedness.  The training dataset is provided by semEval and contains about 17,790 annotated sentence pairs, and comes with tokenization, part-of-speech and named entity tags.  The testing dataset consists of a further 1k examples from a different time period that has been annotated by an expert.  SemEval also provides several baselines against which to compare our algorithm's performance. \\ 
 
-TODO: Report the result from using Google Wordvec and Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection for this task; and discuss how to improve upon them.\\
+\textbf{TODO: Report the Results and Error Analysis from using Google Wordvec and Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection for this task; and discuss how to improve upon them. Maybe move the "Results" subsection up here?}\\
 
+\begin{center}
+\begin{tabular}{|l | c | c | c|}
+\hline
+ & Baseline & Method 1 & Method 2 (RAE) \\ \hline
+ F1 & 0.501 & 0.547 & 0.326 \\ \hline
+ Acc & 0.726 & 0.751 & 0.74 \\ 
+ \hline
+\end{tabular}
+\end{center}
 
 We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
 
@@ -442,10 +451,17 @@ We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
 % (should never be an issue)
 
 \section{Task Review}
-Given two sentences, we have to determine whether they express the same or very similar meaning and optionally a degree score between 0 and 1. The input to the system are two sentences from Tweets in Twitter. The system has to predict whether they express the same meaning and also produce a similarity number between 0 and 1.\\
+Given two phrases, we have to determine whether they express the same or very similar meaning. The input to the system are two sentences from Tweets in Twitter. The system has to predict whether they express the same meaning and also produce a similarity number between 0 and 1.\\
 
 \section{Oracle}
-The oracle for our twitter phase classifier are human identifiers. This relies on humans reading two different twitter phrases and determining whether or not they refer to the same context. The added constraint is the phrase identification must be performed in a timely manner (under a minute per phrase pair) and without outside help (i.e. searching on the internet the meaning of a word, phrase, etc.). With the members of our group as the oracle, we found that we have a 99.98\% accuracy rate. The oracle fails to accurately identify all phrases, or misidentifies some phrases as being related, due to human error. \\
+The oracle for our twitter phase classifier are human identifiers. This relies on humans reading two different twitter phrases and determining whether or not they refer to the same context. The added constraints are that the phrase identification must be performed in a timely manner (under a minute per phrase pair) and without outside help (i.e. searching on the internet the meaning of a word, phrase, etc.). Using the members of our group as the oracle, we found that we have a 99.98\% accuracy rate. The oracle fails to accurately identify all phrases, or misidentifies some phrases as being related, due to human error. \\
+
+\section{Challenges of General Paraphrasing \& Tweets}
+Accurately identifying related paraphrases is a challenging process and extensive NLP research focuses on this topic. The sources of difficulty arise from the panoply of meanings that can be extracted from words or phrases. The mapping of words and phrases to meanings is not one-to-one but rather one-to-many. The correct meaning of a phrase depends on many dynamic variables such as time, location, length of text, context, and syntax. \\
+
+Tweets pose a particular challenge. Not only are tweets' meaning hyper sensitive to time and location, they also contain frequent linguistic errors and idiosyncratic styles \cite{derczynski}. Additionally, the limit in the number of characters of a tweet constrains the ability to provide contextual meaning to the phrase. For this reason, the other indicators becoming more important in deciphering a tweet's meaning: time, location, slang, etc. These are some of the challenge of classifying tweets. \\
+
+There exist many techniques to ameliorate some of the NLP difficulties inherent in tweet classification. This includes correcting incorrect spelling before processing and improving the library of English parts-of-speech \cite{derczynski}. Additionally, it helps to understand the use of tweets and the specific characteristics of different uses. For example, using tweets for political news updates is much different than celebrity gossip or rumors \cite{OConnor}. These, along with traditional phrase classification are used to properly identify related tweets. 
 
 \section{Baseline Description}
 As a baseline model we found the MULTIP (Multi-Instance Learning Paraphrase) model for the Twitter phrase classifier. This model was proposed by Xu et. al \cite{zane}. Their model serves as a good starting point and is the reference baseline model for our twitter classifier project. The model description below is a summary of the proposal for the MULTIP model. \\
@@ -584,6 +600,16 @@ Twitter datasets tend to attract slang and misspellings, arbitrary capitalizatio
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
+
+\bibitem{derczynski}
+Leon Derczynski, Allan Ritter, Sam Clark, Kalina Bontcheva, 
+Twitter Part-of-Speech Tagging for All: Overcoming Sparse and Noisy Data.
+RANLP 2013.
+
+\bibitem{OConnor}
+Brendan O’Connor, Michel Krieger, David Ahn,
+Tweetmotif: Exploratory Search and Topic Summarization for Twitter.
+ICWSM 2010.
 
 \bibitem{zane}
 Wei Xu, Alan Ritter, Chris Callison-Burch, William B. Dolan, Yangfeng Ji, 

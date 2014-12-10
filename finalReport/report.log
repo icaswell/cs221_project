@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 DEC 2014 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 DEC 2014 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -165,8 +165,23 @@ LaTeX Font Info:    ... okay on input line 351.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 351.
 LaTeX Font Info:    ... okay on input line 351.
 
+Underfull \hbox (badness 1810) in paragraph at lines 434--435
+\OT1/ptm/m/n/10 and named en-tity tags. The test-ing dataset con-sists of
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 436--437
+[]\OT1/ptm/b/n/10 TODO: Re-port the Re-sults and Er-ror Anal-y-sis
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 436--437
+\OT1/ptm/b/n/10 from us-ing Google Word-vec and Dy-namic Pool-ing
  []
 
 
@@ -174,25 +189,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 451--452
-
- []
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 456.
+(Font)              <7> on input line 439.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 456.
+(Font)              <5> on input line 439.
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--458
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 460--461
 
@@ -203,11 +213,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--468
+
+ []
+
 [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
@@ -223,65 +248,67 @@ Missing character: There is no ’ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no ˆ in font ptmr7t!
 Missing character: There is no ’ in font ptmr7t!
-
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 501--503
-
- []
-
 [2]
-Underfull \hbox (badness 5970) in paragraph at lines 504--505
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--519
+
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 520--521
 []\OT1/ptm/m/n/10 Each tweet can fur-ther-more be as-signed a vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 504--505
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
 
  []
 
 
-LaTeX Warning: Citation `bengio' on page 3 undefined on input line 511.
+LaTeX Warning: Citation `bengio' on page 3 undefined on input line 527.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 514--515
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 517--520
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--527
-
- []
-
-
-Underfull \hbox (badness 3815) in paragraph at lines 529--533
-\OT1/ptm/m/n/10 stan-dard RAE with the only dif-fer-ence be-ing that a
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 529--533
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
+Underfull \hbox (badness 10000) in paragraph at lines 533--536
 
  []
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 541--543
+
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 545--549
+\OT1/ptm/m/n/10 stan-dard RAE with the only dif-fer-ence be-ing that a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--549
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
+
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -299,10 +326,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1529 strings out of 493117
- 23053 string characters out of 6135433
+ 1531 strings out of 493117
+ 23074 string characters out of 6135433
  87253 words of memory out of 5000000
- 5043 multiletter control sequences out of 15000+600000
+ 5045 multiletter control sequences out of 15000+600000
  32838 words of font info for 64 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  27i,8n,20p,1545b,246s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -318,7 +345,7 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on report.pdf (4 pages, 133188 bytes).
+Output written on report.pdf (4 pages, 141594 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
