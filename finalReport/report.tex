@@ -509,10 +509,16 @@ This model suffices as a basic outline on how to solve the Twitter classifier. H
 \indent A one dimensional representation doesn't match what we know about words; words can be similar in certain ways, and different in others.  The words "fear" and "trembling", for instance, are similar in that they are both nouns, different in that one is emotional and the other physical; close to each other in negative valence and further from each other in commonness in standard parlance, and so on; a human could easily identify hundreds of dimensions in which they are close or far.  This is precisely the idea behind dense vector representations of words. Each word in these models is represented as a dense vector $w$, where each entry $w_k$ corresponds to some 'topic' or property of that word. (One may think $w$ as an unnormalized probability distribution over different attributes of the word.) In practice, to generate these distributions, some form of statistical clustering is performed first, usually based on which words tend to co-occur. Each dimension ('topic') is determined by the percent membership to different clusters, based on the global word co-occurrence matrix $X$ \cite{Wordvec}.\\
 
 
-There are a variety of advantages fo this approach.  First of all, and germane to our application to the Twitter dataset, there is now a well defined and meaninful distance between words.  Distance metrics such as the cosine and Euclidean distance between two dense word vectors can give a relatively meaningful approximation of how similar these words are as a whole, which we demonstrate to be of practical use in determining similarity of tweets.\\
+There are a variety of advantages of this approach.  First of all, and germane to our application to the Twitter dataset, there is now a well defined and meaningful distance between words.  Distance metrics such as the cosine and Euclidean distance between two dense word vectors can give a relatively meaningful approximation of how similar these words are as a whole, which we demonstrate to be of practical use in determining similarity of tweets.\\
 
 The expressive power of word vectors is especially evident in the example of vector similarity, a metric which respects a finer-grained relationship between words. For example, vector distance between words makes intuitive sense in analogy detection: the analogy “king is to queen as man is to woman” should be encoded in the vector space by the vector equation vec("king") − vec("queen") = vec("man") − vec("woman").  Indeed, Milikov et al's model demonstrates that the vector obtained by the equation vec("Madrid") - vec("Spain") + vec("France") is closer to vec("Paris") than to any other word vector, and furthermore that even simple vector addition can produce meaningful results: for example, vec("Russia") + vec("river") is close to vec("Volga River"), and vec("Germany") + vec("capital") is close to vec("Berlin"). That the semantics of these phrases can be brought out by such simple compositionality has exciting implications for the ability to understand language using basic mathematical operations on the word-vector feature space.\\
 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{compositionality.png}
+	\caption{Compositionality in Word Vectors}
+	\label{fig1}
+\end{figure}
 
 \subsection{Method 1: Wordvec and Dense Vector Representation of Words}
 %%TODO: section into Model, Algorithm, etc.
