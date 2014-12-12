@@ -1,0 +1,3404 @@
+Error: Could not find or load main class edu.stanford.nlp.semeval2015.pit.ParaphraseProblem
+Error: Could not find or load main class edu.stanford.nlp.semeval2015.pit.ParaphraseProblem
+Loaded 51903 word vectors of dimension 300 from
+/u/xiao/scr/semeval2015/wordVectors/word2vec/wiki_giga_vectors.txt.cachedSubset
+ 4.404E-7. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 1.000E0. 3.380E-1. 1.000E0. 1.000E0.
+QNMinimizer terminated due to average improvement: | newest_val - previous_val | / |newestVal| < TOL 
+A Walk to Remember - (3,2) true
+On the real I like the movie A Walk to Remember
+Watching A Walk To Remember is seriously making me ball right now it s so perfect
+
+Adidas - (4,1) true
+AAP is in the Adidas commercial
+AAP was nice on that Adidas commercial
+
+Adidas - (3,2) true
+AAP is in the Adidas commercial
+That AAP Rocky Adidas commerical is hard af
+
+Amber - (4,1) true
+Do not Amber Alert me
+Look Im tired if these damn Amber Alerts
+
+Amber - (4,1) true
+That amber alert was getting annoying
+Amber alert gave me a damn heart attack
+
+Amber - (3,2) true
+That amber alert was getting annoying
+Everyone keeps talking about amber alerts on their phone
+
+Amber - (3,2) true
+That amber alert was getting annoying
+I thought amber alerts would only sound on androids
+
+Amber - (5,0) true
+That amber alert was getting annoying
+Ive gotten the same amber alert 3 times
+
+Amber - (3,2) true
+That amber alert was getting annoying
+Ok this is the fifth amber alert Ive received
+
+Amber - (4,1) true
+That amber alert was getting annoying
+Wats up with this amber alerts going off in church
+
+Amber - (5,0) true
+That Amber alert scared the crap out of me
+Everytime I get an amber alert on my phone I get freaked out
+
+Amber - (4,1) true
+My phone is annoying me with these amber alerts
+I hate the amber alert sound
+
+Amber - (4,1) true
+My phone is annoying me with these amber alerts
+Just got the same amber alert three times today smh
+
+Amber - (5,0) true
+My phone is annoying me with these amber alerts
+That amber alert was getting annoying
+
+Amber - (4,1) true
+My phone is annoying me with these amber alerts
+Turns out it s just another amber alert
+
+Amber - (3,2) true
+What is an amber alert
+Does anybody else keep gettin this Amber Alert notification
+
+Amber - (5,0) true
+These Amber Alerts need to chill
+Ive been getting amber alerts all day like what the fuck
+
+Amber - (3,2) true
+These Amber Alerts need to chill
+That s 5 amber alerts today Ive got
+
+Amber - (3,2) true
+My phone is annoying me with these amber alerts
+Omfg Who The FUCK Invented This Fucking Amber Alert
+
+Amber - (3,2) true
+That amber alert was getting annoying
+Can we chill with the amber alerts
+
+Amber - (4,1) true
+That amber alert was getting annoying
+OH MY GOD FUCK THESE AMBER ALERTS
+
+Amber - (3,2) true
+That amber alert was getting annoying
+These amber alerts on my phone been going off ALL day
+
+Amber - (3,2) true
+If I get one more damn amber alert
+Amber Alerts to my iPhone scare me EVERYTIME
+
+Amber - (4,1) true
+If I get one more damn amber alert
+I have gotten 3 amber alert notices today
+
+Amber - (3,2) true
+If I get one more damn amber alert
+That amber alert just scared the beep outta me
+
+Amber - (4,1) true
+If I get one more damn amber alert
+This is the 4th time Ive gotten that amber alert
+
+Asik - (4,1) true
+Rockets Asik showed the Thunder
+Asik showed heart going to the line and knocking some of the FT s down
+
+Asik - (3,2) true
+Rockets Asik showed the Thunder
+Omer Asik came through big tonight
+
+Backstrom - (3,2) true
+Backstrom injured in warmup Harding gets the start
+Lol so Backstrom got hurt in warm ups
+
+Backstrom - (3,2) true
+Backstrom injured in warmup Harding gets the start
+lose Backstrom in the warm ups
+
+Backstrom - (5,0) true
+backstrom just got hurt in the warmup
+Backstrom apparently suffered an injury in warmup
+
+Backstrom - (3,2) true
+backstrom just got hurt in the warmup
+Backstrom out in warm ups for the wild
+
+Backstrom - (5,0) true
+backstrom hurt and left warmups
+Backstrom gets hurt in warm ups for the wild
+
+Backstrom - (3,2) true
+backstrom hurt and left warmups
+Backstrom s out for MIN
+
+Backstrom - (3,2) true
+backstrom hurt and left warmups
+Lmao they had to help Backstrom off the ice
+
+Backstrom - (4,1) true
+backstrom hurt and left warmups
+Yikes Backstrom might be injured
+
+Backstrom - (3,2) true
+backstrom hurt and left warmups
+you see backstrom is out
+
+Backstrom - (5,0) true
+Backstrom hurt himself during warmups
+Also hate that Backstrom went down in the warm up
+
+Backstrom - (3,2) true
+Backstrom hurt himself during warmups
+Neve mind Niklas Backstrom s hurt
+
+Backstrom - (5,0) true
+Backstrom hurt himself during warmups
+Omg backstrom injured in warmup
+
+Backstrom - (5,0) true
+Backstrom hurt himself during warmups
+Wild in playoffs Backstrom injured in pregame warmups
+
+Backstrom - (4,1) true
+Backstrom s hurt in warmups
+Backstrom was injured in warm up for Minnesota
+
+Backstrom - (5,0) true
+Backstrom s hurt in warmups
+Backstrom was injured warming up
+
+Backstrom - (3,2) true
+Backstrom s hurt in warmups
+Hurt himself during warm ups tough break for backstrom
+
+Backstrom - (4,1) true
+Backstrom s hurt in warmups
+Minnesota Wild goalie Backstrom just got injured in warm ups
+
+Backstrom - (5,0) true
+Backstrom Hurt in warmups Harding gets the start
+Looks like Backstrom injured in warmup
+
+Backstrom - (3,2) true
+Backstrom Hurt in warmups Harding gets the start
+Maybe with backstrom injured the D will step up
+
+Backstrom - (5,0) true
+Backstrom Hurt in warmups Harding gets the start
+Minnesota goalie Backstrom hurt in warm ups
+
+Backstrom - (4,1) true
+Backstrom Hurt in warmups Harding gets the start
+Nikalas backstrom hurt during warm ups
+
+Backstrom - (3,2) true
+Backstrom Hurt in warmups Harding gets the start
+Of course Backstrom would get injured during warmups
+
+Backstrom - (3,2) true
+Backstrom Hurt in warmups Harding gets the start
+Tell flynnkatie Backstrom got injured during warmups
+
+Backstrom - (4,1) true
+Backstrom Hurt in warmups Harding gets the start
+well first injury of the playoffs goes to backstrom in warmups of the first game
+
+Backstrom - (5,0) true
+Just lost Backstrom in warmup
+Backstrom gets hurt in warm ups for the wild
+
+Backstrom - (5,0) true
+Just lost Backstrom in warmup
+Backstrom goes down in warmups hate seeing that
+
+Backstrom - (3,2) true
+Just lost Backstrom in warmup
+Thats gotta be crushing for the Wild to see Backstrom leave during warmups
+
+Backstrom - (3,2) true
+Just lost Backstrom in warmup
+Wow Backstrom hurt in pregame warmups for the Wild may not play
+
+Backstrom - (4,1) true
+Nick Backstrom hurt in warmup for the Wild
+Backstrom hurt in warmup Harding could start
+
+Backstrom - (3,2) true
+Nick Backstrom hurt in warmup for the Wild
+Niklas Backstrom taken off the ice during warm ups
+
+Backstrom - (4,1) true
+Backstrom injured in pregame for Minnesota
+Backstrom for Min is hurt in warmup
+
+Backstrom - (3,2) true
+Backstrom injured in pregame for Minnesota
+Backstrom is hurt on the ice during warmups for Minnesota
+
+Backstrom - (4,1) true
+Backstrom injured in pregame for Minnesota
+First game of the playoffs and backstrom gets hurt during warm ups
+
+Backstrom - (4,1) true
+Backstrom injured in pregame for Minnesota
+Loool Backstrom got injured during warmup
+
+Backstrom - (4,1) true
+Backstrom injured in pregame for Minnesota
+Nicklas Backstrom has been injured in warmups
+
+Backstrom - (4,1) true
+Backstrom injured in warm up HA
+Backstrom hurt himself in warmies
+
+Backstrom - (5,0) true
+Backstrom injured in warm up HA
+Backstrom injured in pregame warmup for Wild
+
+Backstrom - (4,1) true
+Backstrom injured in warm up HA
+Backstrom limps out of warmies
+
+Backstrom - (3,2) true
+Backstrom injured in warm up HA
+Huge blow for the wild with backstrom out
+
+Backstrom - (5,0) true
+Backstrom injured in warm up HA
+Wild goalie Niklas Backstrom hurt himself during warm ups
+
+Bayless - (3,2) true
+Bayless made the layup like nothing
+Bayless with a fullcourt sprint layup with 43 seconds in the 3rdthat was beautiful
+
+Bayless - (4,1) true
+Bayless made the layup like nothing
+hey did you see your son Bayless with that last second layup
+
+Bayless - (3,2) true
+That bayless drive to end the 3rd
+How does Bayless do that to you with 4 seconds left
+
+Bayless - (3,2) true
+What a take by Bayless
+Nice drive by Bayless to end the third quarter
+
+Bayless - (3,2) true
+Bayless FLEW down the court
+Bayless got in there right at the buzzer
+
+Bayless - (3,2) true
+Bayless FLEW down the court
+Bayless hits a layup before the 3rd expires
+
+Bayless - (5,0) true
+Bayless FLEW down the court
+Bayless is the fastest guy in the NBA
+
+Bayless - (5,0) true
+Bayless FLEW down the court
+Bayless ran pass the whole squad for that layup
+
+Bayless - (4,1) true
+Bayless FLEW down the court
+Bayless took it coast to coast with 4 seconds left in the 3rd
+
+Bayless - (4,1) true
+Bayless FLEW down the court
+Great move Bayless to beat the clock
+
+Bayless - (4,1) true
+That shot counted by Bayless
+Bayless just took that to the hoop with like 5 seconds left
+
+Bayless - (4,1) true
+That shot counted by Bayless
+Bayless took off a foot inside the free throw line beat the buzzer
+
+Bayless - (3,2) true
+Damn Bayless straight to the rack
+but what great finger roll by Bayless
+
+Bayless - (3,2) true
+Jerryd Bayless at the buzzer
+Bayless just took that to the hoop with like 5 seconds left
+
+Bayless - (5,0) true
+Jerryd Bayless at the buzzer
+Jared Bayless with clutch buzzer
+
+Blues - (3,2) true
+Great first period for the Blues
+This Kings Blues game is already off the rocker
+
+Box Chevy - (3,2) true
+Just saw the box chevy video
+Box Chevy video is finally out
+
+Calum - (5,0) true
+I LOVE YOU SO MUCH CALUM PLEASE FOLLOW ME ILYSM 4
+Calum Hood I will literally do anything in the world for you to follow me
+
+Calum - (4,1) true
+I LOVE YOU SO MUCH CALUM PLEASE FOLLOW ME ILYSM 4
+hey Calum you should follow me ya know w
+
+Calum - (4,1) true
+I LOVE YOU SO MUCH CALUM PLEASE FOLLOW ME ILYSM 4
+im begging you to follow desirableziall Calum
+
+Calum - (5,0) true
+Calum you need to follow me ok
+calum will u pls follow me and make my life complete
+
+Calum - (5,0) true
+Calum you need to follow me ok
+fricken calum follow me im upset
+
+Calum - (3,2) true
+PLEASE PLEASE PLEASE FOLLOW ME CALUM ILY 21
+Guys I promise I will TRY to help all of you on your Calum follow
+
+Calum - (3,2) true
+PLEASE PLEASE PLEASE FOLLOW ME CALUM ILY 21
+I cant believe I changed my name to FOLLOW ME CALUM
+
+Calum - (4,1) true
+CALUM CAN I FOLLOW ME PLA OGMFMDDKD
+CALUM IVE TRIED VERY HARD BUT YEAH YOU SHOULD FOLLOW ME THANKS
+
+Calum - (4,1) true
+CALUM CAN I FOLLOW ME PLA OGMFMDDKD
+Calum what does it take to get a follow from you
+
+Calum - (3,2) true
+Calum I love you plz follow me
+CALUM PLEASE BE MY FIRST CELEBRITY TO FOLLOW ME
+
+Calum - (3,2) true
+Calum I love you plz follow me
+Calum could you like follow me Ive waited this whole time babe
+
+Calum - (4,1) true
+Calum I love you plz follow me
+please follow me CALUM im gonna cry
+
+Calum - (4,1) true
+why wont you follow me Calum
+calum please see this and follow me I love u so much xox s
+
+Calum - (4,1) true
+why wont you follow me Calum
+please follow me calum im loosing hope here
+
+Calum - (5,0) true
+Calum please follow me please i love u pleaseee
+CALUM PLEASE FOLLOW sykesational AND calumhooding IF YOU SEE THIS IT WOULD MEAN THE WORLD
+
+Calum - (3,2) true
+Calum please follow me please i love u pleaseee
+Could i wake up to a calum follow
+
+Calum - (5,0) true
+Calum please follow me please i love u pleaseee
+PLEASE FOLLOW ME CALUM IT WOULD MEAN SO MUCH ZXXXXXXX
+
+Calum - (3,2) true
+Calum please follow me please i love u pleaseee
+do i have a chance to received i love you from calum or a followback
+
+Calum - (4,1) true
+Calum please follow me please i love u pleaseee
+hey calum you should come to America and follow Me
+
+Calum - (3,2) true
+CALUM CAN I FOLLOW ME PLA OGMFMDDKD
+Calum my main squeeze pls follow me eep ily
+
+Calum - (5,0) true
+I LOVE YOU SO MUCH CALUM PLEASE JUST FOLLOW ME XX11
+CALUM A FOLLOW WOULD MEAN A LOT TO ME PLEASE FOLLOW ME XXX
+
+Candice - (3,2) true
+I swear Candice Glover is the black Adele
+Candice has the best voice
+
+Candice - (3,2) true
+I swear Candice Glover is the black Adele
+Tell you what Candice Glover is amazing
+
+Candice - (3,2) true
+Candice is better than Amber
+Candice just murdered that song
+
+Candice - (3,2) true
+Candice is better than Amber
+okay I have to admit that Candice truly is beautiful her voice is flawless
+
+Candice - (3,2) true
+Candice Glover is on fire tonight
+Candice I think youre incredible and very very talented
+
+Candice - (3,2) true
+Candice Glover is on fire tonight
+Candice looks real pretty tonight
+
+Candice - (3,2) true
+Candice Glover is on fire tonight
+Candice oh how I love her
+
+Candice - (4,1) true
+Candice Glover is on fire tonight
+Candice slayed my mother fucking soul
+
+Candice - (3,2) true
+Candice Glover is on fire tonight
+I cant wait till Candice album
+
+Candice - (3,2) true
+Candice Glover is on fire tonight
+I want to hear that version by Candice again
+
+Candice - (3,2) true
+Candice Glover is on fire tonight
+seriously Candice s voice is just
+
+Candice - (3,2) true
+Candice better win American idol
+Candice on Idol is fierce
+
+Candice - (4,1) true
+Dang Candice is amazing on idol
+Candice Glover all the way
+
+Candice - (4,1) true
+Dang Candice is amazing on idol
+Candice just shut it down on AI
+
+Candice - (3,2) true
+Dang Candice is amazing on idol
+Candice s voice is sooo velvety and rich
+
+Candice - (4,1) true
+Dang Candice is amazing on idol
+Candice sang that real well
+
+Candice - (3,2) true
+Candice s voice is BEAUTIFUL
+Candice vocals are just soo disrespectful
+
+Candice - (4,1) true
+Mariah said Candice is anointed
+Candice killed it once again
+
+Candice - (3,2) true
+Mariah said Candice is anointed
+Candice owns the night on Idol
+
+Candice - (3,2) true
+Mariah said Candice is anointed
+Go Candice you are leading this race
+
+Candice - (4,1) true
+Candice is beyond this competition
+Candice Glover is really in it to win it
+
+Candice - (3,2) true
+Candice is beyond this competition
+I know Im late to the party but Candice Glover is the TRUTH
+
+Candice - (5,0) true
+Candice is beyond this competition
+That was absolutely FLAWLESS CANDICE
+
+Candice - (4,1) true
+Candice is beyond this competition
+candice s performance was flawless
+
+Candice - (5,0) true
+Candice is SOOOO fuckin inittowinit
+Candice Glover all the way
+
+Candice - (3,2) true
+Candice is SOOOO fuckin inittowinit
+Candice Glover has an amazing voice
+
+Candice - (4,1) true
+Candice is SOOOO fuckin inittowinit
+candice s performance was everything
+
+Candice - (4,1) true
+Angie and Candice are my girls
+Candice or Amber to win they are so dope
+
+Candice - (4,1) true
+Angie and Candice are my girls
+Candice or Angie all the way
+
+Candice - (4,1) true
+I feel Candice will win
+CANDICE TRENDING BECAUSE SHE IS IT
+
+Candice - (5,0) true
+I feel Candice will win
+Candice is in it to win it like Randy said
+
+Candice - (4,1) true
+I feel Candice will win
+I loved kreedom but know I want Candice or amber to take the crown
+
+Candice - (3,2) true
+I feel Candice will win
+I really hope it will be Candice and Kree at the end
+
+Candice - (4,1) true
+I feel Candice will win
+talks like Randeh Candice is in it to win it dawg
+
+Candice - (5,0) true
+every night is Candice night to me
+It absolutely was Candice s NIGHT last night
+
+Candice - (5,0) true
+every night is Candice night to me
+def was Candice night last night
+
+Candice - (4,1) true
+I think Candice is the whole package
+Candice has what it takes to win IdolAND Angie too
+
+Candice - (5,0) true
+I think Candice is the whole package
+I think Candice will dominate this competition
+
+Candice - (3,2) true
+I think Candice is the whole package
+Ill support Candice s album definitely she is just it
+
+Candice - (3,2) true
+but Candice and Amber did the best
+I dont want to see any of them leave especially amber and Candice
+
+Candice - (3,2) true
+but Candice and Amber did the best
+Now it s up to Candice and Amber
+
+Chelsea - (3,2) true
+Chelsea fans are fucking awful
+I dont wanna be at Chelsea fans situation in the future
+
+Chelsea - (3,2) true
+Chelsea fans are fucking awful
+If Chelsea win the Europa league their fans will not shut up about it
+
+Chicago - (3,2) true
+It s finally spring in Chicago
+Of course typical Chicago warm weather some gets shot on the block
+
+Chicago - (3,2) true
+are you coming to chicago
+yea he s coming to Chicago too
+
+Chris Kelly - (3,2) true
+Damn Chris Kelly from Kriss Kross passed away
+Sad news RIP Chris Kelly of Kris Kross
+
+Chris Kelly - (4,1) true
+Damn Chris Kelly from Kriss Kross passed away
+sad to hear news of Chris Kelly s passing
+
+Chris Kelly - (3,2) true
+Chris Kelly of Kris Kross is gone
+Chris Kelly dun left the land of the living
+
+Chris Kelly - (4,1) true
+Chris Kelly of Kris Kross is gone
+chris kelly really was found dead
+
+Chris Kelly - (3,2) true
+Damn Chris Kelly from Kris Kross killed himself
+Chris Kelly of rap duo Kriss Kross dies in Ga
+
+Chris Kelly - (3,2) true
+Damn Chris Kelly from Kris Kross killed himself
+RIP to Chris Kelly of Kriss Kross who just passed away at the age of 34
+
+Chris Kelly - (5,0) true
+Damn Chris Kelly from Kriss Kross died
+Aww man RIP to Chris Kelly of Kris Kross
+
+Chris Kelly - (5,0) true
+Damn Chris Kelly from Kriss Kross died
+Chris Kelly dead at 34 how sad
+
+Chris Kelly - (4,1) true
+Damn Chris Kelly from Kriss Kross died
+RIP Chris Kelly of the 1990s rap duo Kris Kross
+
+Chris Kelly - (5,0) true
+Damn Chris Kelly from Kriss Kross died
+Still cant believe Chris Kelly dead
+
+Chris Kelly - (3,2) true
+Omg Chris Kelly from Kris Kross died
+Chris Kelly is dead too soon
+
+Chris Kelly - (5,0) true
+Omg Chris Kelly from Kris Kross died
+Chris Kelly of Kriss Kross Found Dead In Home
+
+Chris Kelly - (5,0) true
+Omg Chris Kelly from Kris Kross died
+Damn RIP to Chris Kelly of Kriss Kross
+
+Chris Kelly - (3,2) true
+Chris Kelly of rap group Kriss Kross
+CNN affiliate WXIA confirms Chris Kelly from Kris Kross found dead at his home in Atlanta
+
+Chris Kelly - (4,1) true
+Chris Kelly of rap group Kriss Kross
+Omg Chris Kelly from Kris Kross was supposedly found dead tonight
+
+Chris Kelly - (4,1) true
+Chris Kelly of rap group Kriss Kross
+RIP Chris Kelly from KrissKross Daddy Mac
+
+Chris Kelly - (4,1) true
+Well Chris Kelly of Kris Kross passed on
+CNN confirms Chris Kelly from Kris Kross was found dead in his home
+
+Chris Kelly - (4,1) true
+Well Chris Kelly of Kris Kross passed on
+RIP Chris Kelly aka Mac Daddy from Kriss Kross
+
+Chris Kelly - (4,1) true
+Chris Kelly Of The Legendary Group Kriss Kross
+Kris Kross member Chris Kelly is dead after being found unresponsive in his Atlanta home
+
+Chris Paul - (3,2) true
+I Love the way Chris Paul is playing tonight
+Chris Paul does some amazing things
+
+Chris Paul - (3,2) true
+I Love the way Chris Paul is playing tonight
+Chris Paul just crossed the shit outta this fool
+
+Chris Paul - (3,2) true
+I Love the way Chris Paul is playing tonight
+Chris Paul right up there too
+
+Chris Paul - (4,1) true
+Chris Paul is the only clippers player playing like he wants to win
+Chris Paul looks like a man amongst boys out there
+
+Chris Paul - (4,1) true
+Chris Paul is such a joy to watch
+Chris Paul is just killing it right now
+
+Chris Paul - (3,2) true
+Chris Paul is such a joy to watch
+Chris Paul n fuck it mode
+
+Chris Paul - (4,1) true
+It s the Chris Paul show
+Chris Paul dont have no help right now
+
+Chris Paul - (4,1) true
+It s the Chris Paul show
+Chris Paul is the only one playing for the Clippers right now
+
+Chris Paul - (3,2) true
+It s the Chris Paul show
+Chris Paul is the only reason this game isnt a blowout
+
+Chris Paul - (4,1) true
+It s the Chris Paul show
+Someone on the Clippers not named Chris Paul needs to step up in the 2nd half
+
+Cinco De Mayo - (3,2) true
+Are you ready for Cinco De Mayo this weekend
+Anyone interested in some Cinco De Mayo fun this Sunday on the Drake Patio
+
+Coach Carter - (5,0) true
+Mom dont tell me Coach Carter is on
+Coach carter is on be back latahhhh
+
+Coach Carter - (3,2) true
+Mom dont tell me Coach Carter is on
+Omg coach carter is coming on at 8
+
+Coach Carter - (3,2) true
+Mom dont tell me Coach Carter is on
+Watching coach carter but coach carter bouta be watching me
+
+Coach Carter - (3,2) true
+Mom dont tell me Coach Carter is on
+Watching my favorite basketball movie coach carter
+
+Coach Carter - (4,1) true
+Mom dont tell me Coach Carter is on
+Well at least coach carter is on
+
+Coach Carter - (3,2) true
+Coach Carter is on abc family now
+Only two people have informed me that coach carter is on tonight
+
+Coach Carter - (3,2) true
+Coach Carter is on abc family now
+Was about to start my 2 papers but coach carter is on
+
+Coach Carter - (4,1) true
+Oh gurlll Coach Carter is on
+Coach Carter about to come on
+
+Coach Carter - (3,2) true
+Oh gurlll Coach Carter is on
+Watching Coach Carter in the lobby
+
+Coach Carter - (3,2) true
+Coach Carter is a really good movie
+Coach carter just came on and I thoroughly enjoy quoting the movie
+
+Coach Carter - (4,1) true
+Coach Carter is a really good movie
+Never get tired of watching Coach carter
+
+Coach Carter - (3,2) true
+Coach Carter is a really good movie
+Oh hell yea coach carter is on
+
+Coach Carter - (4,1) true
+Coach Carter is a really good movie
+cant wait for coach carter to come on
+
+Coach Carter - (4,1) true
+Great night to watch tv coach carter is on
+Coach Carter is on at 5
+
+Coach Carter - (5,0) true
+Great night to watch tv coach carter is on
+Only good thing bout today is coach carter is coming on
+
+Coach Carter - (3,2) true
+Great night to watch tv coach carter is on
+The fact Coach Carter comes on tonight
+
+Coach Carter - (5,0) true
+Great night to watch tv coach carter is on
+coach carter is on at 8 OH YAH
+
+Coach Carter - (3,2) true
+Coach Carter is on and I cant watch it cause The Voice is recording
+At least coach carter is on tv
+
+Coach Carter - (3,2) true
+Coach Carter is on and I cant watch it cause The Voice is recording
+Hell yeah Coach Carter is on
+
+Coach Carter - (3,2) true
+Thank god Coach Carter is coming on
+Coach Carter just came on TV
+
+Corey Brewer - (3,2) true
+corey brewer has to be the dumbest player in the league
+Corey Brewer has simply been awful
+
+Corey Brewer - (3,2) true
+corey brewer has to be the dumbest player in the league
+Corey brewer is like that annoying adone niggah that doesnt know his role
+
+Corey Brewer - (3,2) true
+corey brewer has to be the dumbest player in the league
+OMG Corey Brewer is soooo ass
+
+Corey Brewer - (3,2) true
+corey brewer has to be the dumbest player in the league
+Somebody please tell corey brewer he can not shoot
+
+Corey Brewer - (3,2) true
+Corey brewer look like a bum
+Corey Brewer is the ugliest basketball player in the league lol
+
+Corey Brewer - (3,2) true
+Someone get Corey Brewer out of the game
+Corey Brewer go home youre drunk
+
+Corey Brewer - (3,2) true
+Someone get Corey Brewer out of the game
+Corey Brewer is really sucking ass
+
+Corey Brewer - (4,1) true
+Someone get Corey Brewer out of the game
+I do not wonna see Corey Brewer in 4th quarter
+
+Corey Brewer - (3,2) true
+Someone get Corey Brewer out of the game
+To say Corey Brewer is having a rough night would be an understatement
+
+Corey Brewer - (4,1) true
+Lol Corey Brewer is so bad
+Corey Brewer is 5for28 over the last three games
+
+Corey Brewer - (3,2) true
+Lol Corey Brewer is so bad
+Corey Brewer is going to take 100 threepointers until he makes ONE
+
+Corey Brewer - (4,1) true
+Lol Corey Brewer is so bad
+Corey Brewer might be dumber than McGee
+
+Corey Brewer - (5,0) true
+Lol Corey Brewer is so bad
+Corey Brewer stop shooting u sorry fuck
+
+Corey Brewer - (4,1) true
+Lol Corey Brewer is so bad
+Corey brewer is like that annoying adone niggah that doesnt know his role
+
+Corey Brewer - (3,2) true
+Lol Corey Brewer is so bad
+that was such a corey brewer foulthing to do
+
+Corey Brewer - (5,0) true
+what in the hell is Corey Brewer doing out there
+What are you thinking Corey Brewer
+
+Corey Brewer - (3,2) true
+Corey brewer is doing straight horrible
+Corey Brewer just had the worse 3 back to back to back plays in NBA history
+
+Corey Brewer - (4,1) true
+Corey brewer is doing straight horrible
+On some real shit Corey Brewer needs to sit the bench
+
+Corey Brewer - (3,2) true
+Second of all What the hell is Corey Brewer doing
+Corey Brewer is single handily losing this game for the nuggets
+
+Corey Brewer - (3,2) true
+Second of all What the hell is Corey Brewer doing
+Corey Brewer needs to go Dleague
+
+Corey Brewer - (3,2) true
+Second of all What the hell is Corey Brewer doing
+Corey Brewer should be suspended for that
+
+Corey Brewer - (3,2) true
+Second of all What the hell is Corey Brewer doing
+Corey brewer is the reason that Denver loses this series
+
+Corey Brewer - (3,2) true
+Second of all What the hell is Corey Brewer doing
+Corey brewer needs to go home tonight
+
+Corey Brewer - (3,2) true
+Second of all What the hell is Corey Brewer doing
+Not a great sequence for Corey Brewer
+
+David Cook - (4,1) true
+David Cook was fantastic on idol
+David Cook s performance was pretty awesome too
+
+David Cook - (3,2) true
+David Cook was fantastic on idol
+My mom is freaking out cuz david cook is on american idol right now
+
+David Luiz - (3,2) true
+Omfg just seen David Luiz s goal
+David Luiz s shots are UNBELIEVABLE
+
+Deandre Jordan - (5,0) true
+Deandre jordan is a sorry ass center
+DeAndre Jordan needs to find some game
+
+Deandre Jordan - (3,2) true
+Deandre jordan is a sorry ass center
+Why is DeAndre Jordan so offensively handicapped
+
+Denver - (4,1) true
+Denver it s ovaaa wit
+Start up the planes time to go home Denver
+
+Denver - (3,2) true
+Denver it s ovaaa wit
+That Denver team wont be together much longer
+
+Denver - (4,1) true
+Denver it s ovaaa wit
+There s always next year Denver
+
+Elena - (4,1) true
+dude Elena is a biiiiiitch
+I dont like this ELENA
+
+Game 7 - (3,2) true
+Would love to see the Nets win a game 7 at home
+Imma go to bed and dream about Brooklyn s future game 7 win
+
+Gerald Wallace - (4,1) true
+Gerald Wallace missed a easy lay up
+Gerald Wallace just air balled a layup oO
+
+Gerald Wallace - (4,1) true
+Gerald Wallace missed a easy lay up
+Lmao Gerald Wallace didnt just miss that layup like that
+
+Golden State - (3,2) true
+THIS IS A GOLDEN STATE OF MIND FOOL
+Golden State got this game in the bag
+
+Golden State - (4,1) true
+THIS IS A GOLDEN STATE OF MIND FOOL
+Hard not 2 cheer for this Golden State team
+
+Golden State - (3,2) true
+THIS IS A GOLDEN STATE OF MIND FOOL
+Once again Golden State is fucking balling
+
+Google Glass - (3,2) true
+Google Glass can do a lot of stuff
+Google Glass app to snap photos with a wink
+
+Google Glass - (4,1) true
+Google Glass can do a lot of stuff
+Google Glass is the future 8212 or at least that s what techies acr
+
+Great Gatsby - (3,2) true
+The great gatsby looks pretty goood
+Omgomgomg the great Gatsby comes out next week
+
+Hack Asik - (3,2) true
+The Hack Asik strategy failed hard
+Hack Asik didnt work desperate OKC
+
+Hack Asik - (5,0) true
+The Hack Asik strategy failed hard
+I think it s safe to say that Hack Asik didnt work
+
+Harding - (3,2) true
+Josh Harding is a goddamned hero
+Harding for Minnesota had one hell of a game
+
+Harding - (3,2) true
+Josh Harding is a goddamned hero
+Harding put a great fight considering the circumstances
+
+Harding - (4,1) true
+Josh Harding is a goddamned hero
+I cannot believe how well Harding played for the Wild tonight
+
+Harding - (5,0) true
+Josh Harding is a goddamned hero
+Major props to Harding for a great show under a lot of pressure
+
+Harding - (4,1) true
+Josh Harding is a goddamned hero
+So much respect for Harding though
+
+Harding - (4,1) true
+Josh Harding is a goddamned hero
+Thank you Harding for being so awesome
+
+Harding - (5,0) true
+Josh Harding is a goddamned hero
+What Josh Harding did tonight though was inspiring
+
+Harding - (3,2) true
+Harding had a helluva game
+And even in the OT loss Minnesota s Josh Harding continues to inspire
+
+Harding - (5,0) true
+Harding had a helluva game
+Gotta hand it to Josh Harding though
+
+Harding - (3,2) true
+Harding had a helluva game
+Great goaltending performace by Josh Harding and what to the Wild do wit it
+
+Harding - (4,1) true
+Harding had a helluva game
+Harding is an effing pro
+
+Harding - (5,0) true
+Harding had a helluva game
+Harding played one of the best games of his career tonight
+
+Harding - (5,0) true
+Credit to Harding of the Wild
+Awesome that Harding did so well
+
+Harding - (3,2) true
+Credit to Harding of the Wild
+Backup goalie Josh Harding played a great game too bad someone had to lose
+
+Harding - (4,1) true
+Credit to Harding of the Wild
+Great performance by mnwild with Harding in net
+
+Harding - (5,0) true
+Credit to Harding of the Wild
+Josh Harding whatta game Minnesota is proud of you stepping up
+
+Harding - (5,0) true
+Credit to Harding of the Wild
+So much respect for Harding though
+
+Harding - (4,1) true
+josh harding what a grat job
+Couldnt be more proud of Josh Harding
+
+Harding - (3,2) true
+josh harding what a grat job
+Hardinghe s earned it tonight
+
+Harding - (5,0) true
+Credit to Harding of the Wild
+And to josh Harding u did amazin
+
+Harding - (4,1) true
+Credit to Harding of the Wild
+Gutsy performance by Harding tonight tho
+
+Harding - (3,2) true
+Credit to Harding of the Wild
+Harding star of the game zucker close second
+
+Harding - (4,1) true
+Credit to Harding of the Wild
+Josh harding did awesome tonight in goal all things considered
+
+Harding - (4,1) true
+Credit to Harding of the Wild
+Okay Harding Good showing for a surprise start
+
+Harding - (4,1) true
+Credit to Harding of the Wild
+Once Again Much Respect For Josh Harding
+
+Harding - (3,2) true
+Credit to Harding of the Wild
+Props to Harding for being a great backup goaltender
+
+Harding - (5,0) true
+Credit to Harding of the Wild
+What a game by Josh Harding
+
+Harding - (5,0) true
+Josh Harding is for sure the best player of the game tonight
+Harding definitely MVP of that game
+
+Harding - (4,1) true
+Josh Harding is for sure the best player of the game tonight
+Harding was absolutely unreal tonight
+
+Harding - (4,1) true
+Harding had a fantastic game
+Josh Harding youve earned a ton more of my respect for tonight buddy
+
+Harding - (3,2) true
+Harding had a fantastic game
+Wild s Harding played an amazing playoff game
+
+Harding - (3,2) true
+the utmost respect for Harding
+Dont watch Hockey but Damn Harding is the TRUTH
+
+Harding - (4,1) true
+the utmost respect for Harding
+Great game and effort especially by Harding
+
+Harding - (5,0) true
+the utmost respect for Harding
+Josh Harding youve impressed me
+
+Harding - (5,0) true
+the utmost respect for Harding
+So impressed by Harding s effort
+
+Harding - (3,2) true
+the utmost respect for Harding
+That was really a BigUpsworthy performance by Harding given the circumstances though
+
+Harding - (5,0) true
+Way to go Josh Harding
+Congrats to Chicago but hell of a game by Harding and the wild
+
+Harding - (3,2) true
+Way to go Josh Harding
+I feel bad for Josh Harding played a great game
+
+Harding - (5,0) true
+Way to go Josh Harding
+Ill give props to harding played out his ass tonight
+
+Harding - (5,0) true
+Way to go Josh Harding
+Shout out to Josh Harding tonight on one hell of a game
+
+Harding - (5,0) true
+Way to go Josh Harding
+Too bad the Wild didnt win because Josh Harding played outstanding
+
+Harding - (4,1) true
+Way to go Josh Harding
+With the way Harding played he should start game 2
+
+Harding - (4,1) true
+Way to go Josh Harding
+though Harding played a solid game cheers to that
+
+Hiller - (4,1) true
+Hiller is on top of his game tonight
+Hiller is a WALL tonight
+
+Hiller - (3,2) true
+Hiller is on top of his game tonight
+Jimmy Howard has played well but Jonas Hiller is stealing this game
+
+Hiller - (5,0) true
+Hiller with the ol glove save
+Another big save by Hiller
+
+Hiller - (5,0) true
+Hiller with the ol glove save
+But Ducks Hiller makes huge save
+
+Hiller - (5,0) true
+Hiller is on top of it tonight
+Hiller is a WALL tonight
+
+Hiller - (4,1) true
+Hiller is on top of it tonight
+Hiller with a sick save
+
+Hiller - (4,1) true
+Hiller is on top of it tonight
+holy christ hiller is stopping everything
+
+Hiller - (3,2) true
+Hiller is on top of it tonight
+unreal pretty sure hiller just robbed the game
+
+Hiller - (5,0) true
+Hiller you are a beast
+Hiller played his ass off
+
+Hiller - (5,0) true
+Hiller you are a beast
+Tremendous game by Jonas Hiller
+
+Hiller - (3,2) true
+Hiller flashing the leather eh
+Hiller is just killin it man
+
+Hiller - (4,1) true
+Hiller is playing like the Hiller of old
+Hiller had an Amazing game
+
+Hiller - (3,2) true
+Hiller is playing like the Hiller of old
+Hiller is playing crazy right now
+
+Hiller - (4,1) true
+Hiller is playing like the Hiller of old
+Hiller played like a man possessed in net tonight
+
+Hiller - (3,2) true
+Hiller is playing like the Hiller of old
+That said Hiller has been solid so far
+
+Hiller - (3,2) true
+Jonas Hiller is the pinacle of efficient goaltending
+Hiller is in beast mode tonight
+
+Hiller - (4,1) true
+Jonas Hiller is the pinacle of efficient goaltending
+Hiller with two consecutive tough saves
+
+Hiller - (3,2) true
+Jonas Hiller is the pinacle of efficient goaltending
+My first star goes to Hiller
+
+Hiller - (3,2) true
+Jonas Hiller is the pinacle of efficient goaltending
+Okay Hiller is a beast
+
+Hiller - (3,2) true
+HILLER GETS ALL THE STARS
+Abdelkader with a flutter but Hiller strong on the post
+
+Hiller - (4,1) true
+HILLER GETS ALL THE STARS
+Hiller has been a damn beast tonight
+
+Hiller - (3,2) true
+HILLER GETS ALL THE STARS
+Hiller is just killin it man
+
+Hiller - (4,1) true
+HILLER GETS ALL THE STARS
+Hiller is out here tonight
+
+Hiller - (4,1) true
+HILLER GETS ALL THE STARS
+Jonas Adonis HIller with another clutch save
+
+Hiller - (4,1) true
+HILLER GETS ALL THE STARS
+Jonas Hiller is a stud
+
+Hiller - (4,1) true
+HILLER GETS ALL THE STARS
+You simply cant beat Hiller glove side
+
+Hiller - (4,1) true
+Hiller is on top of his game tonight
+Amazing game by Jonas Hiller
+
+Hiller - (5,0) true
+Hiller is on top of his game tonight
+Hiller is doing such a good Job
+
+Hiller - (5,0) true
+Hiller is on top of his game tonight
+Hiller is playing crazy right now
+
+Hiller - (5,0) true
+Hiller is on top of his game tonight
+Hiller looked real solid tonight
+
+Hiller - (5,0) true
+Hiller is on top of his game tonight
+Hiller played his ass off
+
+Hiller - (4,1) true
+Hiller is on top of his game tonight
+Yes Hiller has had some stellar saves
+
+House Party - (4,1) true
+this really my favorite part on House Party
+I love the dance scene of House Party
+
+If the Knicks - (4,1) true
+If the knicks lose this game then they probably will lose the series
+If the Knicks lose this gametheyre in trouble
+
+If the Knicks - (4,1) true
+If the Knicks lose this series I might shed tears
+Bad sign if the Knicks lose this one
+
+If the Knicks - (5,0) true
+If the Knicks lose this series I might shed tears
+If the Knicks lose tonight Im letting oomf have it
+
+If the Knicks - (4,1) true
+Damn what if the Knicks lose this series bruh
+If the Knicks lose I think I may shit a brick
+
+If the Knicks - (4,1) true
+Damn what if the Knicks lose this series bruh
+Im gonna be emotionally frustrated If the Knicks lose
+
+If the Knicks - (5,0) true
+If the Knicks lose tonight this series might be over for them boys
+If the Knicks lose this game I dont think that they will win the series
+
+If the Knicks - (3,2) true
+If the Knicks lose tonight this series might be over for them boys
+If the knicks blow this series mannnn lollll
+
+If the Knicks - (4,1) true
+If the Knicks lose this series oh man
+I swear if the Knicks lose Im hitting someone
+
+If the Knicks - (5,0) true
+If the Knicks lose this series oh man
+If the Knicks blow this they really should be ashamed
+
+J Cole - (3,2) true
+Is the J Cole mixtape worth getting
+J Cole s last album was dope
+
+J Cole - (3,2) true
+This new j cole mixtape is fire
+Am the 1 j cole fan so all yall niggas need to back the fuck up
+
+J Cole - (3,2) true
+This new j cole mixtape is fire
+J cole did his thing on his new mix now we just waitin for June 25
+
+J Cole - (3,2) true
+j cole is my dude bro
+J Cole is obviously better than Drake if you dont agree you probably a fucking idiot
+
+Jarrett Jack - (5,0) true
+Get jarrett jack out of the game
+Pull Jarrett Jack ass right out Mark
+
+Jeff Green - (3,2) true
+i thought Jeff Green hit the dagger
+I told u Jeff Green would become something
+
+Jeff Green - (4,1) true
+i thought Jeff Green hit the dagger
+Jeff Green put the team on his back tho
+
+Jeff Green - (3,2) true
+Jeff Green is a baller tho
+And yeah Jeff Green can be pretty awesome
+
+Jeff Green - (4,1) true
+Crank up the bus Knicks Jeff green is on fire
+Jeff Green said chill Spike I got this
+
+Jeff Green - (3,2) true
+Crank up the bus Knicks Jeff green is on fire
+Just give the ball to Jeff Green he got us
+
+Jeff Green - (4,1) true
+Crank up the bus Knicks Jeff green is on fire
+and Jeff green playing amazing to
+
+Jeff Green - (4,1) true
+Crank up the bus Knicks Jeff green is on fire
+this is why i always dominate 2k with jeff green whenever i use the celtics
+
+Jeff Green - (3,2) true
+JEFF GREEN IS A STAR IN THE MAKING
+Jeff Green is going off tonight
+
+Jeff Green - (4,1) true
+JEFF GREEN IS A STAR IN THE MAKING
+When did Jeff Green become good
+
+Jeff Green - (3,2) true
+Jeff Green s back to back three
+Jeff Green did it to the game
+
+Jeff Green - (4,1) true
+Jeff Green s back to back three
+Jeff Green is going off tonight
+
+Jeff Green - (4,1) true
+Jeff Green s back to back three
+Jeff Green really improved his game
+
+Jeff Green - (4,1) true
+Jeff Green s back to back three
+Jeff green from the Celtics is a baller
+
+Jeff Green - (4,1) true
+Jeff Green s back to back three
+Jeff green is putting the Knicks away
+
+Jeff Green - (4,1) true
+Jeff Green s back to back three
+Tell me Jeff Green doesnt have superstar potential
+
+Jeff Green - (3,2) true
+Jeff Green s back to back three
+The Celtics can win this series as long as Jeff Green plays like big time
+
+Jeff Green - (3,2) true
+and Jeff green playing amazing to
+Jeff Green doesnt stop dropping buckets
+
+Jeff Green - (4,1) true
+and Jeff green playing amazing to
+Jeff green is an amazing player
+
+Jeff Hanneman - (5,0) true
+RIP to one of the greats Jeff Hanneman of Slayer
+Just found out that Slayer s Jeff Hanneman passed away this morning
+
+Jeff Hanneman - (4,1) true
+RIP to one of the greats Jeff Hanneman of Slayer
+RIP Jeff Hanneman such an unexpected loss
+
+Jeff Hanneman - (5,0) true
+RIP to one of the greats Jeff Hanneman of Slayer
+Sad news the world lost Jeff hanneman from Slayer today
+
+Jeff Hanneman - (4,1) true
+RIP to one of the greats Jeff Hanneman of Slayer
+Slayer guitarist Jeff Hanneman died at 11am this morning
+
+Jeff Hanneman - (5,0) true
+Jeff Hanneman of Slayer is dead and I am sad
+Damn rest in peace Jeff Hanneman
+
+Jeff Hanneman - (4,1) true
+Jeff Hanneman of Slayer is dead and I am sad
+Jeff Hanneman one of the founding guitarists of the pioneering thrash metal band Slayer died toda
+
+Jeff Hanneman - (4,1) true
+Jeff Hanneman of Slayer is dead and I am sad
+Just heard about Jeff hanneman slayer guitarist dying
+
+Jeff Hanneman - (4,1) true
+Jeff Hanneman of Slayer is dead and I am sad
+Oh dear Jeff Hanneman has gone South of Heaven
+
+Jeff Hanneman - (5,0) true
+Jeff Hanneman of Slayer is dead and I am sad
+RIP Jeff Hanneman slayer will live on
+
+Jeff Hanneman - (5,0) true
+Jeff Hanneman of Slayer is dead and I am sad
+RIP Soldier Jeff Hanneman The Hell Awaits
+
+Jeff Hanneman - (5,0) true
+Jeff Hanneman of Slayer is dead and I am sad
+RIP to guitar god Jeff Hanneman of Slayer
+
+Jeff Hanneman - (5,0) true
+Jeff Hanneman of Slayer is dead and I am sad
+Sad news the world lost Jeff hanneman from Slayer today
+
+Jeff Hanneman - (4,1) true
+RIP guitarist of Slayer band Jeff Hanneman
+Dude Jeff Hanneman from Slayer died
+
+Jeff Hanneman - (4,1) true
+RIP guitarist of Slayer band Jeff Hanneman
+WTF Jeff Hanneman from Slayer is dead
+
+Jeff Hanneman - (4,1) true
+RIP Jeff Hanneman from Slayer died today at 49 of liver failure
+Grammywinning guitarist Jeff Hanneman a founding member of the heavy metal band Slayer died
+
+Jeff Hanneman - (5,0) true
+RIP Jeff Hanneman from Slayer died today at 49 of liver failure
+Just heard that Jeff Hanneman died today
+
+Jeff Hanneman - (3,2) true
+RIP Jeff Hanneman from Slayer died today at 49 of liver failure
+RIP Jeff Hanneman although I am not much of a Slayer fan it still sucks
+
+Jeff Hanneman - (4,1) true
+RIP Jeff Hanneman from Slayer died today at 49 of liver failure
+RIP to a founding Slayer member guitarist Jeff Hanneman
+
+Jeff Hanneman - (4,1) true
+RIP Jeff Hanneman from Slayer died today at 49 of liver failure
+RIP to one of the heavy metal gods Jeff Hanneman
+
+Jeff Hanneman - (5,0) true
+RIP Jeff Hanneman from Slayer died today at 49 of liver failure
+Were devastated to report that Slayer guitarist Jeff Hanneman has passed away
+
+Jeff Hanneman - (3,2) true
+RIP jeff hanneman of Slayer we never forget you
+Jeff Hanneman of Slayer dies at age 49
+
+Jeff Hanneman - (3,2) true
+RIP jeff hanneman of Slayer we never forget you
+RIP Jeff Hanneman a sad day for all
+
+Jeff Hanneman - (3,2) true
+RIP jeff hanneman of Slayer we never forget you
+Rest in thrash beats Jeff Hanneman
+
+Jeff Hanneman - (3,2) true
+RIP jeff hanneman of Slayer we never forget you
+jeff hanneman of slayer died this morning
+
+Jeff Hanneman - (3,2) true
+RIP to one of the greatest Jeff Hanneman
+Guitarist Jeff Hanneman of metal band Slayer dies
+
+Jeff Hanneman - (3,2) true
+RIP to one of the greatest Jeff Hanneman
+Jeff Hanneman from Slayer died today at age 49
+
+Jeff Hanneman - (4,1) true
+RIP to one of the greatest Jeff Hanneman
+Jeff Hanneman guitarist and cofounder of Slayer dies aged 49
+
+Jeff Hanneman - (4,1) true
+RIP to one of the greatest Jeff Hanneman
+RIP Jeff Hanneman ex guitarrista de Slayer
+
+Jeff Hanneman - (4,1) true
+RIP to one of the greatest Jeff Hanneman
+RIP Slayer guitarist Jeff Hanneman Founding member of Slayer was 49
+
+Jeff Hanneman - (3,2) true
+RIP Jeff Hanneman aguante Slayer ctm
+Absolutely devastated to see Jeff Hanneman passed
+
+Jeff Hanneman - (4,1) true
+RIP Jeff Hanneman aguante Slayer ctm
+The great Jeff Hanneman passed away today
+
+Jeff Hanneman - (3,2) true
+Slayer s guitarist Jeff Hanneman just died of liver failure
+Damn no way Jeff Hanneman has died
+
+Jeff Hanneman - (4,1) true
+Slayer s guitarist Jeff Hanneman just died of liver failure
+RIP Jeff Hanneman brother in thrash
+
+Jeff Hanneman - (3,2) true
+Slayer s guitarist Jeff Hanneman just died of liver failure
+RIP Jeff Hanneman the greatest American riff writer of all time
+
+Jeff Hanneman - (4,1) true
+Slayer s guitarist Jeff Hanneman just died of liver failure
+RIP Jeff Hanneman you crazy bastard
+
+Jeff Hanneman - (3,2) true
+Slayer s guitarist Jeff Hanneman just died of liver failure
+To all the metal heads out there RIP Jeff Hanneman from Slayer
+
+Jeff Hanneman - (3,2) true
+The riffs of Jeff Hanneman remembered
+Jeff Hanneman will always be a metal god
+
+Jeff Hanneman - (4,1) true
+The riffs of Jeff Hanneman remembered
+Rest in peace brother Jeff Hanneman
+
+Jeff Hanneman - (3,2) true
+RIP Jeff Hanneman of Slayer who died today of liver failure
+Another member of the metal community Jeff Hanneman from Slayer has passed away
+
+Jeff Hanneman - (3,2) true
+RIP Jeff Hanneman of Slayer who died today of liver failure
+RIP Jeff Hanneman an incredibly talented guitarist
+
+Jeff Hanneman - (3,2) true
+RIP Jeff Hanneman of Slayer who died today of liver failure
+RIP Jeff Hanneman such an unexpected loss
+
+Jordan Crawford - (3,2) true
+After what Jordan Crawford said to my nigga melo
+Jordan Crawford keep talking trash to Melo next game
+
+Jordan Crawford - (3,2) true
+After what Jordan Crawford said to my nigga melo
+Jordan Crawford told Melo Dat mutherfucker fucked your wife Talking about KG
+
+Jordan Crawford - (3,2) true
+After what Jordan Crawford said to my nigga melo
+LOL at Jordan Crawford talking shit to melo and Felton
+
+Jordan Crawford - (4,1) true
+After what Jordan Crawford said to my nigga melo
+jordan crawford talking shit to melo gotta love that
+
+Jordan Crawford - (3,2) true
+After what Jordan Crawford said to my nigga melo
+what u make of Jordan Crawford saying something about Melo Wife
+
+Josh Harding - (3,2) true
+Josh Harding is already a star of the nhlplayoffs
+How good has Josh harding been tonight
+
+Josh Harding - (4,1) true
+Josh Harding is already a star of the nhlplayoffs
+Josh Harding had an amazing game tonight
+
+Josh Harding - (3,2) true
+Josh Harding is already a star of the nhlplayoffs
+Josh Harding is obvious choice for this year s Masterton
+
+Josh Harding - (3,2) true
+Josh Harding is already a star of the nhlplayoffs
+Josh Harding what an absolutely amazing performance
+
+Josh Harding - (3,2) true
+Josh Harding is already a star of the nhlplayoffs
+for not knowing he was starting Josh Harding is doing excellent against the Hawks
+
+Josh Harding - (3,2) true
+Josh Harding is already a star of the nhlplayoffs
+why is josh harding so good now
+
+Josh Harding - (3,2) true
+Josh Harding here s to you
+Blackhawks win Props to Josh Harding played one hell of a game
+
+Josh Harding - (3,2) true
+Josh Harding here s to you
+I have a huge amount of respect for Josh Harding
+
+Josh Harding - (3,2) true
+Josh Harding here s to you
+What a game by Josh Harding though
+
+Josh Harding - (3,2) true
+Josh Harding is the first star tonight
+I want Chicago to win the series but gotta give props to Josh Harding
+
+Josh Harding - (4,1) true
+Josh Harding is the first star tonight
+Josh Harding does not want to lose
+
+Josh Harding - (4,1) true
+Josh Harding is the first star tonight
+Josh Harding has sticksaveswag GO WILD
+
+Josh Harding - (5,0) true
+Josh Harding is the first star tonight
+Josh Harding is a true hero
+
+Josh Harding - (5,0) true
+Josh Harding is the first star tonight
+Josh Harding is putting on one hell of a performance
+
+Josh Harding - (5,0) true
+Josh Harding is the first star tonight
+Josh Harding is such an incredible goaltender
+
+Josh Harding - (5,0) true
+Josh Harding is the first star tonight
+Josh Harding played a HELL of a game despite the loss
+
+Josh Harding - (4,1) true
+Josh Harding is the first star tonight
+My hat is off to josh Harding though
+
+Josh Harding - (3,2) true
+Still a great game played by Josh Harding
+Give Josh Harding credit for standing on his head all game
+
+Josh Harding - (3,2) true
+Still a great game played by Josh Harding
+Gotta respect Josh Harding s performance here a MasterTON
+
+Josh Harding - (3,2) true
+Still a great game played by Josh Harding
+win or lose Josh Harding is the first star
+
+Josh Harding - (3,2) true
+Congrats to Josh Harding on the second star of the game
+Let s give to up for Josh Harding
+
+Josh Harding - (3,2) true
+Congrats to Josh Harding on the second star of the game
+Proud of Josh Harding s performance tonight
+
+Josh Harding - (4,1) true
+Josh Harding is a hero in my book
+Gotta hand it to Josh Harding though
+
+Josh Harding - (3,2) true
+Josh Harding is a hero in my book
+Josh Harding played an amazing game
+
+Josh Harding - (3,2) true
+Josh Harding is a hero in my book
+Nothing but applause for a virtuoso performance by Josh Harding so far tonight
+
+Josh Harding - (3,2) true
+Josh Harding is a hero in my book
+Still have to give Josh Harding credit he played a hell of a game
+
+Josh Harding - (3,2) true
+Tough loss for the reginaboy josh harding hell of a game
+Hard not to be rooting for Josh Harding in this one
+
+Josh Harding - (3,2) true
+Tough loss for the reginaboy josh harding hell of a game
+Josh Harding has been incredible tonight
+
+Josh Harding - (3,2) true
+Josh Harding played a HELL of a game despite the loss
+Great performance from Josh Harding tonight for Minnesota
+
+Josh Harding - (4,1) true
+Tough Tough break for Josh Harding
+Josh Harding just a wonderful performance in a losing cause
+
+Josh Harding - (5,0) true
+Tough Tough break for Josh Harding
+Josh Harding played a HELL of a game despite the loss
+
+Josiah - (4,1) true
+Josiah is my perfect man
+I will marry josiah from the voice
+
+Josiah - (3,2) true
+Josiah is my perfect man
+Josiah from the voice is so sexy
+
+Josiah - (3,2) true
+Josiah is my perfect man
+Seriously Josiah on the voice is so hot
+
+Judi - (5,0) true
+I love Judi but she got her ass beat
+And Judi Got Her ass whopped
+
+Judi - (5,0) true
+I love Judi but she got her ass beat
+Judi Started The Fight Got Her Ass Beat
+
+Judi - (4,1) true
+I love Judi but she got her ass beat
+Judi was getting fucked up the whole time
+
+Judi - (5,0) true
+I love Judi but she got her ass beat
+Priscilla beat the hell out of Judi
+
+Judi - (3,2) true
+Judi was a crazy mf
+Judi Came in W a Mowhawk
+
+Judi - (3,2) true
+Judi was a crazy mf
+Judi came in with a full sew in and she left with a Mohawk
+
+Judi - (3,2) true
+Judi was a crazy mf
+Judi is my favorite bad girl tbh
+
+Judi - (5,0) true
+Judi was a crazy mf
+Judi was BY FAR the craziest Bad Girl
+
+Judi - (3,2) true
+Priscilla Laced Judi Ass Up tho
+JUDI GOT HER ASS BEAT LHHHH
+
+Judi - (5,0) true
+Priscilla Laced Judi Ass Up tho
+Judi got that ass handed to her by Priscilla in Season 7
+
+Judi - (3,2) true
+Priscilla Laced Judi Ass Up tho
+Judi was asking for a ass whooping
+
+Judi - (5,0) true
+Judi stayed getting her ass beat
+Judi got that ass handed to her by Priscilla in Season 7
+
+Judi - (4,1) true
+Judi stayed getting her ass beat
+Priscilla had BEAT Judi crazy ass lmao
+
+Judi - (4,1) true
+I remember this fight Judi got her ass tore up
+Judi was fucked up pretty descent
+
+Judi - (3,2) true
+I love the fight with Judi vs Priscilla
+Priscilla vs Judi Season 7 of BGC
+
+Judi - (4,1) true
+Judi was psycho lmao loved her
+Judi lost that fight but I was on Judi team lol
+
+Judi - (4,1) true
+Judi was psycho lmao loved her
+Judi was getting that ass tore up
+
+Judi - (3,2) true
+Judi was psycho lmao loved her
+LMFAO YOOO when Judi threw cereal on Priscilla I was cryinggg
+
+Judi - (4,1) true
+Judi was a crazy Creole bitch
+judi was really crazy though
+
+Judi - (3,2) true
+I love the fight with Judi vs Priscilla
+Judi got her ass beat by Priscilla in this fight
+
+Judi - (3,2) true
+I love the fight with Judi vs Priscilla
+Judi got her ass beat lmao
+
+Judi - (3,2) true
+I love the fight with Judi vs Priscilla
+Lmao Judi got her ass beat my Prisilla
+
+Judi - (3,2) true
+I love the fight with Judi vs Priscilla
+When Priscilla beat Judis ass that was tragic lol
+
+Julie - (3,2) true
+Julie got her ass handed to her on that reunion
+I just noticed Christina pushed Julie on the floor
+
+Julie - (3,2) true
+Julie got her ass handed to her on that reunion
+I loved when Julie got her ass kicked
+
+Julie - (3,2) true
+Julie got her ass handed to her on that reunion
+Why didnt they show Lulu gettin in Julie s ass at the reunion tho
+
+Kevin Martin - (3,2) true
+Kevin Martin is 1 of 10 really
+Kevin Martin missing all the shots
+
+Kevin Martin - (3,2) true
+Kevin Martin is the reason OKC lost
+Bum ass Kevin Martin has 1 fucking point
+
+Kevin Martin - (3,2) true
+Kevin Martin is the reason OKC lost
+Kevin Martin SUCKS it s time for him to find a new team
+
+Kevin Martin - (3,2) true
+Kevin Martin is awful right now
+An Kevin Martin is 1 for 10
+
+Kevin Martin - (5,0) true
+Kevin Martin is awful right now
+Im sorry Kevin Martin but seriously sit the fuck down
+
+Kevin Martin - (4,1) true
+Kevin Martin is awful right now
+Kevin Martin just needs to stop with what he is trying to do
+
+Kevin Martin - (5,0) true
+Kevin Martin is awful right now
+Kevin Martin what are you doing man
+
+Kevin Martin - (3,2) true
+Kevin Martin is awful right now
+Kevin Martin will never be like JAMES HARDEN
+
+Kevin Martin - (3,2) true
+Kevin Martin is awful right now
+Safe to say Kevin Martin was no true replacement of James Harden
+
+Kevin Martin - (3,2) true
+Kevin martin is doing horrible gah damn
+Kevin Martin is the Tim Tebow of the NBA
+
+Kevin Martin - (5,0) true
+Kevin martin is doing horrible gah damn
+Kevin Martin isnt good enough Im sorry lol
+
+Kevin Martin - (5,0) true
+Kevin martin is doing horrible gah damn
+Kevin Martin shooting form is so fucked up
+
+Kevin Martin - (4,1) true
+Kevin martin is doing horrible gah damn
+Kevin Martin useless if his shot not falling
+
+Kevin Martin - (3,2) true
+Kevin martin is doing horrible gah damn
+Where did Kevin Martin learn his shooting form
+
+Kevin Martin - (3,2) true
+All Kevin Martin does is miss shots
+Derek Fisher Kevin Martin and Scott Brooks are bums
+
+Kevin Martin - (3,2) true
+All Kevin Martin does is miss shots
+Didnt they say Kevin Martin was supposed to score coming off the bench
+
+Kevin Martin - (3,2) true
+All Kevin Martin does is miss shots
+Is kevin Martin going to show up to the playpffs
+
+Kevin Martin - (3,2) true
+All Kevin Martin does is miss shots
+Kevin martin is not doing what he got picked up to do
+
+Kevin Martin - (3,2) true
+Kevin Martin is 1 of 10 really
+Kevin Martin is worthless as tits on a boar hog for the Thunder tonight
+
+Kevin Martin - (3,2) true
+KEVIN Martin is all the rest of the crap there
+I dont know why Kevin Martin is still playing
+
+Kevin Martin - (3,2) true
+KEVIN Martin is all the rest of the crap there
+Kevin Martin has 1 pointwe cantwont win like this
+
+Kevin Martin - (3,2) true
+Did Kevin Martin miss the bus
+Can Kevin Martin just stay on the bench please
+
+Kevin Martin - (3,2) true
+Did Kevin Martin miss the bus
+Kevin Martin needs to get right
+
+Kevin Martin - (4,1) true
+Kevin martin is showing them the true bricktown
+Kevin Martin cant hit the broad side of a barn
+
+Kim Possible - (3,2) true
+KIM POSSIBLE IS ON IM SO EXCITED
+It s been forever but Kim Possible I on Disney channel
+
+Kim Possible - (5,0) true
+KIM POSSIBLE IS ON IM SO EXCITED
+Loving the fact Kim Possible in on Disney right now lol
+
+Kim Possible - (4,1) true
+KIM POSSIBLE IS ON IM SO EXCITED
+OMG Kim Possible returning to Disney Channel tonight
+
+Kim Possible - (4,1) true
+KIM POSSIBLE IS ON IM SO EXCITED
+Wtf kim possible is on Disney channel like omg like that show was my life
+
+Kim Possible - (4,1) true
+Kim Possible is on tv right now guys
+Kim Possible just came on and I got really excited
+
+Kim Possible - (4,1) true
+Kim Possible is on tv right now guys
+Starting the tbt early Kim Possible is on
+
+Kim Possible - (3,2) true
+Kim Possible is on tv right now guys
+Watching Kim Possible and realizing the Kimmunicator is more advance than the iPhone
+
+Kim Possible - (3,2) true
+i thought yall niggas was lien Kim Possible is on
+God Im legit freaking out because Kim Possible is on
+
+Kim Possible - (3,2) true
+i thought yall niggas was lien Kim Possible is on
+Kim Possible just came on and I got really excited
+
+Kim Possible - (4,1) true
+i thought yall niggas was lien Kim Possible is on
+No fucking way Kim possible is on
+
+Kim Possible - (3,2) true
+i thought yall niggas was lien Kim Possible is on
+BUT I CANT BECAUSE KIM POSSIBLE IS OONNNNN
+
+Kim Possible - (3,2) true
+i thought yall niggas was lien Kim Possible is on
+I stayed up just to watch Kim possible
+
+Kim Possible - (3,2) true
+i thought yall niggas was lien Kim Possible is on
+OMG Kim Possible returning to Disney Channel tonight
+
+Kim Possible - (3,2) true
+i thought yall niggas was lien Kim Possible is on
+OMG Kim possible is on Disney channel again Lol
+
+Kim Possible - (3,2) true
+i thought yall niggas was lien Kim Possible is on
+Omg Kim Possible on lol this my favv show
+
+Kim Possible - (5,0) true
+Yall Kim possible is on right now
+Kim possible on disney channel oh shit
+
+Kim Possible - (4,1) true
+OMG KIM POSSIBLE IS ON BUT I NEED TO SLEEP
+Ahhhh Kim Possible is on Disney Channel right now
+
+Kim Possible - (4,1) true
+OMG KIM POSSIBLE IS ON BUT I NEED TO SLEEP
+KIM POSSIBLE IS ON IM SO HAPPY IM SCREAMING
+
+Kim Possible - (3,2) true
+OMG KIM POSSIBLE IS ON BUT I NEED TO SLEEP
+Yall dont understand how damn excited I got when I saw Kim Possible come on
+
+Kim Possible - (4,1) true
+Kim Possible On I Use To Love That Show
+Kim Possible is on Disney Channel right now and my night is made
+
+Kim Possible - (4,1) true
+Kim Possible On I Use To Love That Show
+Omg Kim Possible is on my tv right now jizz
+
+Kim Possible - (4,1) true
+Kim Possible On I Use To Love That Show
+Please excuse my fangirling but I am watching Kim Possible and I am loving it
+
+Kim Possible - (4,1) true
+Kim Possible is on right now on Disney Channel
+Oh shit Kim possible is on
+
+Kim Possible - (3,2) true
+Kim Possible is on right now on Disney Channel
+Word on the street is KIM POSSIBLE IS ON
+
+Kim Possible - (4,1) true
+Freak out Kim possible is on
+Watching Kim Possible til i KO
+
+Kim Possible - (4,1) true
+Ah fuck Kim possible is on yo
+Kim possible is on Disney Channel My Night Has Been Made
+
+Klay - (3,2) true
+well lets go StephenCurry30 and Klay Thompson
+Lets go Klay step it up
+
+Klay - (4,1) true
+well lets go StephenCurry30 and Klay Thompson
+much respect for my sons Stephen Curry and Klay Thompson
+
+Klay - (3,2) true
+Klay Thompson Is A Good Ass Shooter
+Klay Thompson turn around jumpers kill me
+
+Klay - (5,0) true
+Can Klay Thompson wake up
+Cmon Klay need u to get it going
+
+Klay - (3,2) true
+Can Klay Thompson wake up
+Klay Thompson can be lethal if Golden State can get him going
+
+Klay - (5,0) true
+Can Klay Thompson wake up
+Klay Thompson needs to take off
+
+Klay - (3,2) true
+Can Klay Thompson wake up
+Klay hasnt done shit either
+
+Klay - (5,0) true
+Did Klay Thompson just air ball
+Klay Thompson with an airball
+
+Klay - (3,2) true
+Whatsup with Klay and curry
+Curry klay Thompson have played like ass
+
+Kree - (5,0) true
+My top 3 is Candice Angie Kree
+Kree Candice and Angie are our final three
+
+Kris Kross - (3,2) true
+RIP to Chris Kelly one half of 90s group Kris Kross
+Chris Kelly AKA Mac Daddy from Kris Kross died
+
+Kris Kross - (4,1) true
+Damn one of the homies from Kris Kross died
+Kris Kross member dies Chris Kelly 34 drug overdose
+
+Kris Kross - (5,0) true
+Damn one of the homies from Kris Kross died
+Member from Kris Kross found dead
+
+Kris Kross - (4,1) true
+Damn one of the homies from Kris Kross died
+RIP Chris Kelly 12 of KRIS KROSS
+
+Kris Kross - (3,2) true
+Chris Kelley from Kris Kross dead
+RIP to the homie of the member Kris Kross
+
+Kris Kross - (4,1) true
+RIP to the dude from Kris Kross
+Chris Kelly of rap duo Kris Kross dies at34
+
+Kris Kross - (4,1) true
+RIP to the dude from Kris Kross
+Chris Mac Daddy Kelley of Kris Kross died today in Atlanta at age of 34
+
+Kris Kross - (4,1) true
+RIP to the dude from Kris Kross
+Chris Mac Daddy Kelly of Kris Kross was found dead yesterday at his Atlanta home
+
+Kris Kross - (3,2) true
+RIP to the dude from Kris Kross
+Which one of the Kris Kross guys died
+
+Kris Kross - (3,2) true
+So sad to hear the news about Chris Kelly of Kris Kross
+Chris Kelly of 90 s HipHop group Kris Kross died last night
+
+Kris Kross - (3,2) true
+So sad to hear the news about Chris Kelly of Kris Kross
+Chris Mac Daddy Kelley of Kris Kross died today in Atlanta at age of 34
+
+Kris Kross - (3,2) true
+So sad to hear the news about Chris Kelly of Kris Kross
+Kris Kross Rapper Chris Kelly Is Dead Aged 34
+
+Kris Kross - (3,2) true
+Chris Kelly Dead Kris Kross Rapper Mac
+Shocking news about Chris from Kris Kross
+
+Kris Kross - (5,0) true
+Chris Kelly onehalf of the 1990s rap duo Kris Kross is dead
+Cant believe one half of Kris Kross dead
+
+Kris Kross - (5,0) true
+Chris Kelly onehalf of the 1990s rap duo Kris Kross is dead
+Chris Kelly AKA Mac Daddy from Kris Kross died
+
+Kris Kross - (3,2) true
+Chris Kelly onehalf of the 1990s rap duo Kris Kross is dead
+Im gutted that mac daddy from kris kross is dead
+
+Kris Kross - (4,1) true
+Chris Kelly onehalf of the 1990s rap duo Kris Kross is dead
+Kris Krosss Chris Mac Daddy Kelly Dies Aged 34
+
+Kris Kross - (4,1) true
+Chris Kelly onehalf of the 1990s rap duo Kris Kross is dead
+RIP Kris Kross rapper Kelly dies at 34
+
+Kris Kross - (4,1) true
+Chris Kelly onehalf of the 1990s rap duo Kris Kross is dead
+RIP to Chris Mac Daddy of Kris Kross
+
+Kris Kross - (4,1) true
+Chris Kelly onehalf of the 1990s rap duo Kris Kross is dead
+Rest in peace Daddy Mac of Kris Kross
+
+Kris Kross - (4,1) true
+Kris Kross rapper Chris Kelly dead at 34
+12 of Kris Kross found dead of apparent drug overdose
+
+Kris Kross - (4,1) true
+Kris Kross rapper Chris Kelly dead at 34
+Damn I cant believe Chris from Kris Kross died
+
+Kris Kross - (5,0) true
+Kris Kross rapper Chris Kelly dead at 34
+RIP to the homie of the member Kris Kross
+
+Kris Kross - (4,1) true
+Kris Kross rapper Chris Kelly dead at 34
+RiP to Chris from the group Kris Kross
+
+Kris Kross - (4,1) true
+Just read about Mac Daddy Chris Kelly of Kris Kross
+Kris Kross member Chris Kelly has pasted away
+
+Kris Kross - (4,1) true
+Just read about Mac Daddy Chris Kelly of Kris Kross
+Rest in Peace to Chris Kelley of Kris Kross
+
+Kris Kross - (4,1) true
+Just read about Mac Daddy Chris Kelly of Kris Kross
+Rest in peace guy from Kris Kross
+
+Kriss Kross - (3,2) true
+Which one of the dudes from Kriss Kross died
+RIP Chris Kelly of hip hop group Kriss Kross
+
+Kriss Kross - (3,2) true
+Which one of the dudes from Kriss Kross died
+RIP to the Chris Kelly from Kriss Kross
+
+Kriss Kross - (3,2) true
+RIP Chris Kelley the Mac Daddy of Kriss Kross
+Dude from Kriss Kross died today at 34
+
+Kriss Kross - (4,1) true
+Chris Mac Daddy Kelly from Kriss Kross just died
+One of the dudes from Kriss Kross is dead
+
+Kriss Kross - (3,2) true
+Shocked about Chris from Kriss Kross
+One of the Kriss Kross rappers died today
+
+Kriss Kross - (3,2) true
+damn Chris Kelly of Kriss Kross at 34
+Damn man i heard Kriss from kriss kross died
+
+Kriss Kross - (3,2) true
+damn Chris Kelly of Kriss Kross at 34
+Kriss Kelly from Kriss Kross got his wings today
+
+Kriss Kross - (3,2) true
+damn Chris Kelly of Kriss Kross at 34
+Wow RIP Chris from Kriss Kross
+
+Kriss Kross - (3,2) true
+Chris Mac Daddy Kelly from Kriss Kross just died
+Damn one of the members from Kriss kross died
+
+Kriss Kross - (3,2) true
+The Mack Daddy from Kriss Kross died today
+12 of Kriss Kross has passed on
+
+Kriss Kross - (3,2) true
+The Mack Daddy from Kriss Kross died today
+Chris Kelly onehalf of Kriss Kross of backwardsclothes and rap fame has died
+
+Kriss Kross - (4,1) true
+The Mack Daddy from Kriss Kross died today
+Damn heard one of members of Kriss Kross died
+
+Kriss Kross - (3,2) true
+The Mack Daddy from Kriss Kross died today
+Omg DUDE Grime KRISS KROSS Died
+
+Kriss Kross - (5,0) true
+The Mack Daddy from Kriss Kross died today
+One of the Kriss Kross guys was found dead
+
+Kriss Kross - (4,1) true
+The Mack Daddy from Kriss Kross died today
+RIP Chris Kelly of Kriss Kross Migitty Migitty Migitty Migitty MAc Daddy
+
+Kriss Kross - (4,1) true
+The Mack Daddy from Kriss Kross died today
+RIP Chris Mac Daddy Kelly just 3 months ago Kriss Kross reunited
+
+Kriss Kross - (5,0) true
+NOOOO Chris Kelly from Kriss Kross has died
+RIP to Chris Mac daddy of the group Kriss Kross
+
+Kriss Kross - (5,0) true
+wow Chris Mac Daddy Kelly from Kriss Kross died
+Damn my homie from Kriss Kross passed away
+
+Kriss Kross - (5,0) true
+wow Chris Mac Daddy Kelly from Kriss Kross died
+Dude from Kriss Kross really did pass away
+
+Kriss Kross - (5,0) true
+wow Chris Mac Daddy Kelly from Kriss Kross died
+One of the dudes from the 90s rap duo Kriss kross died today
+
+Kriss Kross - (5,0) true
+wow Chris Mac Daddy Kelly from Kriss Kross died
+The cute lil light skin one from kriss kross died
+
+Kriss Kross - (5,0) true
+wow Chris Mac Daddy Kelly from Kriss Kross died
+one of the members from Kriss Kross was found dead
+
+Lars Eller - (3,2) true
+Holy hope Lars Eller is okay
+I feel so bad for Lars Eller
+
+Lars Eller - (4,1) true
+Holy hope Lars Eller is okay
+OMG Hoping for the well being of Lars Eller
+
+Lars Eller - (4,1) true
+Oof scary hit on Lars Eller
+And I believe Eric Gryba just got a game misconduct for absolutely murdering Lars Eller
+
+Lars Eller - (4,1) true
+Oof scary hit on Lars Eller
+Even Kevin Stevens looked away from that Lars Eller hit
+
+Lars Eller - (3,2) true
+Oof scary hit on Lars Eller
+Even as a leafs fan I hope lars eller from the habs is alright
+
+Lars Eller - (3,2) true
+Oof scary hit on Lars Eller
+Holy shit man I hope Lars Eller is ok
+
+Lars Eller - (3,2) true
+Oof scary hit on Lars Eller
+Hope former Rivermen Lars Eller is OK
+
+Lars Eller - (4,1) true
+Oof scary hit on Lars Eller
+Lars Eller hit the ice with a head contusion
+
+Lars Eller - (3,2) true
+Oof scary hit on Lars Eller
+Lars Eller is going to need a transfusion
+
+Lars Eller - (4,1) true
+Oof scary hit on Lars Eller
+Man I hope Lars Eller is okay after that hit
+
+Lars Eller - (3,2) true
+Oof scary hit on Lars Eller
+The hit itself is clean but the injury lars eller suffers is from hitting the ice
+
+Lars Eller - (3,2) true
+Lars Eller brought off the ice on a stretcher
+Holy shit Lars eller is bleeding BAD
+
+Lars Eller - (3,2) true
+Lars Eller brought off the ice on a stretcher
+Lars Eller just got fuck up
+
+Lars Eller - (3,2) true
+Lars Eller brought off the ice on a stretcher
+Lars Eller just got lite up
+
+Lars Eller - (3,2) true
+Lars Eller brought off the ice on a stretcher
+My main point being that Lars Eller just got knocked the fuck out
+
+Lars Eller - (3,2) true
+Lars Eller brought off the ice on a stretcher
+That hit on Lars Eller was vicious
+
+Lars Eller - (4,1) true
+Man that hit on Lars Eller was bad
+Awful and scary injury for Lars Eller
+
+Lars Eller - (3,2) true
+Man that hit on Lars Eller was bad
+Gryba from the Sens blindsided Lars Eller from Montreal
+
+Lars Eller - (4,1) true
+Man that hit on Lars Eller was bad
+Lars Eller hit the ice with a head contusion
+
+Lars Eller - (3,2) true
+Man that hit on Lars Eller was bad
+Lars Eller you just knocked the fuck outtt
+
+Lars Eller - (3,2) true
+WHOAAAAA Eric Gryba on Lars Eller
+Damn Lars Eller just got killed
+
+Lars Eller - (4,1) true
+Lars Eller on the Canadiens just got fucked up
+Best wishes to Lars Eller after that hit
+
+Lars Eller - (5,0) true
+Lars Eller on the Canadiens just got fucked up
+Holy fuck Lars Eller is bleeding like a motherfucker
+
+Lars Eller - (3,2) true
+Lars Eller on the Canadiens just got fucked up
+Lars Eller hit by Eric Gryba
+
+Lars Eller - (5,0) true
+Lars Eller on the Canadiens just got fucked up
+RIP Lars Eller in all seriousness hope he is ok
+
+Lars Eller - (5,0) true
+Lars Eller on the Canadiens just got fucked up
+That hit on Lars Eller was absolutely viscous
+
+Lars Eller - (4,1) true
+Lars Eller on the Canadiens just got fucked up
+Ugly hit on Lars Eller havent seen that much blood in a long time
+
+Lars Eller - (3,2) true
+That was some hit on Lars Eller
+LARS ELLER IS ON THE ICE JUST BLEEDING PROFUSELY
+
+Lars Eller - (5,0) true
+That was some hit on Lars Eller
+Lars Eller on the Canadiens just got fucked up
+
+Lars Eller - (3,2) true
+That was some hit on Lars Eller
+Oh Lars Eller your face is LEAKING
+
+Lars Eller - (3,2) true
+BIG hit on the Habs Lars Eller
+I hope Lars Eller 81 is gonna be alright
+
+Lars Eller - (4,1) true
+BIG hit on the Habs Lars Eller
+Lars Eller you just knocked the fuck outtt
+
+Lars Eller - (5,0) true
+BIG hit on the Habs Lars Eller
+Praying for Lars Eller that was such a horrible hit
+
+Luongo - (3,2) true
+What the hell is Luongo doing
+Luongo sucks the air out of the building again
+
+Luongo - (4,1) true
+What the hell is Luongo doing
+luongo looking as sketchy as ever
+
+MC Hammer - (3,2) true
+MC hammer is at the game aha
+Lmao MC Hammer front row ironically
+
+MC Hammer - (4,1) true
+MC hammer is at the game aha
+MC HAMMER IN THE GOLDEN STATE CROWD
+
+MC Hammer - (3,2) true
+MC hammer is at the game aha
+Where the hell MC Hammer get money from to sit court side
+
+MC Hammer - (4,1) true
+MC Hammer spotting at the warriors game
+Did I just see MC hammer in the GS crowd
+
+MC Hammer - (3,2) true
+MC Hammer sighting at the NuggetsWarriors game
+And is that MC Hammer courtside
+
+MC Hammer - (3,2) true
+MC Hammer sighting at the NuggetsWarriors game
+Mc Hammer in the building court side
+
+MC Hammer - (3,2) true
+MC Hammer sighting at the NuggetsWarriors game
+My boy Mc hammer court side
+
+MC Hammer - (5,0) true
+MC Hammer sighting at the NuggetsWarriors game
+Nigga is tht MC Hammer next to the Warriors bench
+
+MC Hammer - (5,0) true
+Is that MC Hammer court side in the bay
+Have u noticed MC Hammer courtside
+
+MC Hammer - (4,1) true
+Who seen MC HAMMER at the game
+How can MC Hammer afford front row seats at a Warrior game
+
+MC Hammer - (4,1) true
+Who seen MC HAMMER at the game
+how the fuck MC Hammer got courtside tickets
+
+MC Hammer - (4,1) true
+Mc Hammer at the warriors game tho lol
+Did anybody just see MC Hammer sitting courtside
+
+MC Hammer - (3,2) true
+MC HAMMER is in the house
+MC Hammer and Ice T at the GS game
+
+MC Hammer - (4,1) true
+MC HAMMER is in the house
+MC Hammer up in this bitch
+
+MC Hammer - (4,1) true
+MC HAMMER is in the house
+Mc Hammer on The Warriors Bench lol
+
+MC Hammer - (3,2) true
+MC HAMMER is in the house
+My niggas MC Hammer is at this Game LOL
+
+MC Hammer - (3,2) true
+MC HAMMER is in the house
+Only 10 niggas kno thats mc hammer at the warriors game
+
+MC Hammer - (4,1) true
+MC HAMMER is in the house
+SO to MC Hammer courtside at the Warriors game
+
+MC Hammer - (3,2) true
+MC Hammer courside at the Warriors game
+How is MC Hammer sitting courtside isnt he broke
+
+MC Hammer - (4,1) true
+MC Hammer courside at the Warriors game
+MC Hammer sittin court side in the Oracle tonight
+
+MC Hammer - (3,2) true
+MC Hammer courside at the Warriors game
+Wait Was that MC Hammer on the sideline
+
+MC Hammer - (3,2) true
+Was that MC Hammer at the goldenstate game
+MC Hammer is watching court side
+
+Mac Daddy - (5,0) true
+Kriss Kross Rapper Chris Mac Daddy Kelly Dead at 34
+Chris Mac Daddy Kelly of 90s band KrisKross has died
+
+Mac Daddy - (3,2) true
+Kriss Kross Rapper Chris Mac Daddy Kelly Dead at 34
+PIR Mac Daddy Of Kris Kross
+
+Mac Daddy - (4,1) true
+Kriss Kross Rapper Chris Mac Daddy Kelly Dead at 34
+RIP Mac Daddy make ya wanna
+
+Mac Daddy - (4,1) true
+Kriss Kross Rapper Chris Mac Daddy Kelly Dead at 34
+Sending condolences to the family friends and fans of Chris Mac Daddy Kelly of krisskross
+
+Mac Daddy - (5,0) true
+Kriss Kross Rapper Chris Mac Daddy Kelly Dead at 34
+damn RIP Chris MAC Daddy Kelly from KrissKross
+
+Mac Daddy - (4,1) true
+RIP to the MiggityMac Daddy
+Chris Kelly aka Mac Daddy of Kriss Kross dead at 34
+
+Mac Daddy - (4,1) true
+RIP to the MiggityMac Daddy
+Chris Kelly aka Mac Daddy was the one that died
+
+Mac Daddy - (3,2) true
+RIP to the MiggityMac Daddy
+Chris Mac Daddy Kelly reportedly found dead in his Atlanta hm
+
+Mac Daddy - (3,2) true
+RIP to the MiggityMac Daddy
+I found this Chris Mac Daddy Kelly Of Kriss Kross Found Dead At 34
+
+Mac Daddy - (5,0) true
+RIP to the MiggityMac Daddy
+RIP Chris Kelly aka Mac Daddy Criss Cross
+
+Mac Daddy - (5,0) true
+RIP to the MiggityMac Daddy
+damn mac daddy from kriss kross died RIP
+
+Mac Daddy - (5,0) true
+RIP to the MiggityMac Daddy
+rip 2 Chris Kelly aka Mac Daddy from Kris Kross
+
+Mac Daddy - (5,0) true
+TIP Chris Kelly The Mac Daddy of Kris Kross
+Wow RIP Mac Daddy from Kriss Kross
+
+Mac Daddy - (4,1) true
+RIP Mac Daddy aka Chris Kelly from Kriss Kross
+The Mac Daddy that made you JUMP JUMP has passed
+
+Mac Daddy - (4,1) true
+Awwww Chris Mac Daddy Kelly died
+Mac Daddy frm Kris Kross was found dead in his home
+
+Mac Daddy - (3,2) true
+Awwww Chris Mac Daddy Kelly died
+Salute to the homie Mac Daddy
+
+Mac Daddy - (3,2) true
+Chris Mac Daddy Kelly from Kriss Kross has died
+As of today the Mac Daddy wont make ya jump jump
+
+May Day - (3,2) true
+Well May Day protests around the world
+17 arrested in violent Seattle May Day protests
+
+Mayweather - (3,2) true
+What date is the Mayweather fight
+Ready for the Mayweather fight Saturday
+
+Memphis - (3,2) true
+But Memphis is winnin this game
+Memphis 54 x 48 Clippers
+
+Miley Cyrus - (3,2) true
+I would go gay for Miley Cyrus
+Dont care what anyone says Miley Cyrus is still fucking sexy
+
+Miley Cyrus - (3,2) true
+Why is Miley Cyrus so ghetto now
+Dude what kinda phase is Miley Cyrus going through
+
+Miley Cyrus - (3,2) true
+Why is Miley Cyrus so ghetto now
+I want the old Miley Cyrus back
+
+Miley Cyrus - (5,0) true
+Miley Cyrus is my lesbo crush
+Miley Cyrus has full permission to sit on my face for the remainder of my life
+
+Nicki - (4,1) true
+nicki gets to mariah too
+Nicki Minaj is the fool for continuing to feed into Mariah s insecurities
+
+Pandora - (5,0) true
+Finally I have my Pandora again
+First of the month means I can use Pandora for a week
+
+Pandora - (4,1) true
+Finally I have my Pandora again
+I woke up early excited for my pandora to work lol
+
+Pandora - (5,0) true
+Finally I have my Pandora again
+It s may now so I can listen to my pandora againnnn
+
+Pandora - (5,0) true
+I got my pandora back thank god
+Happy listen to pandora again day
+
+Pandora - (3,2) true
+I got my pandora back thank god
+It s May first which means more Pandora hours
+
+Pandora - (4,1) true
+I got my pandora back thank god
+Maybe my pandora works again
+
+Pandora - (5,0) true
+I got my pandora back thank god
+YAY I CAN FINALLY LISTEN TO PANDORA AGAIN
+
+Pandora - (5,0) true
+So glad I can listen to pandora again
+Glad it s finally the first cause I get pandora back
+
+Pandora - (5,0) true
+So glad I can listen to pandora again
+Got my Pandora back FINALLY
+
+Pandora - (5,0) true
+So glad I can listen to pandora again
+Got my hours back on pandora lol
+
+Pandora - (3,2) true
+I got that Pandora bumping to early
+Pandora is back on what a good way to start my morning
+
+Pandora - (5,0) true
+I can use pandora on my phone again
+I got my pandora back thank god
+
+Pandora - (4,1) true
+I can use pandora on my phone again
+Just happy I have my pandora hours back
+
+Pandora - (5,0) true
+I can use pandora on my phone again
+OMGGG I FINALLY GOT MY PANDORA BACK YAYYYY
+
+Pandora - (3,2) true
+I can use pandora on my phone again
+Thank god my pandora reset
+
+Pandora - (3,2) true
+I can use pandora on my phone again
+Yay my pandora hour limit started over
+
+Pandora - (5,0) true
+whoop I got Pandora back
+Finally I can use pandora again
+
+Pandora - (5,0) true
+whoop I got Pandora back
+I could finally listen to free music on pandora again
+
+Pandora - (5,0) true
+whoop I got Pandora back
+It s finally May that means my pandora works again
+
+Pandora - (3,2) true
+whoop I got Pandora back
+New month reset pandora hours
+
+Pandora - (3,2) true
+whoop I got Pandora back
+Yay finally got my pandora bracelet
+
+Pandora - (4,1) true
+whoop I got Pandora back
+Yes may 1st means my pandora works again
+
+Pandora - (4,1) true
+Finally get my pandora back
+I can get back on pandora nowwww
+
+Pandora - (5,0) true
+Finally get my pandora back
+My pandora back working lol it s the 1st of the month
+
+Pandora - (5,0) true
+Finally get my pandora back
+So glad I can use pandora again
+
+Pandora - (5,0) true
+Finally get my pandora back
+Thank goodness it s May so I can finally listen to pandora again
+
+Pandora - (3,2) true
+I can listen to pandora again yay
+My Pandora time out is over
+
+Pandora - (5,0) true
+I can listen to pandora again yay
+Yesss I get my pandora back
+
+Pandora - (5,0) true
+Yay my pandora hours reset
+I finally get more pandora hours
+
+Pandora - (3,2) true
+Yay my pandora hours reset
+Im allowed to listen to Pandora again
+
+Pandora - (4,1) true
+Yay my pandora hours reset
+So excited that it s may first so now I can listen to pandora again
+
+Pandora - (3,2) true
+Yay my pandora hours reset
+The best thing about today being May 1st is I can listen to pandora again
+
+Pandora - (4,1) true
+Yay my pandora hours reset
+We can finally all listen to pandora again
+
+Pandora - (4,1) true
+Yay my pandora hours reset
+Which means a reload of Pandora hours
+
+Pandora - (3,2) true
+Yay my pandora hours reset
+Yes i can finally listen to pandora on my phone again
+
+Pandora - (3,2) true
+Yay my pandora hours reset
+may first means I get my pandora back
+
+Reggie Miller - (5,0) true
+Lmao Reggie miller said shit on tv
+Reggie Miller drops the sbomb on tnt
+
+Reggie Miller - (5,0) true
+Reggie Miller just said shit on Tv lls
+Reggie Miller cursed on national television
+
+Reggie Miller - (5,0) true
+Reggie Miller just said shit on Tv lls
+Reggie Miller cussin on live television lmao
+
+Reggie Miller - (3,2) true
+Reggie Miller just said shit on Tv lls
+Reggie Miller cussing in the locker room
+
+Reggie Miller - (5,0) true
+Reggie Miller just said shit on Tv lls
+just Showed Reggie Miller dropping an sbomb live
+
+Reggie Miller - (5,0) true
+LMAOOOO Reggie Miller just said Shit on TNT
+Reggie Miller does manage to get a shit on the air so there s that
+
+Reggie Miller - (3,2) true
+Omg reggie miller just said shit on live tv
+Did Reggie Miller just drop the S bomb on national television anchor job in jeopardy
+
+Reggie Miller - (4,1) true
+Omg reggie miller just said shit on live tv
+Reggie Miller dropped an S bomb in the Warriors locker room
+
+Reggie Miller - (4,1) true
+LOL Reggie Miller just swore on TNT
+Reggie Miller dropped an S bomb in the Warriors locker room
+
+Reggie Miller - (3,2) true
+LOL Reggie Miller just swore on TNT
+So what if Reggie miller said shit on the air
+
+Reggie Miller - (3,2) true
+Reggie Miller just said SHIT on live TV LMAO
+Reggie Miller must not know it s live TV
+
+Reggie Miller - (5,0) true
+Reggie Miller just said SHIT on live TV LMAO
+Reggie Miller says shit on TNT during a speech to the Warriors
+
+Reggie Miller - (5,0) true
+Reggie Miller just said SHIT on live TV LMAO
+TNT didnt have to censor Reggie Miller saying shit right there
+
+Reggie Miller - (5,0) true
+Reggie Miller just said SHIT on live TV LMAO
+Who caught Reggie Miller just now saying shit
+
+Reggie Miller - (5,0) true
+Reggie Miller seriously just said Shit on live tv
+Did Reggie Miller just drop the S bomb on national television anchor job in jeopardy
+
+Reggie Miller - (4,1) true
+Reggie Miller seriously just said Shit on live tv
+Lol Reggie Miller swearing on TNT
+
+Reggie Miller - (3,2) true
+Reggie Miller cussing on national tv
+BiggNBadd how about Reggie Miller saying Shit in the locker room
+
+Reggie Miller - (4,1) true
+Reggie Miller cussing on national tv
+Yes to Reggie Miller saying shit over the air
+
+Reggie Miller - (3,2) true
+Reggie miller with the shit bomb on tv
+Did Reggie Miller just drop the S bomb in that hella saved locker room
+
+Reggie Miller - (5,0) true
+Reggie miller with the shit bomb on tv
+Lol Reggie Miller cursing on National television
+
+Reggie Miller - (3,2) true
+Reggie miller with the shit bomb on tv
+This guy Reggie miller cussing on t
+
+Reggie Miller - (3,2) true
+LOL Reggie Miller just swore on TNT
+So reggie miller can say shit on tv
+
+Rhode Island - (5,0) true
+Rhode Island is going to approve gay marriage
+Rhode Island just added itself to the promarriage equality list too
+
+Rhode Island - (3,2) true
+Rhode Island is going to approve gay marriage
+Watch Rhode Island vote for marriage equality LIVE
+
+Rhode Island - (5,0) true
+Rhode Island welcome to the club
+Congratulations Rhode Island on legalizing same sex marriage
+
+Rhode Island - (5,0) true
+Rhode Island welcome to the club
+Congratulations to Rhode Island for passing same sex marriage
+
+Rhode Island - (4,1) true
+Rhode Island welcome to the club
+Rhode Island legislature approves gay marriage bill Gov
+
+Rhode Island - (4,1) true
+Rhode Island welcome to the club
+Rhode Island passed the gay marriage bill
+
+Rhode Island - (4,1) true
+Marriage equality law passed in Rhode Island
+Congrats Rhode Island for passing MarriageEquality
+
+Rhode Island - (4,1) true
+Marriage equality law passed in Rhode Island
+Congrats to Rhode Island becoming the 10th state to enact marriage equality
+
+Rhode Island - (4,1) true
+Marriage equality law passed in Rhode Island
+Rhode Island becomes the 10th state to legalize the freedom to marry
+
+Rhode Island - (5,0) true
+Marriage equality law passed in Rhode Island
+Rhode Island is approving gay marriage
+
+Rhode Island - (4,1) true
+Marriage equality law passed in Rhode Island
+Rhode Island will become the 10th state with marriage equality
+
+Rhode Island - (3,2) true
+Congrats to Rhode Island fir being the 10th state for marriage equality
+Rhode Island approves gay marriage bill 5615
+
+Rhode Island - (3,2) true
+Congrats to Rhode Island fir being the 10th state for marriage equality
+Rhode Island has made same sex marriage legal
+
+Rhode Island - (3,2) true
+Congratulations to Rhode Island on legalizing gay marriage
+Marriage equality is a reality in Rhode Island
+
+Rhode Island - (5,0) true
+Rhode Island is going to approve gay marriage
+And Rhode Island just passed the final hurdle for marriage equality
+
+Rhode Island - (5,0) true
+Rhode Island is going to approve gay marriage
+Congratulations Rhode Island for being the 10th state to pass MarriageEquality
+
+Rhode Island - (4,1) true
+Rhode Island makes the 10th state to legalize equal marriage
+Congrats Rhode Island for passing MarriageEquality
+
+Rhode Island - (4,1) true
+Rhode Island makes the 10th state to legalize equal marriage
+Rhode Island House Approves Marriage Equality Bill 5615
+
+Rhode Island - (4,1) true
+Rhode Island makes the 10th state to legalize equal marriage
+Rhode Island is going to sign a bill to approve of gay marriage
+
+Rhode Island - (4,1) true
+Rhode Island makes the 10th state to legalize equal marriage
+Like a masochist in Newport Marriage Equality is Rhode Island bound
+
+Rhode Island - (4,1) true
+Rhode Island makes the 10th state to legalize equal marriage
+WELCOME TO EQUALITY RI Rhode Island House approves MarriageEquality Gov
+
+Rhode Island - (4,1) true
+Rhode Island welcome to the party
+Excited and happy about Rhode Island legalizing gay marriage
+
+Rhode Island - (4,1) true
+Rhode Island welcome to the party
+I am happy that Rhode Island is accepting gay marriage
+
+Rhode Island - (3,2) true
+Rhode Island welcome to the party
+Rhode Island now allows gay marriage
+
+Ryu - (5,0) true
+Ryu is just something else
+Ryu is having such a good game tonight
+
+Ryu - (4,1) true
+Ryu is just something else
+Ryu is in the zone
+
+Ryu - (3,2) true
+Ryu is just something else
+That s how you do it RYU
+
+Ryu - (3,2) true
+Ryu K s for days
+Ryu has 4 strikeouts on 35 pitches
+
+Ryu - (3,2) true
+Ryu K s for days
+Ryu has 8 Ks through 4
+
+Ryu - (4,1) true
+Ryu with a base knock
+Ryu doing work with the bat too
+
+Ryu - (3,2) true
+Ryu is in the zone
+Ryu is throwing a gem
+
+Ryu - (4,1) true
+is ryu the best hitting pitcher
+Ryu is such a beast hitter
+
+Ryu - (3,2) true
+HyunJin Ryu is dealing for the Dodgers
+Ryu is definitely becoming one of one my favorite Dodgers players
+
+Ryu - (3,2) true
+Ryu s pitching is on point
+Damn the curve ball by Ryu was crazy
+
+Ryu - (3,2) true
+Ryu s pitching is on point
+Ok RYU is officially awesome in my book
+
+Ryu - (5,0) true
+Ryu s pitching is on point
+Ryu is looking good right now
+
+Ryu - (3,2) true
+Ryu s pitching is on point
+Ryu singles in Captain Clutch Dodgers lead 61
+
+Ryu - (3,2) true
+Ryu s pitching is on point
+WOW I LOBE YOU Ryu
+
+Ryu - (4,1) true
+Ryu is helpin himself out
+Ryu sets a new careerhigh with 9 Ks in the 5th
+
+Scott Brooks - (3,2) true
+Scott Brooks to me is panicking
+When you resort to HackAsik in G5 you look desperate Scott Brooks
+
+TNT - (4,1) true
+Lol Reggie Miller swearing on TNT
+To Reggie just said SH on TNT egg
+
+Tanner Glass - (3,2) true
+Wooooo Tanner Glass with a goal
+My boy Tanner Glass with one
+
+Tanner Glass - (3,2) true
+When Tanner Glass scores on you you must be the Islanders
+Tanner Glass with a goal you dont say that much
+
+Tanner Glass - (4,1) true
+When Tanner Glass scores on you you must be the Islanders
+You know its a good game when tanner glass gets a goal
+
+Tanner Glass - (5,0) true
+When Tanner Glass scores on you you must be the Islanders
+You know its a rough night when Tanner Glass scores
+
+Tanner Glass - (5,0) true
+When Tanner Glass scores on you you must be the Islanders
+You know things are bad when you let Tanner Glass score
+
+Tanner Glass - (5,0) true
+When Tanner Glass scores on you you must be the Islanders
+You know you suck when you let Tanner Glass score
+
+Tanner Glass - (4,1) true
+When Tanner Glass scores on you you must be the Islanders
+Lol you know it s bad when tanner glass scores
+
+Tanner Glass - (3,2) true
+Tanner glass just scored just scored
+Damn tanner glass scored thats when you know the islanders suck 50
+
+Tanner Glass - (3,2) true
+Tanner glass just scored just scored
+You know youre going to win when Tanner Glass scores
+
+Tanner Glass - (4,1) true
+You know when the Pens are on when Tanner Glass scores an even strength goal
+You know it s a good night when Tanner Glass scores
+
+Tanner Glass - (4,1) true
+You know when the Pens are on when Tanner Glass scores an even strength goal
+You know things are going your way when Tanner Glass scores
+
+Tanner Glass - (4,1) true
+Tanner Glass is on the board
+Nothing more humbling than a tanner glass goal
+
+Tanner Glass - (5,0) true
+Tanner Glass is on the board
+Tanner Glass just scored on you New York get the fuck outta here
+
+Tanner Glass - (4,1) true
+Tanner Glass is on the board
+When Tanner Glass scores a playoff goal its time to call the game
+
+Tanner Glass - (4,1) true
+Tanner Glass is on the board
+When Tanner Glass scores you know your in trouble
+
+Tanner Glass - (4,1) true
+Tanner Glass is on the board
+You know it s a bad day when tanner glass scores on you
+
+Tanner Glass - (4,1) true
+Tanner Glass is on the board
+You know things arent going your way when Tanner Glass scores a garbage goal
+
+Tanner Glass - (4,1) true
+Tanner Glass is on the board
+You know youre in trouble when Tanner Glass scores on you
+
+Tanner Glass - (4,1) true
+Tanner Glass is on the board
+you know it s bad when Tanner Glass scores a goal
+
+Tanner Glass - (3,2) true
+When Tanner Glass scores in a playoff game
+Hey Islanders Tanner Glass even scored on you
+
+Tanner Glass - (3,2) true
+When Tanner Glass scores in a playoff game
+Tanner Glass buries his first of the playoffs
+
+Tanner Glass - (3,2) true
+When Tanner Glass scores in a playoff game
+When Tanner Glass scored his goal this year he said on the bench I roofed it
+
+Tanner Glass - (4,1) true
+When Tanner Glass scores in a playoff game
+You know the Islanders suck when Tanner Glass scores
+
+Tanner Glass - (3,2) true
+When Tanner Glass scores in a playoff game
+You know things are bad when you let Tanner Glass score
+
+Tanner Glass - (3,2) true
+When Tanner Glass scores in a playoff game
+You know your team is bad when tanner glass scores
+
+Tanner Glass - (4,1) true
+When Tanner Glass scores on you you know things are going South
+Nothing more humbling than a tanner glass goal
+
+Tanner Glass - (4,1) true
+When Tanner Glass scores on you you know things are going South
+Tanner Glass just scored a goal in the playoffs WHAT
+
+Tanner Glass - (4,1) true
+When Tanner Glass scores on you you know things are going South
+Tanner Glass scoring is not a good thing
+
+Target - (3,2) true
+It s why I LOVE Target
+Target s a genius marketing team they really do
+
+Target - (4,1) true
+It s why I LOVE Target
+Target shopping is the best shopping
+
+Tim Hudson - (3,2) true
+so to tim hudson hitting a homerun and on the way to his 200th win
+Tim Hudson hit a HR tonight
+
+Travis - (3,2) true
+Im rooting for Travis Travis family and Juan Martinez
+Thank God Juan is there for Travis
+
+True Life - (3,2) true
+True life I have a social anxiety disorder is on
+MTV should have picked me up for this True Life episode
+
+True Life - (3,2) true
+True life I have a social anxiety disorder is on
+Omg True LifeSocial Anxiety is coming on next why am I not on there
+
+Vedo - (3,2) true
+The voice teamVedo I love you
+Watchin Vedo sing I think Im in love
+
+Vedo - (4,1) true
+Vedo is taking this one
+Vedo won that knockout round
+
+Vedo - (3,2) true
+Vedo is taking this one
+hell of a job tonight Vedo
+
+Vedo - (3,2) true
+Vedo I love this guy
+Vedo s performance was absolutely amazing
+
+Vedo - (4,1) true
+Vedo I love this guy
+grl i like vedo hes gonna stay
+
+Vedo - (3,2) true
+Loved Vedo s performance tonight
+I have so much respect for Vedo
+
+Vedo - (5,0) true
+Loved Vedo s performance tonight
+That performance by Vedo was seriously touching
+
+Vedo - (5,0) true
+Loved Vedo s performance tonight
+Vedo s performance was something I could relate too
+
+Vedo - (4,1) true
+Loved Vedo s performance tonight
+Vedo your mom s just got wings from that performance
+
+Vedo - (3,2) true
+I think Vedo has this one
+Vedo sold it to me
+
+Vedo - (4,1) true
+I think Vedo has this one
+Vedo won with look into my eyes
+
+Vedo - (3,2) true
+I think Vedo has this one
+grl i like vedo hes gonna stay
+
+Vedo - (3,2) true
+I think Vedo has this one
+i prefer Vedo over the both of them
+
+Vedo - (3,2) true
+I think Vedo has this one
+Vedo deserved to win that round
+
+Vedo - (3,2) true
+OMG Vedo is so perfect
+And Vedo has an amazing voice
+
+Vedo - (3,2) true
+OMG Vedo is so perfect
+Vedo congrats on a job well done
+
+Vedo - (3,2) true
+OMG Vedo is so perfect
+Wow wow wow Vedo just killed it
+
+Vedo - (3,2) true
+Vedo sold it to me
+Loved Vedo s performance tonight
+
+Vedo - (3,2) true
+Vedo sold it to me
+Vedo gives me the chills
+
+Vedo - (4,1) true
+Vedo sold it to me
+Vedo had me tearin up
+
+Vedo - (4,1) true
+Vedo gives me the chills
+Omg vedo is making me cry
+
+Vedo - (3,2) true
+Vedo gives me the chills
+Vedo is about to kill this NBCTheVoice I cant wait to see his performance
+
+Vedo - (4,1) true
+Vedo gives me the chills
+vedo is pulling at my heartstrings right now
+
+Vick - (4,1) true
+Mike Vick really beat Lesean McCoy in a race
+Haha Vick smoked Shady in a footrace
+
+Vick - (4,1) true
+Mike Vick really beat Lesean McCoy in a race
+Vick dusted Lesean McCoy in 40 by 4 yards today
+
+Vick - (4,1) true
+Mike Vick beat Shady McCoy in a foot race
+Shady lost to Vick by 5 yards in a 40 smh
+
+Vick - (3,2) true
+Lol Michael Vick walked lesean McCoy in a race
+Mike vick still beat McCoy in a 40cant say I expected that
+
+Vick - (5,0) true
+Vick beat McCoy in a sprint
+Hahahaha Mike Vick smoked McCoy on the 40 yard dash
+
+Vick - (3,2) true
+Vick beat McCoy in a sprint
+wait Vick smoked McCoy by 5 yards lawwddd
+
+Vick - (3,2) true
+Mike Vick beat LeSean McCoy in a 40 yard dash today
+Vick agreed to a 40 yard race smoked him by 5
+
+Vick - (5,0) true
+Vick crushed McCoy in a 40
+Haha MikeVick beat McCoy in the 40yard dash
+
+Vick - (3,2) true
+Vick crushed McCoy in a 40
+Vick beat Shady in a race after being called an old man haha
+
+Vick - (4,1) true
+Michael Vick in a 40 yard dash
+Vick whoops Shady in 40yard race
+
+Vick - (4,1) true
+Vick crushed McCoy in a 40
+McCoy challenged Vick to a race and Vick beat him
+
+Vick - (3,2) true
+Vick crushed McCoy in a 40
+yo shady why you let Vick beat you in a race
+
+Westbrook - (4,1) true
+Damn OKC need Westbrook that bad
+The Thunder are NOTHING wout Westbrook
+
+Westbrook - (3,2) true
+Damn OKC need Westbrook that bad
+The effect Westbrook leaves on OKC
+
+Westbrook - (4,1) true
+Damn OKC need Westbrook that bad
+This series shows how valuable and how great Westbrook is for OKC
+
+Z-Bo - (4,1) true
+ZBo playing no games
+Now ZBo is cranking up
+
+Z-Bo - (4,1) true
+ZBo playing no games
+They can not hold ZBo
+
+Z-Bo - (4,1) true
+ZBo playing no games
+ZBo doin da damn thang tonight
+
+Z-Bo - (4,1) true
+ZBo playing no games
+ZBo is in top form
+
+Z-Bo - (5,0) true
+ZBo playing no games
+ZBo is stepping up big
+
+Z-Bo - (5,0) true
+ZBo playing no games
+ZBo s a beast
+
+Z-Bo - (5,0) true
+ZBo playing no games
+ZBo wont be stopped
+
+Z-Bo - (3,2) true
+ZBo and Gasol inside killing
+Zbo killin it right now
+
+Z-Bo - (4,1) true
+ZBO IS SO TOUGH
+ZBO is taking command of the paint
+
+Z-Bo - (5,0) true
+ZBO IS SO TOUGH
+ZBo is a fucking beast
+
+Z-Bo - (4,1) true
+ZBO IS SO TOUGH
+ZBo is ballin in this 4th quarter
+
+Z-Bo - (4,1) true
+ZBO IS SO TOUGH
+ZBo is killin the clippers
+
+Z-Bo - (3,2) true
+ZBo is a baaad man
+ZBo is running thru these fools
+
+Z-Bo - (3,2) true
+ZBo is a baaad man
+ZBo taking over tight now
+
+Z-Bo - (3,2) true
+ZBo is a baaad man
+ZBo you are a beast
+
+Z-Bo - (4,1) true
+ZBo is treating the Clippers like
+ZBo makin the Clips his bitch
+
+Z-Bo - (4,1) true
+ZBo is a baaad man
+So ZBo he pretty good
+
+Z-Bo - (3,2) true
+ZBo is a baaad man
+ZBO is workin the clips rite now
+
+Z-Bo - (3,2) true
+ZBo is a baaad man
+ZBo gets buckets easy
+
+Z-Bo - (3,2) true
+ZBo is a baaad man
+ZBo owns the jab step
+
+Z-Bo - (4,1) true
+ZBo is a baaad man
+Zbo killin it right now
+
+Z-Bo - (4,1) true
+ZBo is a baaad man
+Zbo putting on that work
+
+Z-Bo - (4,1) true
+ZBo is torching the clippers
+These bitches scared of ZBo
+
+Z-Bo - (4,1) true
+ZBo is torching the clippers
+ZBO IS SO PRODUCTIVE
+
+Z-Bo - (4,1) true
+ZBo is torching the clippers
+ZBo is goin to work
+
+Z-Bo - (4,1) true
+ZBo is torching the clippers
+ZBo is so fun to watch
+
+Z-Bo - (4,1) true
+ZBo is torching the clippers
+ZBo rules the world bitch
+
+Z-Bo - (3,2) true
+ZBo is torching the clippers
+lol they getting abuse by Gasol and ZBo
+
+{FalseNegative=>849.0, FalsePositive=>311.0, TrueNegative=>2946.0, TruePositive=>621.0}
+F1: 0.517	P: 0.666	R: 0.422	Accuracy: 0.755

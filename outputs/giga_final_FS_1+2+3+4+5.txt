@@ -1,0 +1,15 @@
+Test
+Loaded 51903 word vectors of dimension 300 from
+/u/xiao/scr/semeval2015/wordVectors/word2vec/wiki_giga_vectors.txt.cachedSubset
+Exception in thread "main" java.lang.IllegalArgumentException: Specified element is out of bounds: 0 -1
+	at org.ejml.data.DenseMatrix64F.get(Unknown Source)
+	at org.ejml.data.MatrixIterator.next(Unknown Source)
+	at org.ejml.data.MatrixIterator.next(Unknown Source)
+	at com.google.common.collect.Ordering.max(Ordering.java:536)
+	at edu.stanford.nlp.semeval2015.pit.Features$$Lambda$26/1734340220.apply(Unknown Source)
+	at edu.stanford.nlp.semeval2015.pit.Features.pool(Features.java:249)
+	at edu.stanford.nlp.semeval2015.pit.Features.getVectorSpaceAlignmentFeatures(Features.java:124)
+	at edu.stanford.nlp.semeval2015.pit.Features.getFeatureVector(Features.java:76)
+	at edu.stanford.nlp.semeval2015.pit.Features.getFeatureDatum(Features.java:148)
+	at edu.stanford.nlp.semeval2015.pit.Evaluation.evaluate(Evaluation.java:125)
+	at edu.stanford.nlp.semeval2015.pit.ParaphraseProblem.main(ParaphraseProblem.java:132)
