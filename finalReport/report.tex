@@ -352,7 +352,7 @@
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{CS221 Project Report\\Classifying Paraphrases in Twitter}
+\title{Paraphrasing in Twitter}
 
 
 % author names and affiliations
@@ -493,9 +493,8 @@ if $z_{j}$ = 1 for at least one j. $z_{j}$ = 1 only if $w_{j}$ = ($w_{j1}$, $w_{
 
 This model suffices as a basic outline on how to solve the Twitter classifier. However, this is only our baseline as the actual model and algorithm we implement is described below.
  
- \section{Approaches}
-\subsection{Foundations: Dense word vectors}
-\noindent Our approach to solving the problem of Twitter paraphrases hinges on the application of a dense vector representation for words and phrases.  This section details the idea behind this approach, and its advantages.\\
+ \section{Foundations: Distributional word representations}
+ \noindent Our approach to solving the problem of Twitter paraphrases hinges on the application of a dense vector representation for words and phrases.  This section details the idea behind this approach, and its advantages.\\
 
 \indent In standard applications of machine learning techniques to NLP, words have been represented by "one-hot" vectors, which are vectors whose entries are all zero except for a single 1 entry. A typical way of representing a document, for instance, is as a counts vector, or with some derivative of word counts, such as tf-idf (term frequency-inverse document frequency).  This approach yields a vector of length $|V|$ for each document, where entry $i$ corresponds to some function of the count of the $i$th word in the vocabulary.  Such a count vector can be seen as a sum of vectors for each word, where each vector is a one-hot vector with its one entry in the index corresponding to that token.  These models have been moderately successful, but suffer from some serious problems. Primarily, a one-hot word representation  doesn't offer any information about the semantics of an individual word, and ignores the local context in which the word appears. Furthermore, as a result, any reasonable measure of vector similarity between two words, with such a model, is zero.\\
 
@@ -520,7 +519,9 @@ The expressive power of word vectors is especially evident in the example of vec
 	\label{fig1}
 \end{figure}
 
-\subsection{Method 1: Wordvec and Dense Vector Representation of Words}
+ \section{Approaches}
+
+\subsection{Word vectors using distributional representations}
 %%TODO: section into Model, Algorithm, etc.
 Our first approach the problem of Twitter paraphrase detection was to train word vectors with Wordvec, Google's implementation of the Skip-gram algorithm developed by Mikilov et al in Google \cite{Mikolov}, and assign a similarity score between two tweets that is an aggregate of the similarities between individual words in the tweets.  More precisely, we define the distance metric $D_{tweets}$ for two tweets $t_1$ and $t_2$, as the following:
 
@@ -558,9 +559,7 @@ Using these dense vector representations, we can now compare tweets.  We iterate
 
 Each tweet can furthermore be assigned a vector representation itself, by aggregating its word vectors in a hierarchical way.  There is an intuitive interpretation that we can now glean from these aggregate vectors.  By observing which words have high values for different elements in the vector, we can determine the semantic meaning of each dimension in the vector. For instance, one might find that all tweets $w_k$ dealing with sports have a high value for $w_{k5}$, whereas tweets about social rights have a high $w_{k18}$. This would indicate that the fifth dimension of the word-vector space corresponded to the general semantic topic of sports, and the 18th to issues of social justice.\\
 
-
-
-\subsection{Method 2: Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}
+\subsection{Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection}
 In this section, we describe a state-of-the-art work \cite{richard} on using dynamic pooling and unfolding recursive autoencoders (RAE) for paraphrase detection.\\
 \subsubsection{Model}
 The model used here are Neural networks. Neural networks are especially useful in automatically learning features from data. This is much more powerful than manually specifying features to the classifier. A very powerful idea called neural language models was first introduced by Bengio et al. \cite{bengio}. The idea is to jointly learn an embedding of words into an $n$-dimensional vector space and these vectors can be used to predict how likely a word is given its context. A word embedding matrix $L \in \mathbf{R}^{n \times |V|}$, where $|V|$ is the size of the vocabulary is obtained by running gradient descent on the network. Once this training is done we can obtain a word's vector as just a column in $L$.\\
@@ -588,10 +587,10 @@ Finally, a classifier is trained on this matrix which takes as input a matrix an
 \subsubsection{Example}
 Given two sentences and their parse trees $T_1$ and $T_2$, the unfolding recursive neural network will first compute features for these two sentences using the algorithm described above. We then compute the euclidean distance between all word and phrase vectors of the two sentences. This will form the $S$ matrix. We then compute the $S_{pooled}$ matrix as stated above. When this is given to the classifier, it will make a decision of whether the sentences are paraphrases or not.\\
 
-\subsection{Method 3: GloVe representations}
+\subsection{GloVe distributed representations}
 A recent exciting development in the class of algorithms using dense word vector representations is GloVe, developed at Stanford by Pennington, Socher and Manning. It addresses the problem that standard co-occurrence models are succeptable to noise: The vast majority of co-occurrences in the matrix $X$ will tend to be ones that happen very rarely, and without much particular semantic significance. Even just the 0 entries of $X$ will tend to account for 75-95\% of data. Furthermore, some words that co-occur extremely commonly have little semantic relevance, such as "the" along with any noun. To compensate for this, Pennington et al introduce a weighting function into the least-squares error which lowers the impact of common co-occurrences as well as the least common ones. Furthermore, by ensuring that the function approaches 0 as co-occurrence approaches 0, one naturally excludes all pairs which do not co-occur in the corpus from the calculations, which seems intuitively to make sense, and has the benefit of speeding up calculation significantly. Pennington et al demonstrate that, as a result of using only nonzero co-occurrence values, these methods run in approximately $O(|C|^{0.8})$ , where $|C|$ is the size of the corpus. The objective they propose furthermore claims to address several problems with loss functions of other unsupervised methods based on co-occurrence, such as skip-gram and ivLBL. \cite{GloVe}\\
 
-\subsection{Method 4: SVM with features derived from word vectors}
+\subsection{Classifier with word vector features and other features}
 Building off the previously described methods, we construct a SVM classifier using features derived from word vectors as features, in addition to other more standard NLP features.  The features we used in total are the following, for a pair of tweets $(t_1, t_2)$:
 
 \begin{enumerate}
@@ -622,6 +621,7 @@ test1 & 0.501 & 0.547 & 0.326 \\ \hline
 \end{center}
 
 \section{Results}
+TODO melvin write here
 
 \begin{figure}
 	\centering
@@ -653,6 +653,7 @@ TODO(Melvin) - write me
 TODO(melvin) - write me
 
 \section{Future Work}
+TODO melvin
 There are several things we can do to improve the accuracy of our current model.  Following is a list of the next things we will work on
 
 
