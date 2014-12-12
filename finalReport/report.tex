@@ -460,15 +460,14 @@ Twitter datasets tend to attract slang and misspellings, arbitrary capitalizatio
 
 
 
-\subsection{Corpi Used}
-The corpi we used for thie project were the following: (TODO: are these really corpuses?  Should I say 'external datasets'?)
+\subsection{Corpuses Used}
+The corpuses we used for thie project were the following:
 \begin{itemize}
-\item Pretrained word vectors publically from Google's word2vec project.  These were trained on the Google News dataset (about 100 billion words) with the  continuous Skip-gram model described by Milikov et al (http://arxiv.org/pdf/1310.4546.pdf). The model contains 300-dimensional vectors for 3 million words and phrases, from Agence France Press English Service, Associated Press Worldstream English Service, The New York Times Newswire Service and The Xinhua News Agency English Service.
+\item \textit{(For training Skip Gram word vectors)} Google News dataset (about 100 billion tokens, 692k types after removing words ocurring less than 5 times)
 
-\item The English Gigaword corpus (released January 28, 2003), an archive of about 1200M words from  newswire text data in English that has been acquired over several years by the Linguistic Data Consortium.
+\item \textit{(for training GloVe vectors)} Gigaword5 -The English Gigaword Fifth Edition corpus (released June 17, 2011), an archive of 4.3 billion tokens from newswire text data in English that has been acquired over several years by the Linguistic Data Consortium at the University of Pennsylvania.  \cite{GloVe} \cite{Gigaword}.  Contains text from theEnglish service of the Associated Press Worldstream, the Central News Agency of Taiwan, the Los Angeles Times/Washington Post Newswire, the Washington Post/Bloomberg Newswire and the New York Times Newswire and Xinhua News Agency.
 
-\item Glove vectors from http://nlp.stanford.edu/projects/glove/ (on the twitter dataset)
-\item wikipedia dump + giga word corpus
+\item Combination Gigaword5 and Wikipedia2014, a Wikipedia dump.  The combined dataset has 6B tokens.
 
 \end{itemize}
 
@@ -528,7 +527,7 @@ where
 
 $$D_{cosine}(x, y) = \frac{x^Ty}{\left \| x \right \| \left \|y \right \|}$$
 
-and $vec(x)$ is the vector representation of word $x$, as learned by the Skip Gram model, which one will now detail.  TODO: do we learn the cutoff?
+and $vec(x)$ is the vector representation of word $x$, as learned by the Skip Gram model, which one will detail in the next paragraph.  A pair of tweets is then predicted to be a paraphrase if this distance is above a certain threshold.  We learn this threshold with 
 
 The idea behind Skip-gram is to learn word vector representations that are good at predicting nearby words.  Skip-gram furthermore models each word as having both an 'input' and an 'output' form, which reflects the directional relation between word pairs.  Specifically: given a sequence of training words $w_1, W_2, w_3 .... w_T$, the objective of the Skip-Gram model is to minimize the average log probability:
 
@@ -703,10 +702,14 @@ Deep	 Learning for NLP
 NAACL 2013, Atlanta
 
 \bibitem{RBF}
-Alex J. Smola, Bernhard Schölkopf, Klaus-Robert Müller
+Alex J. Smola, Bernhard Sch{\"o}lkopf, Klaus-Robert M{\"u}ller
 The connection between regularization operators and support vector kernels
  22 December 1997
 
+\bibitem{Gigaword}
+English Gigaword Fifth Edition
+Online Dataset description
+https://catalog.ldc.upenn.edu/LDC2011T07
 
 \end{thebibliography}
 
