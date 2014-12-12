@@ -429,12 +429,9 @@ Email: zsilver@stanford.edu}}
 
 
 
-\section{Abstract}
-% no \IEEEPARstart
-Our project is detecting and identifying related paraphrases in Twitter, as part of the SemEval challenge for 2015.   Given two sentences (Tweets), we determine whether they express the same, or very similar, meaning. Then we assign the two phrases a degree score between 0 and 1 that indicates our level of confidence their relatedness.  The training dataset is provided by semEval and contains about 17,790 annotated sentence pairs, and comes with tokenization, part-of-speech and named entity tags.  The testing dataset consists of a further 1k examples from a different time period that has been annotated by an expert.  SemEval also provides several baselines against which to compare our algorithm's performance. \\ 
-
-\textbf{TODO: Report the Results and Error Analysis from using Google Wordvec and Dynamic Pooling and Unfolding Recursive Autoencoders for Paraphrase Detection for this task; and discuss how to improve upon them. Maybe move the "Results" subsection up here?}\\
-We are working with  Xiao Cheng, a PhD candidate in the Computer Science Dept.
+\begin{abstract}
+Our project is detecting and identifying paraphrases in Twitter, as part of the SemEval challenge for 2015.   Given two sentences (tweets), we determine whether they express the same, or very similar, meaning.  The training dataset is provided by semEval and contains about 17,790 annotated sentence pairs, and comes with tokenization, part-of-speech and named entity tags. SemEval also provides two baselines against which to compare our algorithm's performance. We experimented with different word vector representations trained using different techniques. We also tried various features and performed feature selection to select the best features. We also experimented with different classifiers for the task. Our final best system obtains a precision of \textbf{0.665}, recall of \textbf{0.422}, F1 of \textbf{0.517} and an accuracy of 0.75. We worked in collaboration with  Xiao Cheng, a PhD candidate in the Computer Science Dept.\\ 
+\end{abstract}
 
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
@@ -502,12 +499,12 @@ This model suffices as a basic outline on how to solve the Twitter classifier. H
 
 \indent In standard applications of machine learning techniques to NLP, words have been represented by "one-hot" vectors, which are vectors whose entries are all zero except for a single 1 entry. A typical way of representing a document, for instance, is as a counts vector, or with some derivative of word counts, such as tf-idf (term frequency-inverse document frequency).  This approach yields a vector of length $|V|$ for each document, where entry $i$ corresponds to some function of the count of the $i$th word in the vocabulary.  Such a count vector can be seen as a sum of vectors for each word, where each vector is a one-hot vector with its one entry in the index corresponding to that token.  These models have been moderately successful, but suffer from some serious problems. Primarily, a one-hot word representation  doesn't offer any information about the semantics of an individual word, and ignores the local context in which the word appears. Furthermore, as a result, any reasonable measure of vector similarity between two words, with such a model, is zero.\\
 
-\begin{figure*}
+\begin{figure}
 	\centering
-	\includegraphics[scale=0.4]{tweet_cmp_cs221.png}
+	\includegraphics[scale=0.3]{tweet_cmp_cs221.png}
 	\caption{Word Vectors}
 	\label{fig1}
-\end{figure*}
+\end{figure}
 
 \indent A one dimensional representation doesn't match what we know about words; words can be similar in certain ways, and different in others.  The words "fear" and "trembling", for instance, are similar in that they are both nouns, different in that one is emotional and the other physical; close to each other in negative valence and further from each other in commonness in standard parlance, and so on; a human could easily identify hundreds of dimensions in which they are close or far.  This is precisely the idea behind dense vector representations of words. Each word in these models is represented as a dense vector $w$, where each entry $w_k$ corresponds to some 'topic' or property of that word. (One may think $w$ as an unnormalized probability distribution over different attributes of the word.) In practice, to generate these distributions, some form of statistical clustering is performed first, usually based on which words tend to co-occur. Each dimension ('topic') is determined by the percent membership to different clusters, based on the global word co-occurrence matrix $X$ \cite{Wordvec}.\\
 
@@ -619,19 +616,32 @@ test1 & 0.501 & 0.547 & 0.326 \\ \hline
 \end{center}
 
 \section{Results}
-\begin{center}
-\begin{tabular}{|l | c | c | c|}
-\hline
- & Baseline & Method 1 & Method 2 (RAE) \\ \hline
- F1 & 0.501 & 0.547 & 0.326 \\ \hline
- Acc & 0.726 & 0.751 & 0.74 \\ 
- \hline
-\end{tabular}
-\end{center}
 
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{cmp_vecs.png}
+	\caption{Performance on Different word vectors}
+	\label{vectorSelect}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{cmp_predictors.png}
+	\caption{Performance for different predictors}
+	\label{predSelect}
+\end{figure}
 
 \section{Error Analysis}
 TODO(Melvin) - write me
+
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{ft_select.png}
+	\caption{Forward feature selection}
+	\label{feat}
+\end{figure}
+
 
 \section{Conclusion}
 TODO(melvin) - write me
