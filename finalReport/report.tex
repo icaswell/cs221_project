@@ -635,7 +635,7 @@ In this section, we present the results of our system on various system combinat
 \hline
  Method & Precision & Recall & F1 & Accuracy\\ \hline
 Baseline & 0.70 & 0.38 & 0.50 & 0.72 \\ \hline
-Oracle & 0.xx & 0.xx & 0.xx & 0.xx \\ \hline
+Oracle & 0.60 & 0.91 & 0.74 & 0.76 \\ \hline
 Best System & 0.67 & 0.42 & 0.52 & 0.75  \\ 
 \hline
 \end{tabular}
@@ -645,8 +645,13 @@ Best System & 0.67 & 0.42 & 0.52 & 0.75  \\
 \label{error}
 Traditional NLP tasks involved many hours of feature engineering and error analysis. The researcher had to look at the errors in his system and insert features to capture those errors. Although, this is true for all machine learning systems, this is specifically more true in the field of NLP where the data is unstructured. The infinite loop of feature engineering, error analysis and more feature engineering can be quite cumbersome. It does not end here, this kind of detailed feature engineering also leads to systems that do not generalize well. These systems over fit on the development set.\\
 
-\indent With the advent of distributed representations we gain much more information from these representations which otherwise needs multiple features and extensive tuning. Also, these vector representations provide much more generalized systems. In this work, we used vector representations trained on different corpora. From
+\indent With the advent of distributed representations we gain much more information from these representations which otherwise needs multiple features and extensive tuning. Also, these vector representations provide much more generalized systems. In this work, we used vector representations trained on different corpora. We used code provided in \cite{GloVe} to train our glove model and code in \cite{Wordvec} to train the RAE model. The other two models were trained using Google's toolkit \cite{word2vec}.\\
 
+\indent From Figure \ref{vectorSelect} it can be seen that the vector representations from the provided google news data set is very close to the best system. But it does not provide the best performance. This is attributed to the fact that there is a mismatch between news data and standard twitter data. Although the vectors trained in the glove system are based on twitter data, the objective of glove is to learn word vectors such that their dot product equals the logarithm of the word's probability of co-occurrence. This leads to good vector representations but for our task of paraphrasing entire sentences it does lend good phrase representations. The other two systems are both trained on the combination of wkipedia and gigaword corpus. This corpus has enough information to capture good representations. One of the two representations uses the skip gram method of training as described in \cite{Mikolov}, the other uses the continuous bag of words method of training. It can be seen that the skip gram performs slightly poorly when compared to the other method which can be attributed to the skip gram model not having enough context on either side to predict the current word.\\
+
+\indent In Figure \ref{feat} we perform forward feature selection, i.e, we add a feature at a time to determine the impact of each feature on the final performance. Added the $L_2$ similarity between the vectors gives us a high accuracy but very low precision, recall and $F1$. This is explained by the fact that the task has much more negatives as opposed to positives and it is the positives that we care about a lot since the evaluation metric is $F1$. After adding the cosine similarity between the combined vectors of the two phrases pushes the performance up drastically. This was expected since the vectors were trained to capture similarity in high dimensional spaces, hence, taking their cosine similarity will give us a measure of how much they mean the same thing. Adding NER features increases our recall a little bit. This feature tries to capture the overlap of NER tags between the two sentences. This can be useful when this effect is not captured well by the word vectors. Adding $n$-gram features increases the score by a significant amount since the cosine similarity cancels out same words between the two sentences, however, the presence of these words is a good indicator for paraphrasing. The $n$-gram features capture similarity where the word vectors fail to do so and hence these two features compliment each other.\\
+
+\indent Figure \ref{predSelect} shows the effect of different predictors on the performance. It can seen that all the predictors perform similarly and there isn't a clear winner. The similar performance of logistic regression and the SVM methods might be because the decision space might be clearly separable and hence SVMs don't provide any more benefits. The comparatively poor performance of RAE technique is because the technique considers the nodes of a parse tree and words and tries to learn representations for them. However, since our tweets are really short, the parse tree does not have enough nodes to provide the discrimination required. We decided to stick with logistic regression method since it was easier to train and debug.\\
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.4]{ft_select.png}
@@ -654,9 +659,29 @@ Traditional NLP tasks involved many hours of feature engineering and error analy
 	\label{feat}
 \end{figure}
 
+\indent We provide an example for each of the four classes here.\\
+\begin{itemize}
+\item
+\textbf{True Negative}\\
+A Walk to Remember is the definition of true love\\
+A Walk to Remember is on and Im in town and Im upset\\
+\item
+\textbf{True Positive}\\
+What the fuck did Amanda Bynes do to her face\\
+wow what the hell has happened to amanda bynes\\
+\item
+\textbf{False Positive}\\
+My phone is annoying me with these amber alerts\\
+what is this amber alert thing on my phone\\
+\item
+\textbf{False Negative}\\
+Rockets Asik showed the Thunder\\
+Omer Asik came through big tonight\\
+\end{itemize}
+It can be seen that in the first example, the system understands that the sentiment between the two sentences are different. In the second example, the vector representations of \emph{what the hell happened} and \emph{what the fuck did} are pretty close to each other and hence the system gets it right. The false positive looks really difficult and the system does not have enough discriminating features to get it right. In the last example, the system fails to learn that the phrase \emph{showed the thunder} and \emph{came through big} mean the same thing. This can be attributed to these phrases being rare in the training data.\\
 
 \section{Conclusion}
-We participated in the \textbf{semeval2015} Paraphrasing in Twitter challenge. In this report, we present the challenges in processing small segments of unstructured text like tweets. We describe our data and corpora used. We give a brief primer on distributed word representations. We have tried four different methods which involved three types of training of word representations. Our final method was to use features from the best word representations in a classifier. We performed a detailed error analysis on the experiments with various representations, predictors and features. Our final best system achieves \textbf{0.52 $F1$} and \textbf{0.75 accuracy} which is a \textbf{4\%} and  \textbf{4.2\%} relative improvement over the baseline score.
+We participated in the \textbf{semeval2015} Paraphrasing in Twitter challenge. In this report, we present the challenges in processing small segments of unstructured text like tweets. We describe our data and corpora used. We give a brief primer on distributed word representations. We have tried four different methods which involved three types of training of word representations. Our final method was to use features from the best word representations in a classifier. We performed a detailed error analysis on the experiments with various representations, predictors and features. Our final best system achieves \textbf{0.52 $\textbf{F1}$} and \textbf{0.75 accuracy} which is a \textbf{4\%} and  \textbf{4.2\%} relative improvement over the baseline score. Our system achieves a high precision of \textbf{0.67} which is higher than the oracle's precision but a low recall. The final accuracy is better than the baseline system and is very close to the oracle.\\
 
 \section{Future Work}
 The test data for the task will be released today (December 12th 2014). We plan to run our experiments on the test set and try do some error analysis. The evaluation for the task starts on December 18th. Our system will be an official submission from the Stanford NLP group along with Xiao Cheng. We hope we will do well in the task and will then be required to write a system description paper and present at the workshop.\\
@@ -718,22 +743,25 @@ GloVe: Global Vectors for Word Representation
 \bibitem{Wordvec}
 Richard Socher and Christopher Manning
 Deep	 Learning for NLP
-NAACL 2013, Atlanta
+NAACL 2013, Atlanta.
 
 \bibitem{RBF}
 Alex J. Smola, Bernhard Sch{\"o}lkopf, Klaus-Robert M{\"u}ller
 The connection between regularization operators and support vector kernels
- 22 December 1997
+ 22 December 1997.
 
 \bibitem{Gigaword}
 English Gigaword Fifth Edition
 Online Dataset description
-https://catalog.ldc.upenn.edu/LDC2011T07
+https://catalog.ldc.upenn.edu/LDC2011T07.
 
 \bibitem{Das}
 Dipanjan Das and Noah A. Smith
 Paraphrase Identification as Probabilistic Quasi-Synchronous Recognition
-2009 ACL and AFNLP
+2009 ACL and AFNLP.
+
+\bibitem{word2vec}
+Google word2Vec training tool kit. code.google.com/p/word2vec/.
 
 \end{thebibliography}
 
