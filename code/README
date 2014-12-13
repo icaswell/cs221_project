@@ -19,8 +19,9 @@ Here is a brief explanation of the code base:
 --> stops.txt - a list of all stops
 
 --> scripts
-	
-		--> some scripts for processing data
+		--> run - script to run the evaluation, note it works only in the javanlp repo on the NLP clusters
+		--> some more scripts for processing data
 
 
+Note: All experiments were run on the NLP clusters.
 Note: All code above was written in collaboration with Xiao Cheng, PhD student, Stanford NLP group
