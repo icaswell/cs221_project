@@ -1,0 +1,26 @@
+Here is a brief explanation of the code base:
+
+--> Paraphraseproblem - a class which represents each problem, two sentences and a label
+
+--> Evaluation - contains evaluation methods which includes helpers which update scores, calculate different metrics
+
+--> Features - a class which computes all the features for the problem
+
+--> IOs - helper class for IO methods and other helpers
+
+--> Label - labels from the amazon turkers
+
+--> Params - the directory that contains links to the various directories that contain the data
+
+--> Phrase - a class that contains representations for the twitter data in train file
+
+--> Sentence - a class that models each sentence
+
+--> stops.txt - a list of all stops
+
+--> scripts
+	
+		--> some scripts for processing data
+
+
+Note: All code above was written in collaboration with Xiao Cheng, PhD student, Stanford NLP group
